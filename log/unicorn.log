@@ -1,0 +1,35 @@
+I, [2016-04-17T22:54:25.413876 #26231]  INFO -- : Refreshing Gem list
+I, [2016-04-17T22:54:27.233333 #26231]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2016-04-17T22:54:27.477549 #26236]  INFO -- : worker=0 ready
+I, [2016-04-17T22:54:27.477863 #26231]  INFO -- : master process ready
+I, [2016-04-17T22:54:27.479881 #26239]  INFO -- : worker=1 ready
+I, [2016-04-17T23:03:11.195908 #26231]  INFO -- : reaped #<Process::Status: pid 26236 exit 0> worker=0
+I, [2016-04-17T23:03:11.196201 #26231]  INFO -- : reaped #<Process::Status: pid 26239 exit 0> worker=1
+I, [2016-04-17T23:03:11.196532 #26231]  INFO -- : master complete
+I, [2016-04-17T23:03:16.529191 #26294]  INFO -- : Refreshing Gem list
+I, [2016-04-17T23:03:18.206628 #26294]  INFO -- : unlinking existing socket=/tmp/unicorn.sock
+I, [2016-04-17T23:03:18.207092 #26294]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2016-04-17T23:03:18.450811 #26299]  INFO -- : worker=0 ready
+I, [2016-04-17T23:03:18.452089 #26294]  INFO -- : master process ready
+I, [2016-04-17T23:03:18.454399 #26302]  INFO -- : worker=1 ready
+I, [2016-04-17T23:27:01.120444 #26294]  INFO -- : reaped #<Process::Status: pid 26299 exit 0> worker=0
+I, [2016-04-17T23:27:01.120677 #26294]  INFO -- : reaped #<Process::Status: pid 26302 exit 0> worker=1
+I, [2016-04-17T23:27:01.121019 #26294]  INFO -- : master complete
+I, [2016-04-17T23:27:04.640714 #26396]  INFO -- : Refreshing Gem list
+I, [2016-04-17T23:27:06.337558 #26396]  INFO -- : unlinking existing socket=/tmp/unicorn.sock
+I, [2016-04-17T23:27:06.337734 #26396]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2016-04-17T23:27:06.459178 #26396]  INFO -- : master process ready
+I, [2016-04-17T23:27:06.460355 #26404]  INFO -- : worker=1 ready
+I, [2016-04-17T23:27:06.460232 #26401]  INFO -- : worker=0 ready
+I, [2016-04-17T23:47:21.855491 #26396]  INFO -- : reaped #<Process::Status: pid 26401 exit 0> worker=0
+I, [2016-04-17T23:47:21.855767 #26396]  INFO -- : reaped #<Process::Status: pid 26404 exit 0> worker=1
+I, [2016-04-17T23:47:21.856196 #26396]  INFO -- : master complete
+I, [2016-04-17T23:47:25.167569 #26454]  INFO -- : Refreshing Gem list
+I, [2016-04-17T23:47:26.968159 #26454]  INFO -- : unlinking existing socket=/tmp/unicorn.sock
+I, [2016-04-17T23:47:26.968358 #26454]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2016-04-17T23:47:27.090568 #26459]  INFO -- : worker=0 ready
+I, [2016-04-17T23:47:27.093423 #26454]  INFO -- : master process ready
+I, [2016-04-17T23:47:27.094343 #26462]  INFO -- : worker=1 ready
+I, [2016-04-17T23:56:44.311020 #26454]  INFO -- : reaped #<Process::Status: pid 26459 exit 0> worker=0
+I, [2016-04-17T23:56:44.311226 #26454]  INFO -- : reaped #<Process::Status: pid 26462 exit 0> worker=1
+I, [2016-04-17T23:56:44.311469 #26454]  INFO -- : master complete

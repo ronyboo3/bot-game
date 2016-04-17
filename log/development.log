@@ -1,0 +1,25 @@
+  [1m[36m (292.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (10.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/bot-game" for 121.117.75.21 at 2016-04-18 00:35:21 +0900
+Cannot render console from 121.117.75.21! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as HTML
+  Rendered index/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1316ms (Views: 1268.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bot-game" for 121.117.75.21 at 2016-04-18 00:36:05 +0900
+Cannot render console from 121.117.75.21! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as HTML
+  Rendered index/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bot-game" for 121.117.75.21 at 2016-04-18 00:50:31 +0900
+Cannot render console from 121.117.75.21! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as HTML
+  Rendered index/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 103ms (Views: 102.0ms | ActiveRecord: 0.0ms)

@@ -1,0 +1,27 @@
+I, [2016-04-17T23:56:47.625748 #26570]  INFO -- : Refreshing Gem list
+I, [2016-04-17T23:56:49.551827 #26570]  INFO -- : unlinking existing socket=/tmp/unicorn.sock
+I, [2016-04-17T23:56:49.552123 #26570]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2016-04-17T23:56:50.685591 #26575]  INFO -- : worker=0 ready
+I, [2016-04-17T23:56:51.689376 #26570]  INFO -- : master process ready
+I, [2016-04-17T23:56:51.692220 #26578]  INFO -- : worker=1 ready
+I, [2016-04-18T00:22:59.757991 #26570]  INFO -- : reaped #<Process::Status: pid 26575 exit 0> worker=0
+I, [2016-04-18T00:22:59.758290 #26570]  INFO -- : reaped #<Process::Status: pid 26578 exit 0> worker=1
+I, [2016-04-18T00:22:59.758632 #26570]  INFO -- : master complete
+I, [2016-04-18T00:25:31.572709 #26900]  INFO -- : Refreshing Gem list
+I, [2016-04-18T00:25:33.426514 #26900]  INFO -- : listening on addr=/usr/tmp/unicorn.sock fd=11
+I, [2016-04-18T00:25:34.560907 #26905]  INFO -- : worker=0 ready
+I, [2016-04-18T00:25:35.563370 #26900]  INFO -- : master process ready
+I, [2016-04-18T00:25:35.566484 #26908]  INFO -- : worker=1 ready
+121.117.75.21 - - [18/Apr/2016:00:35:09 +0900] "GET / HTTP/1.0" 404 - 0.0041
+121.117.75.21 - - [18/Apr/2016:00:35:22 +0900] "GET /bot-game HTTP/1.0" 200 - 1.4584
+121.117.75.21 - - [18/Apr/2016:00:35:53 +0900] "GET / HTTP/1.0" 404 - 0.0021
+121.117.75.21 - - [18/Apr/2016:00:36:05 +0900] "GET /bot-game HTTP/1.0" 200 - 0.0465
+121.117.75.21 - - [18/Apr/2016:00:50:25 +0900] "GET /aaa HTTP/1.0" 404 - 0.0023
+121.117.75.21 - - [18/Apr/2016:00:50:31 +0900] "GET /bot-game HTTP/1.0" 200 - 0.1133
+121.117.75.21 - - [18/Apr/2016:00:52:48 +0900] "GET /testapp HTTP/1.0" 404 - 0.0021
+/usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:26900 (or pid=/usr/tmp/unicorn.pid is stale) (ArgumentError)
+	from /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:127:in `start'
+	from /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+	from /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+121.117.75.21 - - [18/Apr/2016:01:29:55 +0900] "GET /testapp HTTP/1.0" 404 - 0.0024
