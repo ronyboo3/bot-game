@@ -15,7 +15,7 @@ timeout 30
 # We will point the upstream Nginx module to this socket later on
 listen "/usr/tmp/unicorn.sock", :backlog => 64
 
-pid "/usr/tmp/unicorn.pid"
+pid "tmp/pids/unicorn.pid"
 
 # Set the path of the log files inside the log folder of the testapp
 stderr_path "#{@app_path}/log/unicorn.stderr.log"

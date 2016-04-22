@@ -470,3 +470,81 @@ E, [2016-04-22T05:33:45.654544 #1660] ERROR -- : /usr/local/rbenv/versions/2.2.2
 91.210.145.125 - - [22/Apr/2016:12:35:35 +0900] "GET /administrator/ HTTP/1.0" 404 - 0.0025
 91.210.145.125 - - [22/Apr/2016:12:35:36 +0900] "GET /blog//administrator/ HTTP/1.0" 404 - 0.0015
 159.226.95.66 - - [22/Apr/2016:12:40:02 +0900] "GET / HTTP/1.0" 404 - 0.0027
+203.104.146.70 - - [22/Apr/2016:13:16:00 +0900] "POST /bot-game HTTP/1.0" 500 108746 0.1653
+/usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:1652 (or pid=/usr/tmp/unicorn.pid is stale) (ArgumentError)
+	from /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:127:in `start'
+	from /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+	from /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+/usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:1652 (or pid=/usr/tmp/unicorn.pid is stale) (ArgumentError)
+	from /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:127:in `start'
+	from /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+	from /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+I, [2016-04-22T13:31:00.794153 #28701]  INFO -- : Refreshing Gem list
+I, [2016-04-22T13:31:02.448798 #28701]  INFO -- : unlinking existing socket=/usr/tmp/unicorn.sock
+I, [2016-04-22T13:31:02.449053 #28701]  INFO -- : listening on addr=/usr/tmp/unicorn.sock fd=11
+I, [2016-04-22T13:31:03.575764 #28706]  INFO -- : worker=0 ready
+I, [2016-04-22T13:31:04.580702 #28701]  INFO -- : master process ready
+I, [2016-04-22T13:31:04.583536 #28709]  INFO -- : worker=1 ready
+124.35.80.154 - - [22/Apr/2016:13:31:19 +0900] "GET /bot-game HTTP/1.0" 304 - 0.2114
+124.35.80.154 - - [22/Apr/2016:13:31:25 +0900] "GET /bot-game HTTP/1.0" 304 - 0.2171
+203.104.146.68 - - [22/Apr/2016:13:31:27 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1088
+124.35.80.154 - - [22/Apr/2016:13:31:28 +0900] "GET /bot-gam HTTP/1.0" 404 - 0.0020
+124.35.80.154 - - [22/Apr/2016:13:31:31 +0900] "GET /bot-game HTTP/1.0" 304 - 0.0100
+203.104.146.70 - - [22/Apr/2016:13:32:41 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0916
+203.104.146.67 - - [22/Apr/2016:13:33:04 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1035
+203.104.146.68 - - [22/Apr/2016:13:43:23 +0900] "POST /bot-game HTTP/1.0" 500 117097 0.3939
+203.104.146.69 - - [22/Apr/2016:13:43:29 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0878
+I, [2016-04-22T13:51:44.493366 #28890]  INFO -- : Refreshing Gem list
+I, [2016-04-22T13:51:47.061944 #28890]  INFO -- : unlinking existing socket=/usr/tmp/unicorn.sock
+I, [2016-04-22T13:51:47.062116 #28890]  INFO -- : listening on addr=/usr/tmp/unicorn.sock fd=11
+I, [2016-04-22T13:51:48.093857 #28895]  INFO -- : worker=0 ready
+I, [2016-04-22T13:51:49.096945 #28890]  INFO -- : master process ready
+I, [2016-04-22T13:51:49.100251 #28898]  INFO -- : worker=1 ready
+E, [2016-04-22T13:52:01.062033 #28898] ERROR -- : app error: Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml` (RuntimeError)
+E, [2016-04-22T13:52:01.062238 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/application.rb:534:in `validate_secret_key_config!'
+E, [2016-04-22T13:52:01.062306 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/application.rb:246:in `env_config'
+E, [2016-04-22T13:52:01.062359 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/engine.rb:514:in `call'
+E, [2016-04-22T13:52:01.062675 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+E, [2016-04-22T13:52:01.062780 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/urlmap.rb:66:in `block in call'
+E, [2016-04-22T13:52:01.062843 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `each'
+E, [2016-04-22T13:52:01.062893 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `call'
+E, [2016-04-22T13:52:01.062942 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-04-22T13:52:01.062990 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-04-22T13:52:01.063039 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-04-22T13:52:01.063126 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-04-22T13:52:01.063179 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-04-22T13:52:01.063226 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-04-22T13:52:01.063270 #28898] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+I, [2016-04-22T13:53:35.609536 #29021]  INFO -- : Refreshing Gem list
+I, [2016-04-22T13:53:37.511659 #29021]  INFO -- : unlinking existing socket=/usr/tmp/unicorn.sock
+I, [2016-04-22T13:53:37.511928 #29021]  INFO -- : listening on addr=/usr/tmp/unicorn.sock fd=11
+I, [2016-04-22T13:53:38.645202 #29026]  INFO -- : worker=0 ready
+I, [2016-04-22T13:53:39.648407 #29021]  INFO -- : master process ready
+I, [2016-04-22T13:53:39.650931 #29029]  INFO -- : worker=1 ready
+203.104.146.70 - - [22/Apr/2016:13:53:44 +0900] "POST /bot-game HTTP/1.0" 200 - 0.2137
+I, [2016-04-22T13:56:14.074418 #29138]  INFO -- : Refreshing Gem list
+I, [2016-04-22T13:56:15.845881 #29138]  INFO -- : unlinking existing socket=/usr/tmp/unicorn.sock
+I, [2016-04-22T13:56:15.846062 #29138]  INFO -- : listening on addr=/usr/tmp/unicorn.sock fd=11
+I, [2016-04-22T13:56:16.969981 #29143]  INFO -- : worker=0 ready
+I, [2016-04-22T13:56:17.973854 #29138]  INFO -- : master process ready
+I, [2016-04-22T13:56:17.976325 #29146]  INFO -- : worker=1 ready
+203.104.146.67 - - [22/Apr/2016:13:56:47 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1290
+203.104.146.68 - - [22/Apr/2016:13:57:04 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0718
+I, [2016-04-22T14:00:03.281328 #29286]  INFO -- : Refreshing Gem list
+I, [2016-04-22T14:00:05.245263 #29286]  INFO -- : unlinking existing socket=/usr/tmp/unicorn.sock
+I, [2016-04-22T14:00:05.245497 #29286]  INFO -- : listening on addr=/usr/tmp/unicorn.sock fd=11
+I, [2016-04-22T14:00:06.382219 #29291]  INFO -- : worker=0 ready
+I, [2016-04-22T14:00:07.385278 #29286]  INFO -- : master process ready
+I, [2016-04-22T14:00:07.388093 #29294]  INFO -- : worker=1 ready
+I, [2016-04-22T14:00:16.643498 #29286]  INFO -- : reaped #<Process::Status: pid 29291 exit 0> worker=0
+I, [2016-04-22T14:00:16.643786 #29286]  INFO -- : reaped #<Process::Status: pid 29294 exit 0> worker=1
+I, [2016-04-22T14:00:16.644070 #29286]  INFO -- : master complete
+I, [2016-04-22T14:00:19.883480 #29400]  INFO -- : Refreshing Gem list
+I, [2016-04-22T14:00:21.900572 #29400]  INFO -- : unlinking existing socket=/usr/tmp/unicorn.sock
+I, [2016-04-22T14:00:21.900856 #29400]  INFO -- : listening on addr=/usr/tmp/unicorn.sock fd=11
+I, [2016-04-22T14:00:23.029254 #29405]  INFO -- : worker=0 ready
+I, [2016-04-22T14:00:24.032449 #29400]  INFO -- : master process ready
+I, [2016-04-22T14:00:24.036202 #29408]  INFO -- : worker=1 ready
+203.104.146.67 - - [22/Apr/2016:14:00:27 +0900] "POST /bot-game HTTP/1.0" 200 - 0.2073

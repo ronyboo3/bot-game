@@ -2735,3 +2735,124 @@ NameError (uninitialized constant RestClient):
   Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
   Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
   Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.8ms)
+
+
+Started POST "/bot-game" for 203.104.146.70 at 2016-04-22 13:16:00 +0900
+Cannot render console from 203.104.146.70! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461298560168, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208030006258", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"あたま", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461298560196, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375194500", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461298560168, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208030006258", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"あたま", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461298560196, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375194500", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant RestClient):
+  app/controllers/index_controller.rb:45:in `line_message'
+  app/controllers/index_controller.rb:21:in `index'
+
+
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.1ms)
+
+
+Started GET "/bot-game" for 124.35.80.154 at 2016-04-22 13:31:18 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 65ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bot-game" for 124.35.80.154 at 2016-04-22 13:31:25 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 69ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.68 at 2016-04-22 13:31:27 +0900
+Cannot render console from 203.104.146.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299487564, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208083327868", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"なあか", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299487581, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375204157", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299487564, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208083327868", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"なあか", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299487581, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375204157", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 76ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bot-game" for 124.35.80.154 at 2016-04-22 13:31:31 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.70 at 2016-04-22 13:32:40 +0900
+Cannot render console from 203.104.146.70! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299560753, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208087495617", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>" こんにちは", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299560771, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375204898", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299560753, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208087495617", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>" こんにちは", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299560771, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375204898", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 79ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.67 at 2016-04-22 13:33:04 +0900
+Cannot render console from 203.104.146.67! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299584385, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208088845321", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"かなあ", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299584406, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375205151", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299584385, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208088845321", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"かなあ", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299584406, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375205151", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 72ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.68 at 2016-04-22 13:43:23 +0900
+Cannot render console from 203.104.146.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"params"=>["u0fda3f7042731a5c9a08e1247583a266"], "message"=>nil, "reqSeq"=>0, "revision"=>171, "opType"=>4}, "createdTime"=>1461300203461, "eventType"=>"138311609100106403", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375211664", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"params"=>["u0fda3f7042731a5c9a08e1247583a266"], "message"=>nil, "reqSeq"=>0, "revision"=>171, "opType"=>4}, "createdTime"=>1461300203461, "eventType"=>"138311609100106403", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375211664", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+RestClient::BadRequest (400 Bad Request):
+  app/controllers/index_controller.rb:45:in `line_message'
+  app/controllers/index_controller.rb:21:in `index'
+
+
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.9ms)
+
+
+Started POST "/bot-game" for 203.104.146.69 at 2016-04-22 13:43:29 +0900
+Cannot render console from 203.104.146.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461300209617, "from"=>"u0fda3f7042731a5c9a08e1247583a266", "location"=>nil, "id"=>"4208123765265", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"おい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461300209636, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375211725", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461300209617, "from"=>"u0fda3f7042731a5c9a08e1247583a266", "location"=>nil, "id"=>"4208123765265", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"おい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461300209636, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375211725", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 76ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.70 at 2016-04-22 13:53:44 +0900
+Cannot render console from 203.104.146.70! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461300824412, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208157224626", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"へい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461300824442, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1521-3365173955", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461300824412, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208157224626", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"へい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461300824442, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1521-3365173955", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 104ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.67 at 2016-04-22 13:56:47 +0900
+Cannot render console from 203.104.146.67! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461301007310, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208167054612", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"へい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461301007327, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1521-3365175838", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461301007310, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208167054612", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"へい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461301007327, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1521-3365175838", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 43ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.68 at 2016-04-22 13:57:04 +0900
+Cannot render console from 203.104.146.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461301024609, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208167978868", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"た", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461301024629, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1519-3375264973", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461301024609, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208167978868", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"た", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461301024629, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1519-3375264973", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 61ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.67 at 2016-04-22 14:00:27 +0900
+Cannot render console from 203.104.146.67! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461301227182, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208178838247", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"なた", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461301227206, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1521-3365177962", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461301227182, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208178838247", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"なた", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461301227206, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1521-3365177962", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 71ms (Views: 0.5ms | ActiveRecord: 0.0ms)

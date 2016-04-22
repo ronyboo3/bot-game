@@ -1,0 +1,552 @@
+スクリプトは 2016年04月22日 13時27分00秒
+ に開始しました]0;root@bot-jp:/usr/local/var/bot-game[?1034h[root@bot-jp bot-game]# exits][K[Kwhereami[K[K[K[K[K[K[K[Kls scripts/unicorn.sh [K[K[K[K[K[K[K[K[K[K[K
+[0m[38;5;34municorn.sh[0m
+[m]0;root@bot-jp:/usr/local/var/bot-game[root@bot-jp bot-game]# scripts/unicorn.sh ^C
+]0;root@bot-jp:/usr/local/var/bot-game[root@bot-jp bot-game]# fv[K[Kvim scripts/unicorn.sh
+[?1049h[?1h=[1;41r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[41;1H"scripts/unicorn.sh" 71L, 1380C[>c[1;1H[34m#!/bin/bash[m
+
+[38;5;130mset[m[36m [m[35m-e[m
+
+[36mTIMEOUT[m=[35m${TIMEOUT[m[38;5;130m-[m60[35m}[m
+[36mAPP_ROOT[m=/usr/[38;5;130mlocal[m/var/bot-game
+[36mPID[m=/tmp/unicorn.pid
+[34m#RAILS_ENV=production[m
+[36mRAILS_ENV[m=development
+[36mCMD[m=[38;5;130m"[m[31mbundle exec unicorn -D -c [m[35m$APP_ROOT[m[31m/config/unicorn.rb -E [m[35m$RAILS_ENV[m[38;5;130m"[m
+[36maction[m=[38;5;130m"[m[35m$1[m[38;5;130m"
+set[m[36m [m[35m-u[m
+
+[36mold_pid[m=[38;5;130m"[m[35m$PID[m[31m.oldbin[m[38;5;130m"
+
+cd[m [35m$APP_ROOT[m || [38;5;130mexit[m [31m1[m
+
+[36msig () {[m
+    [38;5;130mtest[m -s [38;5;130m"[m[35m$PID[m[38;5;130m"[m [38;5;130m&&[m [38;5;130mkill[m -[35m$1[m [35m`cat $PID`[m
+[36m}
+
+oldsig () {[m
+    [38;5;130mtest[m -s [35m$old_pid[m [38;5;130m&&[m [38;5;130mkill[m -[35m$1[m [35m`cat $old_pid`[m
+[36m}[m
+
+[38;5;130mcase[m [35m$action[m [38;5;130min[m
+start[38;5;130m)[m
+    sig [31m0[m [38;5;130m&&[m [38;5;130mecho[m[31m [m[38;5;130m>&2[m [38;5;130m"[m[31mAlready running[m[38;5;130m"[m [38;5;130m&&[m [38;5;130mexit[m [31m0[m
+    [35m$CMD[m
+    [38;5;130m;;[m
+stop[38;5;130m)[m
+    sig QUIT [38;5;130m&&[m [38;5;130mrm[m -f [35m${PID}[m [38;5;130m&&[m [38;5;130mexit[m [31m0[m
+    [38;5;130mecho[m[31m [m[38;5;130m>&2[m [38;5;130m"[m[31mNot running[m[38;5;130m"[m
+    [38;5;130m;;[m
+force-stop[38;5;130m)[m
+    sig TERM [38;5;130m&&[m [38;5;130mexit[m [31m0[m
+    [38;5;130mecho[m[31m [m[38;5;130m>&2[m [38;5;130m"[m[31mNot running[m[38;5;130m"[m
+    [38;5;130m;;[m
+[103mrest[mart[38;5;130m|[mreload[38;5;130m)[m
+    sig HUP [38;5;130m&&[m [38;5;130mecho[m[31m reloaded OK [m[38;5;130m&&[m [38;5;130mexit[m [31m0[m[41;164H6,1[10C先頭[6;1H[?12l[?25h[?25l[41;164H7[7;1H[?12l[?25h[?25l[41;164H8[8;1H[?12l[?25h[?25l[41;164H9[9;1H[?12l[?25h[?25l[41;164H10,1[10;1H[?12l[?25h[?25l[41;165H1[11;1H[?12l[?25h[?25l[41;165H2[12;1H[?12l[?25h[?25l[41;165H3,0-1[13;1H[?12l[?25h[?25l[41;165H4,1  [14;1H[?12l[?25h[?25l[41;165H5,0-1[15;1H[?12l[?25h[?25l[41;165H4,1  [14;1H[?12l[?25h[?25l[41;1H[K[41;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[41;1H[K[41;1H[?1l>[?12l[?25h[?1049l]0;root@bot-jp:/usr/local/var/bot-game[root@bot-jp bot-game]# ls /tmp/unicorn.sock 
+.bundle/      Gemfile       README.md     Rakefile      bin/          config.ru     lib/          public/       scripts/      tmp/          vendor/       
+.git/         Gemfile.lock  README.rdoc   app/          config/       db/           log/          restart.txt   test/         typescript    
+[root@bot-jp bot-game]# ls /tmp/unicorn.sock 
+.bundle/      Gemfile       README.md     Rakefile      bin/          config.ru     lib/          public/       scripts/      tmp/          vendor/       
+.git/         Gemfile.lock  README.rdoc   app/          config/       db/           log/          restart.txt   test/         typescript    
+[root@bot-jp bot-game]# ls /tmp/unicorn.sock 
+.bundle/      Gemfile       README.md     Rakefile      bin/          config.ru     lib/          public/       scripts/      tmp/          vendor/       
+.git/         Gemfile.lock  README.rdoc   app/          config/       db/           log/          restart.txt   test/         typescript    
+[root@bot-jp bot-game]# ls /tmp/unicorn.sock 
+.bundle/      Gemfile       README.md     Rakefile      bin/          config.ru     lib/          public/       scripts/      tmp/          vendor/       
+.git/         Gemfile.lock  README.rdoc   app/          config/       db/           log/          restart.txt   test/         typescript    
+[root@bot-jp bot-game]# ls /tmp/unicorn.sock 
+.bundle/      Gemfile       README.md     Rakefile      bin/          config.ru     lib/          public/       scripts/      tmp/          vendor/       
+.git/         Gemfile.lock  README.rdoc   app/          config/       db/           log/          restart.txt   test/         typescript    
+[root@bot-jp bot-game]# ls /tmp/unicorn.sock [K[K[K[K[Ksock 
+.bundle/      Gemfile       README.md     Rakefile      bin/          config.ru     lib/          public/       scripts/      tmp/          vendor/       
+.git/         Gemfile.lock  README.rdoc   app/          config/       db/           log/          restart.txt   test/         typescript    
+[root@bot-jp bot-game]# ls /tmp/unicorn.sock 
+.bundle/      Gemfile       README.md     Rakefile      bin/          config.ru     lib/          public/       scripts/      tmp/          vendor/       
+.git/         Gemfile.lock  README.rdoc   app/          config/       db/           log/          restart.txt   test/         typescript    
+[root@bot-jp bot-game]# ls /tmp/unicorn.sock 
+.bundle/      Gemfile       README.md     Rakefile      bin/          config.ru     lib/          public/       scripts/      tmp/          vendor/       
+.git/         Gemfile.lock  README.rdoc   app/          config/       db/           log/          restart.txt   test/         typescript    
+[root@bot-jp bot-game]# ls /tmp/unicorn.sock 
+[0m[38;5;13m/tmp/unicorn.sock[0m
+[m]0;root@bot-jp:/usr/local/var/bot-game[root@bot-jp bot-game]# top
+[H[2J(B[mtop - 13:28:11 up 3 days, 21:50,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 123 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 122 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.0%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.9%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  1922232k (B[m[39;49mtotal,(B[m[39;49m(B[m   840576k (B[m[39;49mused,(B[m[39;49m(B[m  1081656k (B[m[39;49mfree,(B[m[39;49m(B[m   149192k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  2064376k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  2064376k (B[m[39;49mfree,(B[m[39;49m(B[m   253176k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                                                 (B[m[39;49m[K
+(B[m(B[m28554 root      20   0 15028 1136  840 R  2.0  0.1   0:00.01 top                                                                                                                     (B[m[39;49m
+(B[m    1 root      20   0 19232 1504 1212 S  0.0  0.1   0:00.87 init                                                                                                                    (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kthreadd                                                                                                                (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.25 migration/0                                                                                                             (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:00.33 ksoftirqd/0                                                                                                             (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                                                                             (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:01.09 watchdog/0                                                                                                              (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.24 migration/1                                                                                                             (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                                                                             (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.81 ksoftirqd/1                                                                                                             (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:01.08 watchdog/1                                                                                                              (B[m[39;49m
+(B[m   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.33 migration/2                                                                                                             (B[m[39;49m
+(B[m   12 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2                                                                                                             (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.71 ksoftirqd/2                                                                                                             (B[m[39;49m
+(B[m   14 root      RT   0     0    0    0 S  0.0  0.0   0:00.90 watchdog/2                                                                                                              (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:21.26 events/0                                                                                                                (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:40.21 events/1                                                                                                                (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:31.00 events/2                                                                                                                (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                                                                                  (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khelper                                                                                                                 (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                                                                                   (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                                                                               (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                                                                                      (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:02.20 sync_supers                                                                                                             (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:03.19 bdi-default                                                                                                             (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                                                                                           (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                                                                                           (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/2                                                                                                           (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:01.18 kblockd/0                                                                                                               (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:00.30 kblockd/1                                                                                                               (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.42 kblockd/2                                                                                                               (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                                                                                  (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                                                                                            (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                                                                                           (B[m[39;49m[6;1H[K[H(B[mtop - 13:28:12 up 3 days, 21:50,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 123 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 122 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.3%(B[m[39;49mus,(B[m[39;49m(B[m  0.0%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  1922232k (B[m[39;49mtotal,(B[m[39;49m(B[m   840576k (B[m[39;49mused,(B[m[39;49m(B[m  1081656k (B[m[39;49mfree,(B[m[39;49m(B[m   149192k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  2064376k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  2064376k (B[m[39;49mfree,(B[m[39;49m(B[m   253176k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                                                 (B[m[39;49m[K
+(B[m    1 root      20   0 19232 1504 1212 S  0.0  0.1   0:00.87 /sbin/init                                                                                                              (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthreadd]                                                                                                              (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.25 [migration/0]                                                                                                           (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:00.33 [ksoftirqd/0]                                                                                                           (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/0]                                                                                                           (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:01.09 [watchdog/0]                                                                                                            (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.24 [migration/1]                                                                                                           (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/1]                                                                                                           (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.81 [ksoftirqd/1]                                                                                                           (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:01.08 [watchdog/1]                                                                                                            (B[m[39;49m
+(B[m   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.33 [migration/2]                                                                                                           (B[m[39;49m
+(B[m   12 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/2]                                                                                                           (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.71 [ksoftirqd/2]                                                                                                           (B[m[39;49m
+(B[m   14 root      RT   0     0    0    0 S  0.0  0.0   0:00.90 [watchdog/2]                                                                                                            (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:21.26 [events/0]                                                                                                              (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:40.21 [events/1]                                                                                                              (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:31.00 [events/2]                                                                                                              (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [cgroup]                                                                                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khelper]                                                                                                               (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [netns]                                                                                                                 (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [async/mgr]                                                                                                             (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [pm]                                                                                                                    (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:02.20 [sync_supers]                                                                                                           (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:03.19 [bdi-default]                                                                                                           (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/0]                                                                                                         (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/1]                                                                                                         (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/2]                                                                                                         (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:01.18 [kblockd/0]                                                                                                             (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:00.30 [kblockd/1]                                                                                                             (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.42 [kblockd/2]                                                                                                             (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpid]                                                                                                                (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_notify]                                                                                                          (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_hotplug]                                                                                                         (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata_aux]                                                                                                               (B[m[39;49m[6;1H[K[H(B[mtop - 13:28:13 up 3 days, 21:50,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 123 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 122 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.3%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  1922232k (B[m[39;49mtotal,(B[m[39;49m(B[m   840584k (B[m[39;49mused,(B[m[39;49m(B[m  1081648k (B[m[39;49mfree,(B[m[39;49m(B[m   149192k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  2064376k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  2064376k (B[m[39;49mfree,(B[m[39;49m(B[m   253188k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                                                 (B[m[39;49m[K
+(B[m28541 root      20   0  104m  492  360 S  0.9  0.0   0:00.01 script                                                                                                                  (B[m[39;49m
+(B[m(B[m28554 root      20   0 15032 1244  944 R  0.9  0.1   0:00.02 top                                                                                                                     (B[m[39;49m
+(B[m    1 root      20   0 19232 1504 1212 S  0.0  0.1   0:00.87 init                                                                                                                    (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kthreadd                                                                                                                (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.25 migration/0                                                                                                             (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:00.33 ksoftirqd/0                                                                                                             (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                                                                             (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:01.09 watchdog/0                                                                                                              (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.24 migration/1                                                                                                             (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                                                                             (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.81 ksoftirqd/1                                                                                                             (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:01.08 watchdog/1                                                                                                              (B[m[39;49m
+(B[m   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.33 migration/2                                                                                                             (B[m[39;49m
+(B[m   12 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2                                                                                                             (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.71 ksoftirqd/2                                                                                                             (B[m[39;49m
+(B[m   14 root      RT   0     0    0    0 S  0.0  0.0   0:00.90 watchdog/2                                                                                                              (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:21.26 events/0                                                                                                                (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:40.21 events/1                                                                                                                (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:31.00 events/2                                                                                                                (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                                                                                  (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khelper                                                                                                                 (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                                                                                   (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                                                                               (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                                                                                      (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:02.20 sync_supers                                                                                                             (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:03.19 bdi-default                                                                                                             (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                                                                                           (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                                                                                           (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/2                                                                                                           (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:01.18 kblockd/0                                                                                                               (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:00.30 kblockd/1                                                                                                               (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.42 kblockd/2                                                                                                               (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                                                                                  (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                                                                                            (B[m[39;49m[6;1H[K[H(B[mtop - 13:28:14 up 3 days, 21:50,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 123 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 122 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.5%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.5%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  1922232k (B[m[39;49mtotal,(B[m[39;49m(B[m   840584k (B[m[39;49mused,(B[m[39;49m(B[m  1081648k (B[m[39;49mfree,(B[m[39;49m(B[m   149192k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  2064376k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  2064376k (B[m[39;49mfree,(B[m[39;49m(B[m   253192k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                                                 (B[m[39;49m[K
+(B[m(B[m28554 root      20   0 15032 1244  944 R  1.4  0.1   0:00.03 top                                                                                                                     (B[m[39;49m
+(B[m    1 root      20   0 19232 1504 1212 S  0.0  0.1   0:00.87 /sbin/init                                                                                                              (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthreadd]                                                                                                              (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.25 [migration/0]                                                                                                           (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:00.33 [ksoftirqd/0]                                                                                                           (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/0]                                                                                                           (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:01.09 [watchdog/0]                                                                                                            (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.24 [migration/1]                                                                                                           (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/1]                                                                                                           (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.81 [ksoftirqd/1]                                                                                                           (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:01.08 [watchdog/1]                                                                                                            (B[m[39;49m
+(B[m   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.33 [migration/2]                                                                                                           (B[m[39;49m
+(B[m   12 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/2]                                                                                                           (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.71 [ksoftirqd/2]                                                                                                           (B[m[39;49m
+(B[m   14 root      RT   0     0    0    0 S  0.0  0.0   0:00.90 [watchdog/2]                                                                                                            (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:21.26 [events/0]                                                                                                              (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:40.21 [events/1]                                                                                                              (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:31.00 [events/2]                                                                                                              (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [cgroup]                                                                                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khelper]                                                                                                               (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [netns]                                                                                                                 (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [async/mgr]                                                                                                             (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [pm]                                                                                                                    (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:02.20 [sync_supers]                                                                                                           (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:03.19 [bdi-default]                                                                                                           (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/0]                                                                                                         (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/1]                                                                                                         (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/2]                                                                                                         (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:01.18 [kblockd/0]                                                                                                             (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:00.30 [kblockd/1]                                                                                                             (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.42 [kblockd/2]                                                                                                             (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpid]                                                                                                                (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_notify]                                                                                                          (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_hotplug]                                                                                                         (B[m[39;49m[6;1H[K[H(B[mtop - 13:28:14 up 3 days, 21:50,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 123 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 122 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.9%(B[m[39;49mus,(B[m[39;49m(B[m  0.9%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 98.1%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  1922232k (B[m[39;49mtotal,(B[m[39;49m(B[m   840584k (B[m[39;49mused,(B[m[39;49m(B[m  1081648k (B[m[39;49mfree,(B[m[39;49m(B[m   149192k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  2064376k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  2064376k (B[m[39;49mfree,(B[m[39;49m(B[m   253208k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                                                 (B[m[39;49m[K
+(B[m 1660 root      20   0  432m 116m 3616 S  0.0  6.2   0:22.70 unicorn worker[1] -D -c /usr/local/var/bot-game/config/unicorn.rb -E development                                        (B[m[39;49m
+(B[m 1657 root      20   0  429m 113m 3596 S  0.0  6.0   0:18.84 unicorn worker[0] -D -c /usr/local/var/bot-game/config/unicorn.rb -E development                                        (B[m[39;49m
+(B[m 1652 root      20   0  388m  76m 7220 S  0.0  4.1   0:07.79 unicorn master -D -c /usr/local/var/bot-game/config/unicorn.rb -E development                                           (B[m[39;49m
+(B[m 1317 mysql     20   0  497m  24m 4064 S  0.0  1.3   2:35.85 /usr/libexec/mysqld --basedir=/usr --datadir=/var/lib/mysql --user=mysql --log-error=/var/log/mysqld.log --pid-file=/var(B[m[39;49m
+(B[m27820 root      20   0 98.8m 4900 3076 S  0.0  0.3   0:00.45 sshd: root@pts/0                                                                                                        (B[m[39;49m
+(B[m28321 root      20   0 98.0m 4052 3076 S  2.8  0.2   0:00.23 sshd: root@pts/1                                                                                                        (B[m[39;49m
+(B[m28123 root      20   0  144m 3728 2332 S  0.0  0.2   0:00.10 vim app/controllers/index_controller.rb                                                                                 (B[m[39;49m
+(B[m 1776 postfix   20   0 81568 3504 2572 S  0.0  0.2   0:00.48 qmgr -l -t fifo -u                                                                                                      (B[m[39;49m
+(B[m 1773 root      20   0 81316 3392 2492 S  0.0  0.2   0:03.51 /usr/libexec/postfix/master                                                                                             (B[m[39;49m
+(B[m28108 postfix   20   0 81396 3332 2456 S  0.0  0.2   0:00.00 pickup -l -t fifo -u                                                                                                    (B[m[39;49m
+(B[m12062 nginx     20   0 45856 3004 1744 S  0.0  0.2   0:00.87 nginx: worker process                                                                                                   (B[m[39;49m
+(B[m 1116 root      20   0  243m 2112 1092 S  0.0  0.1   0:01.64 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5                                                                             (B[m[39;49m
+(B[m 1180 ntp       20   0 30736 2104 1496 S  0.0  0.1   0:01.13 ntpd -u ntp:ntp -p /var/run/ntpd.pid -g                                                                                 (B[m[39;49m
+(B[m 1347 root      20   0 69100 2096 1252 S  0.0  0.1   0:00.13 /usr/sbin/saslauthd -m /var/run/saslauthd -a pam                                                                        (B[m[39;49m
+(B[m 1350 root      20   0 69100 2080 1236 S  0.0  0.1   0:00.10 /usr/sbin/saslauthd -m /var/run/saslauthd -a pam                                                                        (B[m[39;49m
+(B[m27822 root      20   0  110m 2020 1512 S  0.0  0.1   0:00.16 -bash                                                                                                                   (B[m[39;49m
+(B[m 1349 root      20   0 68936 1956 1232 S  0.0  0.1   0:00.08 /usr/sbin/saslauthd -m /var/run/saslauthd -a pam                                                                        (B[m[39;49m
+(B[m28323 root      20   0  105m 1888 1420 S  0.0  0.1   0:00.14 -bash                                                                                                                   (B[m[39;49m
+(B[m28542 root      20   0  105m 1868 1420 S  0.0  0.1   0:00.03 bash -i                                                                                                                 (B[m[39;49m
+(B[m 1351 root      20   0 68936 1728 1020 S  0.0  0.1   0:00.06 /usr/sbin/saslauthd -m /var/run/saslauthd -a pam                                                                        (B[m[39;49m
+(B[m 1348 root      20   0 68936 1704 1004 S  0.0  0.1   0:00.03 /usr/sbin/saslauthd -m /var/run/saslauthd -a pam                                                                        (B[m[39;49m
+(B[m    1 root      20   0 19232 1504 1212 S  0.0  0.1   0:00.87 /sbin/init                                                                                                              (B[m[39;49m
+(B[m 1215 root      20   0  105m 1444 1204 S  0.0  0.1   0:00.02 /bin/sh /usr/bin/mysqld_safe --datadir=/var/lib/mysql --socket=/var/lib/mysql/mysql.sock --pid-file=/var/run/mysqld/mysq(B[m[39;49m
+(B[m 1479 root      20   0  114m 1252  648 S  0.0  0.1   0:02.38 crond                                                                                                                   (B[m[39;49m
+(B[m(B[m28554 root      20   0 15032 1244  944 R  2.8  0.1   0:00.04 top                                                                                                                     (B[m[39;49m
+(B[m 1172 root      20   0 66628 1240  524 S  0.0  0.1   0:01.71 /usr/sbin/sshd                                                                                                          (B[m[39;49m
+(B[m12061 root      20   0 45276 1172  448 S  0.0  0.1   0:00.00 nginx: master process /usr/sbin/nginx -c /etc/nginx/nginx.conf                                                          (B[m[39;49m
+(B[m 1062 root      20   0  9120  996  508 S  0.0  0.1   0:00.01 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dhclient-eth0.pid eth0                     (B[m[39;49m
+(B[m 1451 root      20   0  107m  944  812 S  0.0  0.0   0:00.00 /usr/sbin/abrtd                                                                                                         (B[m[39;49m
+(B[m28539 root      20   0  104m  908  784 S  0.0  0.0   0:00.01 script                                                                                                                  (B[m[39;49m
+(B[m 1100 root      16  -4 93176  864  608 S  0.0  0.0   0:05.11 auditd                                                                                                                  (B[m[39;49m
+(B[m  440 root      16  -4 10760  860  328 S  0.0  0.0   0:00.52 /sbin/udevd -d                                                                                                          (B[m[39;49m
+(B[m 1459 root      20   0  105m  856  692 S  0.0  0.0   0:00.04 abrt-dump-oops -d /var/spool/abrt -rwx /var/log/messages                                                                (B[m[39;49m
+(B[m 1521 root      18  -2 10756  856  328 S  0.0  0.0   0:00.00 /sbin/udevd -d                                                                                                          (B[m[39;49m[6;1H[K[H(B[mtop - 13:28:17 up 3 days, 21:50,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 123 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 122 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.1%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.2%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  1922232k (B[m[39;49mtotal,(B[m[39;49m(B[m   840584k (B[m[39;49mused,(B[m[39;49m(B[m  1081648k (B[m[39;49mfree,(B[m[39;49m(B[m   149192k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  2064376k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  2064376k (B[m[39;49mfree,(B[m[39;49m(B[m   253216k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+
+
+
+
+
+
+(B[m28321 root      20   0 98.0m 4052 3076 S  0.0  0.2   0:00.23 sshd: root@pts/1                                                                                                        (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(B[m(B[m28554 root      20   0 15032 1244  944 R  0.0  0.1   0:00.04 top                                                                                                                     (B[m[39;49m
+
+
+
+
+
+
+
+
+[6;1H[K[42;1H[?12l[?25h
+]0;root@bot-jp:/usr/local/var/bot-game[root@bot-jp bot-game]# kill -9 1652
+]0;root@bot-jp:/usr/local/var/bot-game[root@bot-jp bot-game]# kill -9 1652top[K
+[H[2J(B[mtop - 13:28:29 up 3 days, 21:50,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 120 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 119 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.0%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.9%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  1922232k (B[m[39;49mtotal,(B[m[39;49m(B[m   587284k (B[m[39;49mused,(B[m[39;49m(B[m  1334948k (B[m[39;49mfree,(B[m[39;49m(B[m   149192k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  2064376k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  2064376k (B[m[39;49mfree,(B[m[39;49m(B[m   253216k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                                                 (B[m[39;49m[K
+(B[m12062 nginx     20   0 45856 3004 1744 S  2.0  0.2   0:00.88 nginx                                                                                                                   (B[m[39;49m
+(B[m    1 root      20   0 19232 1504 1212 S  0.0  0.1   0:00.87 init                                                                                                                    (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kthreadd                                                                                                                (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.25 migration/0                                                                                                             (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:00.33 ksoftirqd/0                                                                                                             (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                                                                             (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:01.09 watchdog/0                                                                                                              (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.24 migration/1                                                                                                             (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                                                                             (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.81 ksoftirqd/1                                                                                                             (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:01.08 watchdog/1                                                                                                              (B[m[39;49m
+(B[m   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.33 migration/2                                                                                                             (B[m[39;49m
+(B[m   12 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2                                                                                                             (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.71 ksoftirqd/2                                                                                                             (B[m[39;49m
+(B[m   14 root      RT   0     0    0    0 S  0.0  0.0   0:00.90 watchdog/2                                                                                                              (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:21.26 events/0                                                                                                                (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:40.21 events/1                                                                                                                (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:31.01 events/2                                                                                                                (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                                                                                  (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khelper                                                                                                                 (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                                                                                   (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                                                                               (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                                                                                      (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:02.20 sync_supers                                                                                                             (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:03.19 bdi-default                                                                                                             (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                                                                                           (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                                                                                           (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/2                                                                                                           (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:01.18 kblockd/0                                                                                                               (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:00.30 kblockd/1                                                                                                               (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.42 kblockd/2                                                                                                               (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                                                                                  (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                                                                                            (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                                                                                           (B[m[39;49m[6;1H[K[H(B[mtop - 13:28:29 up 3 days, 21:50,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 120 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 119 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.5%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.5%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  1922232k (B[m[39;49mtotal,(B[m[39;49m(B[m   587416k (B[m[39;49mused,(B[m[39;49m(B[m  1334816k (B[m[39;49mfree,(B[m[39;49m(B[m   149192k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  2064376k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  2064376k (B[m[39;49mfree,(B[m[39;49m(B[m   253216k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                                                 (B[m[39;49m[K
+(B[m(B[m28555 root      20   0 15032 1244  944 R  1.4  0.1   0:00.01 top                                                                                                                     (B[m[39;49m
+(B[m    1 root      20   0 19232 1504 1212 S  0.0  0.1   0:00.87 /sbin/init                                                                                                              (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthreadd]                                                                                                              (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.25 [migration/0]                                                                                                           (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:00.33 [ksoftirqd/0]                                                                                                           (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/0]                                                                                                           (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:01.09 [watchdog/0]                                                                                                            (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.24 [migration/1]                                                                                                           (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/1]                                                                                                           (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.81 [ksoftirqd/1]                                                                                                           (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:01.08 [watchdog/1]                                                                                                            (B[m[39;49m
+(B[m   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.33 [migration/2]                                                                                                           (B[m[39;49m
+(B[m   12 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/2]                                                                                                           (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.71 [ksoftirqd/2]                                                                                                           (B[m[39;49m
+(B[m   14 root      RT   0     0    0    0 S  0.0  0.0   0:00.90 [watchdog/2]                                                                                                            (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:21.26 [events/0]                                                                                                              (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:40.21 [events/1]                                                                                                              (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:31.01 [events/2]                                                                                                              (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [cgroup]                                                                                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khelper]                                                                                                               (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [netns]                                                                                                                 (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [async/mgr]                                                                                                             (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [pm]                                                                                                                    (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:02.20 [sync_supers]                                                                                                           (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:03.19 [bdi-default]                                                                                                           (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/0]                                                                                                         (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/1]                                                                                                         (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/2]                                                                                                         (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:01.18 [kblockd/0]                                                                                                             (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:00.30 [kblockd/1]                                                                                                             (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.42 [kblockd/2]                                                                                                             (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpid]                                                                                                                (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_notify]                                                                                                          (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_hotplug]                                                                                                         (B[m[39;49m[6;1H[K[H(B[mtop - 13:28:30 up 3 days, 21:50,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 120 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 119 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  1.0%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.0%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  1922232k (B[m[39;49mtotal,(B[m[39;49m(B[m   587416k (B[m[39;49mused,(B[m[39;49m(B[m  1334816k (B[m[39;49mfree,(B[m[39;49m(B[m   149192k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  2064376k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  2064376k (B[m[39;49mfree,(B[m[39;49m(B[m   253228k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                                                 (B[m[39;49m[K
+(B[m 1317 mysql     20   0  497m  24m 4064 S  0.0  1.3   2:35.86 /usr/libexec/mysqld --basedir=/usr --datadir=/var/lib/mysql --user=mysql --log-error=/var/log/mysqld.log --pid-file=/var(B[m[39;49m
+(B[m27820 root      20   0 98.8m 4900 3076 S  0.0  0.3   0:00.45 sshd: root@pts/0                                                                                                        (B[m[39;49m
+(B[m28321 root      20   0 98.0m 4052 3076 S  0.0  0.2   0:00.23 sshd: root@pts/1                                                                                                        (B[m[39;49m
+(B[m28123 root      20   0  144m 3728 2332 S  0.0  0.2   0:00.10 vim app/controllers/index_controller.rb                                                                                 (B[m[39;49m
+(B[m 1776 postfix   20   0 81568 3504 2572 S  0.0  0.2   0:00.48 qmgr -l -t fifo -u                                                                                                      (B[m[39;49m
+(B[m 1773 root      20   0 81316 3392 2492 S  0.0  0.2   0:03.51 /usr/libexec/postfix/master                                                                                             (B[m[39;49m
+(B[m28108 postfix   20   0 81396 3332 2456 S  0.0  0.2   0:00.00 pickup -l -t fifo -u                                                                                                    (B[m[39;49m
+(B[m12062 nginx     20   0 45856 3004 1744 S  0.0  0.2   0:00.88 nginx: worker process                                                                                                   (B[m[39;49m
+(B[m 1116 root      20   0  243m 2112 1092 S  0.0  0.1   0:01.64 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5                                                                             (B[m[39;49m
+(B[m 1180 ntp       20   0 30736 2104 1496 S  0.0  0.1   0:01.13 ntpd -u ntp:ntp -p /var/run/ntpd.pid -g                                                                                 (B[m[39;49m
+(B[m 1347 root      20   0 69100 2096 1252 S  0.0  0.1   0:00.13 /usr/sbin/saslauthd -m /var/run/saslauthd -a pam                                                                        (B[m[39;49m
+(B[m 1350 root      20   0 69100 2080 1236 S  0.0  0.1   0:00.10 /usr/sbin/saslauthd -m /var/run/saslauthd -a pam                                                                        (B[m[39;49m
+(B[m27822 root      20   0  110m 2020 1512 S  0.0  0.1   0:00.16 -bash                                                                                                                   (B[m[39;49m
+(B[m 1349 root      20   0 68936 1956 1232 S  0.0  0.1   0:00.08 /usr/sbin/saslauthd -m /var/run/saslauthd -a pam                                                                        (B[m[39;49m
+(B[m28323 root      20   0  105m 1888 1420 S  0.0  0.1   0:00.14 -bash                                                                                                                   (B[m[39;49m
+(B[m28542 root      20   0  105m 1876 1424 S  0.0  0.1   0:00.03 bash -i                                                                                                                 (B[m[39;49m
+(B[m 1351 root      20   0 68936 1728 1020 S  0.0  0.1   0:00.06 /usr/sbin/saslauthd -m /var/run/saslauthd -a pam                                                                        (B[m[39;49m
+(B[m 1348 root      20   0 68936 1704 1004 S  0.0  0.1   0:00.03 /usr/sbin/saslauthd -m /var/run/saslauthd -a pam                                                                        (B[m[39;49m
+(B[m    1 root      20   0 19232 1504 1212 S  0.0  0.1   0:00.87 /sbin/init                                                                                                              (B[m[39;49m
+(B[m 1215 root      20   0  105m 1444 1204 S  0.0  0.1   0:00.02 /bin/sh /usr/bin/mysqld_safe --datadir=/var/lib/mysql --socket=/var/lib/mysql/mysql.sock --pid-file=/var/run/mysqld/mysq(B[m[39;49m
+(B[m 1479 root      20   0  114m 1252  648 S  0.0  0.1   0:02.38 crond                                                                                                                   (B[m[39;49m
+(B[m(B[m28555 root      20   0 15032 1244  944 R  6.0  0.1   0:00.03 top                                                                                                                     (B[m[39;49m
+(B[m 1172 root      20   0 66628 1240  524 S  0.0  0.1   0:01.71 /usr/sbin/sshd                                                                                                          (B[m[39;49m
+(B[m12061 root      20   0 45276 1172  448 S  0.0  0.1   0:00.00 nginx: master process /usr/sbin/nginx -c /etc/nginx/nginx.conf                                                          (B[m[39;49m
+(B[m 1062 root      20   0  9120  996  508 S  0.0  0.1   0:00.01 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dhclient-eth0.pid eth0                     (B[m[39;49m
+(B[m 1451 root      20   0  107m  944  812 S  0.0  0.0   0:00.00 /usr/sbin/abrtd                                                                                                         (B[m[39;49m
+(B[m28539 root      20   0  104m  908  784 S  0.0  0.0   0:00.01 script                                                                                                                  (B[m[39;49m
+(B[m 1100 root      16  -4 93176  864  608 S  0.0  0.0   0:05.11 auditd                                                                                                                  (B[m[39;49m
+(B[m  440 root      16  -4 10760  860  328 S  0.0  0.0   0:00.52 /sbin/udevd -d                                                                                                          (B[m[39;49m
+(B[m 1459 root      20   0  105m  856  692 S  0.0  0.0   0:00.04 abrt-dump-oops -d /var/spool/abrt -rwx /var/log/messages                                                                (B[m[39;49m
+(B[m 1521 root      18  -2 10756  856  328 S  0.0  0.0   0:00.00 /sbin/udevd -d                                                                                                          (B[m[39;49m
+(B[m 1522 root      18  -2 10756  840  312 S  0.0  0.0   0:00.00 /sbin/udevd -d                                                                                                          (B[m[39;49m
+(B[m 1155 root      20   0  4080  652  536 S  0.0  0.0   0:00.00 /usr/sbin/acpid                                                                                                         (B[m[39;49m
+(B[m 1506 root      20   0  4080  608  536 S  0.0  0.0   0:00.00 /sbin/agetty /dev/ttyS0 115200 vt100-nav                                                                                (B[m[39;49m[6;1H[K[42;1H[?12l[?25h
+]0;root@bot-jp:/usr/local/var/bot-game[root@bot-jp bot-game]# script/unico[K[K[K[K[K[K[K[K[K[K[K[Kn[Ks[Kservic [Ke nginx restart
+Enter PEM pass phrase:
+nginx: [emerg] SSL_CTX_use_PrivateKey_file("/etc/nginx/ssl.globalsign.com.key") failed (SSL: error:0906406D:PEM routines:PEM_def_callback:problems getting password error:0906A068:PEM routines:PEM_do_header:bad password read error:140B0009:SSL routines:SSL_CTX_use_PrivateKey_file:PEM lib)
+nginx: configuration file /etc/nginx/nginx.conf test failed
+]0;root@bot-jp:/usr/local/var/bot-game[root@bot-jp bot-game]# service nginx restart
+Enter PEM pass phrase:
+nginx: [emerg] SSL_CTX_use_PrivateKey_file("/etc/nginx/ssl.globalsign.com.key") failed (SSL: error:06065064:digital envelope routines:EVP_DecryptFinal_ex:bad decrypt error:0906A065:PEM routines:PEM_do_header:bad decrypt error:140B0009:SSL routines:SSL_CTX_use_PrivateKey_file:PEM lib)
+nginx: configuration file /etc/nginx/nginx.conf test failed
+]0;root@bot-jp:/usr/local/var/bot-game[root@bot-jp bot-game]# service nginx restart
+Enter PEM pass phrase:
+Stopping nginx: [60G[[0;32m  OK  [0;39m]
+Starting nginx: Enter PEM pass phrase:
+[60G[[0;32m  OK  [0;39m]
+]0;root@bot-jp:/usr/local/var/bot-game[root@bot-jp bot-game]# tail -f log/development.log 
+
+NameError (uninitialized constant RestClient):
+  app/controllers/index_controller.rb:45:in `line_message'
+  app/controllers/index_controller.rb:21:in `index'
+
+
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.1ms)
+
+
+Started GET "/bot-game" for 124.35.80.154 at 2016-04-22 13:31:18 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 65ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bot-game" for 124.35.80.154 at 2016-04-22 13:31:25 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 69ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.68 at 2016-04-22 13:31:27 +0900
+Cannot render console from 203.104.146.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299487564, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208083327868", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"なあか", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299487581, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375204157", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299487564, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208083327868", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"なあか", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299487581, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375204157", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 76ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bot-game" for 124.35.80.154 at 2016-04-22 13:31:31 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.70 at 2016-04-22 13:32:40 +0900
+Cannot render console from 203.104.146.70! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299560753, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208087495617", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>" こんにちは", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299560771, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375204898", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299560753, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208087495617", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>" こんにちは", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299560771, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375204898", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 79ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.67 at 2016-04-22 13:33:04 +0900
+Cannot render console from 203.104.146.67! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299584385, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208088845321", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"かなあ", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299584406, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375205151", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461299584385, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208088845321", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"かなあ", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461299584406, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375205151", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 72ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.68 at 2016-04-22 13:43:23 +0900
+Cannot render console from 203.104.146.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"params"=>["u0fda3f7042731a5c9a08e1247583a266"], "message"=>nil, "reqSeq"=>0, "revision"=>171, "opType"=>4}, "createdTime"=>1461300203461, "eventType"=>"138311609100106403", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375211664", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"params"=>["u0fda3f7042731a5c9a08e1247583a266"], "message"=>nil, "reqSeq"=>0, "revision"=>171, "opType"=>4}, "createdTime"=>1461300203461, "eventType"=>"138311609100106403", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375211664", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+RestClient::BadRequest (400 Bad Request):
+  app/controllers/index_controller.rb:45:in `line_message'
+  app/controllers/index_controller.rb:21:in `index'
+
+
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.9ms)
+
+
+Started POST "/bot-game" for 203.104.146.69 at 2016-04-22 13:43:29 +0900
+Cannot render console from 203.104.146.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461300209617, "from"=>"u0fda3f7042731a5c9a08e1247583a266", "location"=>nil, "id"=>"4208123765265", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"おい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461300209636, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375211725", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461300209617, "from"=>"u0fda3f7042731a5c9a08e1247583a266", "location"=>nil, "id"=>"4208123765265", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"おい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461300209636, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1520-3375211725", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 76ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.70 at 2016-04-22 13:53:44 +0900
+Cannot render console from 203.104.146.70! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461300824412, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208157224626", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"へい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461300824442, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1521-3365173955", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461300824412, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208157224626", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"へい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461300824442, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1521-3365173955", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 104ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.67 at 2016-04-22 13:56:47 +0900
+Cannot render console from 203.104.146.67! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461301007310, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208167054612", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"へい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461301007327, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1521-3365175838", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461301007310, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208167054612", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"へい", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461301007327, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1521-3365175838", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}]}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 43ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bot-game" for 203.104.146.68 at 2016-04-22 13:57:04 +0900
+Cannot render console from 203.104.146.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#index as */*
+  Parameters: {"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461301024609, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208167978868", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"た", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461301024629, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1519-3375264973", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "toChannel"=>1462258455}], "index"=>{"result"=>[{"content"=>{"toType"=>1, "createdTime"=>1461301024609, "from"=>"ua3c4c90fa2133580787a141316e73bcc", "location"=>nil, "id"=>"4208167978868", "to"=>["u0c6e183ee6e2f32de111ce1068bbef47"], "text"=>"た", "contentMetadata"=>{"AT_RECV_MODE"=>"2", "SKIP_BADGE_COUNT"=>"true"}, "deliveredTime"=>0, "contentType"=>1, "seq"=>nil}, "createdTime"=>1461301024629, "eventType"=>"138311609000106303", "from"=>"u206d25c2ea6bd87c17655609a1c37cb8", "fromChannel"=>1341301815, "id"=>"WB1519-3375264973", "to"=>["u0c
