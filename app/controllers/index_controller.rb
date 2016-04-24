@@ -16,14 +16,78 @@ class IndexController < ApplicationController
     end
 
     from = params[:result][0][:content][:from]
-    text = params[:result][0][:content][:text]
 
-    line_message(from, text)
+    if params[:result][0][:content]["contentType"] == 1
+      text = params[:result][0][:content][:text]
+    elsif params[:result][0][:content]["contentType"] == 8
+      message = "ふざけてんじゃねぇよ！"
+      output_message(from, message)
+      return
+    else
+      message = "わかんねぇよ！"
+      output_message(from, message)
+      return
+    end
 
-    render json: [], status: :ok
+    File.open("log/line_message.log","a") do |file|
+      file.puts text + ","
+    end
+
+    #食い止め(作業中のみ)
+    output_message(from, "ジュンビチューデース")
+    return
+
+    user = User.by_mid(from).first rescue nil
+
+    if !user
+      User.create(from, "first_name", "a-1")
+      message = "だれ？まず名前を教えて"
+      output_message(from, message)
+      return
+    end
+
+    if "a-1" == user.level
+      if 10 < text.length
+        message = "名前長すぎw\n短くして"
+      elsif text.empty?
+        message = "空欄はやめて"
+      else
+        message = text + " が名前でOK?\n\n1. はい\n2. いいえ"
+        user.update(level: "a-2", name: text)
+      end
+      output_message(from, message)
+      return
+    end
+
+    if "a-2" == user.level
+      if text == "はい" || text == "1"
+        user.update(level: "a-3")
+        message = user.name + "よろしく！"
+        output_message(from, message)
+        return
+      elsif text == "いいえ" || text == "2"
+        user.update(level: "a-1")
+        message = "あかんのかい！\n名前教えて！"
+        output_message(from, message)
+        return
+      else
+        message = "質問をしてるんだけど"
+        output_message(from, message)
+      end
+    end
+
+    if "a-3" == user.level
+      output_message(from, "お楽しみに")
+    end
+
   end
 
   private
+
+  def output_message(from, message)
+    line_message(from, message)
+    render json: [], status: :ok
+  end
 
   def line_message(to, text)
     request_headers = {

@@ -11,10 +11,10 @@ default: &default
   pool: 5
   socket: /var/lib/mysql/mysql.sock
 
-
 development:
   <<: *default
   database: bot_development
+  #host: tana1
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
