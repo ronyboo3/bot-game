@@ -1,0 +1,9 @@
+level:
+  a1: 'a-1' #初回
+  a2: 'a-2' #名前確認
+  a3: 'a-3' #名前決定
+
+message:
+  for_sticker: 'ふざけてんじゃねぇよ！'
+  for_other: 'わかんねぇよ！'
+  for_first: 'お！誰？？名前を教えてくれ！'

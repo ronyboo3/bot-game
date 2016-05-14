@@ -1044,3 +1044,977 @@ E, [2016-04-24T05:00:10.414806 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.
 203.104.146.68 - - [24/Apr/2016:16:56:33 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0805
 203.104.146.70 - - [24/Apr/2016:16:56:37 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0519
 203.104.146.67 - - [24/Apr/2016:16:56:45 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0783
+203.104.146.68 - - [24/Apr/2016:18:10:35 +0900] "POST /bot-game HTTP/1.0" 500 94631 0.3195
+203.104.146.69 - - [24/Apr/2016:18:11:54 +0900] "POST /bot-game HTTP/1.0" 200 - 0.3131
+74.82.47.4 - - [24/Apr/2016:18:38:09 +0900] "GET / HTTP/1.0" 404 - 0.0067
+74.82.47.4 - - [24/Apr/2016:18:49:01 +0900] "GET / HTTP/1.0" 404 - 0.0029
+203.104.146.68 - - [25/Apr/2016:00:08:18 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1183
+194.28.112.52 - - [25/Apr/2016:00:31:40 +0900] "GET / HTTP/1.0" 404 - 0.0011
+194.28.112.52 - - [25/Apr/2016:00:31:41 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0026
+74.91.23.108 - - [25/Apr/2016:02:02:46 +0900] "GET / HTTP/1.0" 404 - 0.0020
+173.208.197.252 - - [25/Apr/2016:02:20:22 +0900] "GET / HTTP/1.0" 404 - 0.0021
+61.161.130.242 - - [25/Apr/2016:02:24:36 +0900] "GET /docs/funcspecs/3.jsp HTTP/1.0" 404 - 0.0064
+61.161.130.242 - - [25/Apr/2016:03:23:15 +0900] "GET /manager/html HTTP/1.0" 404 - 0.0030
+128.68.60.96 - - [25/Apr/2016:03:26:30 +0900] "GET / HTTP/1.0" 404 - 0.0018
+192.99.150.120 - - [25/Apr/2016:04:08:54 +0900] "GET / HTTP/1.0" 404 - 0.0028
+83.233.72.144 - - [25/Apr/2016:06:11:44 +0900] "GET /wp-content/plugins/revslider/js/rev_admin.js HTTP/1.0" 404 - 0.0017
+107.150.46.36 - - [25/Apr/2016:06:48:12 +0900] "GET / HTTP/1.0" 404 - 0.0025
+109.72.215.18 - - [25/Apr/2016:07:57:07 +0900] "HEAD /index.php HTTP/1.0" 404 - 0.0023
+E, [2016-04-25T07:57:07.773276 #29405] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-04-25T07:57:07.773393 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-04-25T07:57:07.773454 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-04-25T07:57:07.773507 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-04-25T07:57:07.773597 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-04-25T07:57:07.773663 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-04-25T07:57:07.773716 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-04-25T07:57:07.773768 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-04-25T07:57:07.773821 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-04-25T07:57:07.773870 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-04-25T07:57:07.773938 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-04-25T07:57:07.774000 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-04-25T07:57:07.774130 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+192.99.150.120 - - [25/Apr/2016:08:14:50 +0900] "GET / HTTP/1.0" 404 - 0.0022
+169.54.244.78 - - [25/Apr/2016:11:57:27 +0900] "GET / HTTP/1.0" 404 - 0.0031
+5.39.222.159 - - [25/Apr/2016:19:52:35 +0900] "GET / HTTP/1.0" 404 - 0.0026
+188.32.234.37 - - [25/Apr/2016:20:19:29 +0900] "GET / HTTP/1.0" 404 - 0.0023
+216.218.206.66 - - [25/Apr/2016:20:51:42 +0900] "GET / HTTP/1.0" 404 - 0.0021
+216.218.206.66 - - [25/Apr/2016:20:59:13 +0900] "GET / HTTP/1.0" 404 - 0.0020
+188.138.56.180 - - [26/Apr/2016:00:21:11 +0900] "POST /xmlrpc.php HTTP/1.0" 404 - 0.0033
+169.54.244.93 - - [26/Apr/2016:02:17:44 +0900] "GET / HTTP/1.0" 404 - 0.0019
+218.241.108.158 - - [26/Apr/2016:05:33:20 +0900] "GET / HTTP/1.0" 404 - 0.0021
+192.99.150.120 - - [26/Apr/2016:06:49:09 +0900] "GET / HTTP/1.0" 404 - 0.0019
+89.248.174.4 - - [26/Apr/2016:07:02:32 +0900] "GET /xmlrpc.php HTTP/1.0" 404 - 0.0018
+185.92.72.32 - - [26/Apr/2016:09:00:47 +0900] "GET / HTTP/1.0" 404 - 0.0021
+185.92.72.32 - - [26/Apr/2016:09:00:48 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0020
+169.54.244.93 - - [26/Apr/2016:10:48:33 +0900] "GET / HTTP/1.0" 404 - 0.0121
+203.104.146.70 - - [26/Apr/2016:12:30:57 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0800
+203.104.146.67 - - [26/Apr/2016:12:31:04 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0714
+184.105.139.68 - - [26/Apr/2016:13:14:53 +0900] "GET / HTTP/1.0" 404 - 0.0009
+184.105.139.68 - - [26/Apr/2016:13:26:56 +0900] "GET / HTTP/1.0" 404 - 0.0023
+157.55.39.199 - - [26/Apr/2016:15:30:26 +0900] "GET /%E3%83%96%E3%83%AD%E3%82%B0/ HTTP/1.0" 404 - 0.0023
+169.54.233.119 - - [26/Apr/2016:16:20:07 +0900] "GET / HTTP/1.0" 404 - 0.0020
+104.41.150.203 - - [26/Apr/2016:18:15:51 +0900] "HEAD / HTTP/1.0" 404 - 0.0022
+E, [2016-04-26T18:15:51.769523 #29405] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-04-26T18:15:51.769618 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-04-26T18:15:51.769712 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-04-26T18:15:51.769885 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-04-26T18:15:51.769972 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-04-26T18:15:51.770033 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-04-26T18:15:51.770083 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-04-26T18:15:51.770134 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-04-26T18:15:51.770184 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-04-26T18:15:51.770232 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-04-26T18:15:51.770281 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-04-26T18:15:51.770332 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-04-26T18:15:51.770378 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+104.41.150.203 - - [26/Apr/2016:18:15:52 +0900] "GET / HTTP/1.0" 404 - 0.0023
+192.99.144.140 - - [26/Apr/2016:18:19:46 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0016
+66.249.66.37 - - [26/Apr/2016:19:28:32 +0900] "GET / HTTP/1.0" 404 - 0.0027
+54.229.172.155 - - [26/Apr/2016:20:03:01 +0900] "GET / HTTP/1.0" 404 - 0.0016
+203.104.146.67 - - [26/Apr/2016:22:06:32 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1466
+141.212.122.161 - - [27/Apr/2016:02:27:20 +0900] "GET / HTTP/1.0" 404 - 0.0009
+218.241.108.158 - - [27/Apr/2016:03:13:13 +0900] "GET / HTTP/1.0" 404 - 0.0018
+38.99.82.191 - - [27/Apr/2016:03:36:40 +0900] "GET / HTTP/1.0" 404 - 0.0017
+76.74.97.4 - - [27/Apr/2016:04:45:17 +0900] "GET / HTTP/1.0" 404 - 0.0016
+66.249.69.134 - - [27/Apr/2016:06:38:26 +0900] "GET / HTTP/1.0" 404 - 0.0019
+203.104.146.68 - - [27/Apr/2016:14:29:44 +0900] "POST /bot-game HTTP/1.0" 500 107703 0.3717
+203.104.146.67 - - [27/Apr/2016:14:31:05 +0900] "POST /bot-game HTTP/1.0" 500 107688 0.3461
+203.104.146.68 - - [27/Apr/2016:14:31:34 +0900] "POST /bot-game HTTP/1.0" 500 100821 0.2749
+203.104.146.69 - - [27/Apr/2016:14:33:18 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1673
+203.104.146.70 - - [27/Apr/2016:14:34:40 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1037
+203.104.146.67 - - [27/Apr/2016:14:34:57 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0860
+203.104.146.68 - - [27/Apr/2016:14:35:00 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0973
+203.104.146.69 - - [27/Apr/2016:14:35:08 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0827
+203.104.146.70 - - [27/Apr/2016:14:35:16 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0831
+203.104.146.67 - - [27/Apr/2016:14:35:19 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0802
+203.104.146.68 - - [27/Apr/2016:14:35:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0771
+203.104.146.69 - - [27/Apr/2016:14:35:24 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0752
+203.104.146.70 - - [27/Apr/2016:14:35:25 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1544
+203.104.146.67 - - [27/Apr/2016:14:35:27 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0831
+203.104.146.68 - - [27/Apr/2016:14:38:40 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1385
+203.104.146.69 - - [27/Apr/2016:15:00:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1793
+203.104.146.70 - - [27/Apr/2016:15:00:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1153
+203.104.146.68 - - [27/Apr/2016:15:01:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0763
+203.104.146.69 - - [27/Apr/2016:15:13:39 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0960
+203.104.146.70 - - [27/Apr/2016:15:13:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1299
+203.104.146.67 - - [27/Apr/2016:15:14:00 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0525
+203.104.146.68 - - [27/Apr/2016:15:15:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0870
+203.104.146.69 - - [27/Apr/2016:15:15:57 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0780
+203.104.146.70 - - [27/Apr/2016:15:17:17 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0619
+203.104.146.67 - - [27/Apr/2016:15:17:35 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0839
+203.104.146.69 - - [27/Apr/2016:15:25:46 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0947
+179.43.140.114 - - [27/Apr/2016:15:54:39 +0900] "GET /xmlrpc.php HTTP/1.0" 404 - 0.0010
+203.104.146.70 - - [27/Apr/2016:16:02:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1087
+203.104.146.68 - - [27/Apr/2016:16:02:50 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0815
+203.104.146.69 - - [27/Apr/2016:16:03:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1179
+203.104.146.70 - - [27/Apr/2016:16:05:18 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0761
+203.104.146.67 - - [27/Apr/2016:16:06:15 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0754
+203.104.146.70 - - [27/Apr/2016:16:08:51 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0776
+192.99.150.120 - - [27/Apr/2016:16:39:18 +0900] "GET / HTTP/1.0" 404 - 0.0019
+5.39.222.159 - - [27/Apr/2016:17:37:09 +0900] "GET / HTTP/1.0" 404 - 0.0017
+203.104.146.67 - - [27/Apr/2016:18:49:29 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0986
+203.104.146.69 - - [27/Apr/2016:19:17:51 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1126
+203.104.146.70 - - [27/Apr/2016:19:17:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0756
+203.104.146.67 - - [27/Apr/2016:19:18:27 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1102
+203.104.146.68 - - [27/Apr/2016:19:47:44 +0900] "POST /bot-game HTTP/1.0" 500 118237 0.3502
+203.104.146.70 - - [27/Apr/2016:19:47:55 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1024
+203.104.146.68 - - [27/Apr/2016:19:48:31 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1881
+203.104.146.69 - - [27/Apr/2016:19:48:35 +0900] "POST /bot-game HTTP/1.0" 200 - 0.4020
+203.104.146.70 - - [27/Apr/2016:19:48:50 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0838
+203.104.146.67 - - [27/Apr/2016:19:48:55 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0857
+203.104.146.68 - - [27/Apr/2016:19:49:03 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1258
+203.104.146.69 - - [27/Apr/2016:19:49:06 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0577
+203.104.146.70 - - [27/Apr/2016:19:50:54 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0716
+203.104.146.67 - - [27/Apr/2016:19:50:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0779
+203.104.146.68 - - [27/Apr/2016:19:52:18 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0892
+203.104.146.69 - - [27/Apr/2016:19:52:27 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0716
+203.104.146.70 - - [27/Apr/2016:19:52:52 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0767
+203.104.146.67 - - [27/Apr/2016:19:53:06 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0816
+203.104.146.68 - - [27/Apr/2016:19:53:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0822
+203.104.146.69 - - [27/Apr/2016:19:53:23 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0789
+203.104.146.70 - - [27/Apr/2016:19:53:28 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0564
+203.104.146.67 - - [27/Apr/2016:19:53:38 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0907
+203.104.146.68 - - [27/Apr/2016:19:53:43 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0833
+203.104.146.69 - - [27/Apr/2016:19:53:59 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0904
+203.104.146.70 - - [27/Apr/2016:19:54:19 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0821
+203.104.146.67 - - [27/Apr/2016:19:54:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0813
+203.104.146.68 - - [27/Apr/2016:19:56:29 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0941
+203.104.146.69 - - [27/Apr/2016:19:57:34 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0829
+203.104.146.69 - - [27/Apr/2016:21:02:06 +0900] "POST /bot-game HTTP/1.0" 500 118237 0.4376
+203.104.146.70 - - [27/Apr/2016:21:02:36 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0981
+203.104.146.67 - - [27/Apr/2016:21:02:42 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1181
+203.104.146.68 - - [27/Apr/2016:21:02:48 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0732
+203.104.146.69 - - [27/Apr/2016:21:02:52 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0806
+203.104.146.70 - - [27/Apr/2016:21:02:55 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1472
+203.104.146.67 - - [27/Apr/2016:21:02:57 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0924
+203.104.146.68 - - [27/Apr/2016:21:03:03 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0740
+203.104.146.69 - - [27/Apr/2016:21:03:10 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0641
+203.104.146.70 - - [27/Apr/2016:21:04:00 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1008
+203.104.146.67 - - [27/Apr/2016:21:04:10 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0773
+203.104.146.68 - - [27/Apr/2016:21:04:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0999
+203.104.146.69 - - [27/Apr/2016:21:04:24 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0845
+203.104.146.70 - - [27/Apr/2016:21:05:07 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1297
+203.104.146.67 - - [27/Apr/2016:21:05:12 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0926
+203.104.146.68 - - [27/Apr/2016:21:05:16 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0914
+203.104.146.69 - - [27/Apr/2016:21:05:19 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0887
+203.104.146.70 - - [27/Apr/2016:21:05:29 +0900] "POST /bot-game HTTP/1.0" 500 107856 0.2815
+203.104.146.67 - - [27/Apr/2016:21:05:33 +0900] "POST /bot-game HTTP/1.0" 500 107838 0.3281
+203.104.146.68 - - [27/Apr/2016:21:05:36 +0900] "POST /bot-game HTTP/1.0" 500 107838 0.4138
+203.104.146.69 - - [27/Apr/2016:21:05:41 +0900] "POST /bot-game HTTP/1.0" 500 107850 0.2662
+203.104.146.70 - - [27/Apr/2016:21:05:42 +0900] "POST /bot-game HTTP/1.0" 500 107880 0.2260
+203.104.146.67 - - [27/Apr/2016:21:05:44 +0900] "POST /bot-game HTTP/1.0" 500 107844 0.3390
+203.104.146.68 - - [27/Apr/2016:21:06:44 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1440
+203.104.146.69 - - [27/Apr/2016:21:07:01 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0576
+203.104.146.70 - - [27/Apr/2016:21:07:02 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0721
+203.104.146.67 - - [27/Apr/2016:21:07:14 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1107
+203.104.146.68 - - [27/Apr/2016:21:07:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0848
+203.104.146.69 - - [27/Apr/2016:21:08:17 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0753
+203.104.146.70 - - [27/Apr/2016:21:08:32 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0834
+203.104.146.67 - - [27/Apr/2016:21:08:41 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0884
+203.104.146.68 - - [27/Apr/2016:21:08:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0791
+203.104.146.69 - - [27/Apr/2016:21:09:02 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0828
+31.220.3.180 - - [27/Apr/2016:21:18:06 +0900] "GET /cgi-bin/php HTTP/1.0" 404 - 0.0014
+31.220.3.180 - - [27/Apr/2016:21:18:06 +0900] "GET /cgi-bin/php5 HTTP/1.0" 404 - 0.0019
+31.220.3.180 - - [27/Apr/2016:21:18:06 +0900] "GET /cgi-bin/php4 HTTP/1.0" 404 - 0.0017
+203.104.146.70 - - [27/Apr/2016:22:05:37 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1360
+74.82.47.4 - - [27/Apr/2016:22:09:42 +0900] "GET / HTTP/1.0" 404 - 0.0017
+79.143.185.19 - - [27/Apr/2016:22:11:21 +0900] "HEAD / HTTP/1.0" 404 - 0.0021
+E, [2016-04-27T22:11:21.180552 #29408] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-04-27T22:11:21.180688 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-04-27T22:11:21.180806 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-04-27T22:11:21.180869 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-04-27T22:11:21.180922 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-04-27T22:11:21.180973 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-04-27T22:11:21.181023 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-04-27T22:11:21.181094 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-04-27T22:11:21.181152 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-04-27T22:11:21.181211 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-04-27T22:11:21.181268 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-04-27T22:11:21.181318 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-04-27T22:11:21.181368 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+74.82.47.4 - - [27/Apr/2016:22:19:49 +0900] "GET / HTTP/1.0" 404 - 0.0016
+207.46.13.23 - - [28/Apr/2016:00:32:36 +0900] "GET /2011/11/21/astro-iq-fiction/ HTTP/1.0" 404 - 0.0015
+218.241.108.158 - - [28/Apr/2016:02:37:57 +0900] "GET / HTTP/1.0" 404 - 0.0015
+179.43.140.114 - - [28/Apr/2016:05:22:17 +0900] "GET /xmlrpc.php HTTP/1.0" 404 - 0.0016
+179.43.140.114 - - [28/Apr/2016:05:23:46 +0900] "GET /xmlrpc.php HTTP/1.0" 404 - 0.0017
+5.189.130.166 - - [28/Apr/2016:06:49:21 +0900] "GET / HTTP/1.0" 404 - 0.0026
+5.189.130.166 - - [28/Apr/2016:06:50:12 +0900] "GET / HTTP/1.0" 404 - 0.0018
+5.189.130.166 - - [28/Apr/2016:06:50:12 +0900] "GET /epgrec/do-record.sh HTTP/1.0" 404 - 0.0017
+5.189.130.166 - - [28/Apr/2016:06:50:20 +0900] "GET /epgrec/do-record.sh HTTP/1.0" 404 - 0.0225
+222.85.138.75 - - [28/Apr/2016:06:53:32 +0900] "HEAD / HTTP/1.0" 404 - 0.0023
+E, [2016-04-28T06:53:32.939156 #29405] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-04-28T06:53:32.939388 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-04-28T06:53:32.939461 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-04-28T06:53:32.939515 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-04-28T06:53:32.939565 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-04-28T06:53:32.939614 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-04-28T06:53:32.939696 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-04-28T06:53:32.939836 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-04-28T06:53:32.939900 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-04-28T06:53:32.939950 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-04-28T06:53:32.939999 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-04-28T06:53:32.940046 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-04-28T06:53:32.940091 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+192.99.144.140 - - [28/Apr/2016:07:00:01 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0010
+207.46.13.100 - - [28/Apr/2016:07:40:57 +0900] "GET /%E3%83%90%E3%82%A4%E3%82%AF%E9%83%A8%E5%93%81%E7%94%A8%E5%93%81-%E8%B2%A9%E5%A3%B2%E5%8F%AF%E8%83%BD%E5%93%81/%E4%B8%AD%E5%8F%A4%E9%83%A8%E5%93%81/ HTTP/1.0" 404 - 0.0013
+192.99.144.140 - - [28/Apr/2016:10:12:29 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0020
+222.186.58.140 - - [28/Apr/2016:11:00:33 +0900] "GET /manager/html HTTP/1.0" 404 - 0.0027
+5.206.88.106 - - [28/Apr/2016:11:07:53 +0900] "GET /?uUAAh3ged HTTP/1.0" 404 - 0.0029
+207.46.13.90 - - [28/Apr/2016:12:32:00 +0900] "GET /j/shop/terms HTTP/1.0" 404 - 0.0014
+194.28.112.52 - - [28/Apr/2016:12:47:05 +0900] "GET / HTTP/1.0" 404 - 0.0017
+194.28.112.52 - - [28/Apr/2016:12:47:06 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0018
+203.104.146.67 - - [28/Apr/2016:15:45:41 +0900] "POST /bot-game HTTP/1.0" 500 118237 0.5238
+203.104.146.68 - - [28/Apr/2016:15:45:47 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1424
+203.104.146.69 - - [28/Apr/2016:15:45:52 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0857
+203.104.146.70 - - [28/Apr/2016:15:45:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0888
+203.104.146.67 - - [28/Apr/2016:15:46:03 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0633
+203.104.146.68 - - [28/Apr/2016:15:46:06 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0805
+203.104.146.69 - - [28/Apr/2016:15:46:08 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0613
+203.104.146.70 - - [28/Apr/2016:15:46:09 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0563
+203.104.146.67 - - [28/Apr/2016:15:46:11 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0802
+203.104.146.68 - - [28/Apr/2016:15:46:17 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0937
+203.104.146.69 - - [28/Apr/2016:15:46:31 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0877
+203.104.146.70 - - [28/Apr/2016:15:46:41 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0866
+203.104.146.67 - - [28/Apr/2016:15:46:51 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0532
+203.104.146.68 - - [28/Apr/2016:15:47:25 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1052
+203.104.146.69 - - [28/Apr/2016:15:47:26 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0835
+203.104.146.70 - - [28/Apr/2016:15:47:37 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1526
+203.104.146.67 - - [28/Apr/2016:15:47:53 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0907
+203.104.146.68 - - [28/Apr/2016:15:49:21 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0808
+203.104.146.69 - - [28/Apr/2016:15:49:25 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0749
+203.104.146.70 - - [28/Apr/2016:15:50:01 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0862
+203.104.146.67 - - [28/Apr/2016:15:51:44 +0900] "POST /bot-game HTTP/1.0" 500 118237 0.3784
+203.104.146.68 - - [28/Apr/2016:15:51:55 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1066
+203.104.146.69 - - [28/Apr/2016:15:52:02 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0782
+203.104.146.70 - - [28/Apr/2016:15:52:07 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0874
+203.104.146.67 - - [28/Apr/2016:15:52:11 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0923
+203.104.146.68 - - [28/Apr/2016:15:52:16 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0785
+203.104.146.69 - - [28/Apr/2016:15:52:26 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0872
+203.104.146.70 - - [28/Apr/2016:15:52:31 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0661
+176.117.40.23 - - [28/Apr/2016:20:53:58 +0900] "GET /manager/html HTTP/1.0" 404 - 0.0023
+192.237.216.89 - - [29/Apr/2016:01:05:29 +0900] "GET / HTTP/1.0" 404 - 0.0025
+62.210.107.57 - - [29/Apr/2016:06:47:05 +0900] "GET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.0" 404 - 0.0022
+62.210.107.57 - - [29/Apr/2016:06:47:06 +0900] "GET /phpMyAdmin/scripts/setup.php HTTP/1.0" 404 - 0.0050
+62.210.107.57 - - [29/Apr/2016:06:47:06 +0900] "GET /phpmyadmin/scripts/setup.php HTTP/1.0" 404 - 0.0024
+62.210.107.57 - - [29/Apr/2016:06:47:07 +0900] "GET /pma/scripts/setup.php HTTP/1.0" 404 - 0.0027
+62.210.107.57 - - [29/Apr/2016:06:47:07 +0900] "GET /myadmin/scripts/setup.php HTTP/1.0" 404 - 0.0018
+62.210.107.57 - - [29/Apr/2016:06:47:08 +0900] "GET /MyAdmin/scripts/setup.php HTTP/1.0" 404 - 0.0019
+192.99.144.140 - - [29/Apr/2016:07:18:57 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0022
+216.218.206.66 - - [29/Apr/2016:09:55:25 +0900] "GET / HTTP/1.0" 404 - 0.0019
+216.218.206.66 - - [29/Apr/2016:10:01:43 +0900] "GET / HTTP/1.0" 404 - 0.0032
+138.201.20.12 - - [29/Apr/2016:13:24:46 +0900] "GET / HTTP/1.0" 404 - 0.0024
+66.249.79.215 - - [29/Apr/2016:19:28:33 +0900] "GET / HTTP/1.0" 404 - 0.0017
+37.187.92.25 - - [29/Apr/2016:20:10:42 +0900] "GET / HTTP/1.0" 404 - 0.0018
+141.212.122.161 - - [29/Apr/2016:20:21:48 +0900] "GET / HTTP/1.0" 404 - 0.0073
+79.143.185.19 - - [29/Apr/2016:21:26:08 +0900] "HEAD / HTTP/1.0" 404 - 0.0021
+E, [2016-04-29T21:26:08.884819 #29408] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-04-29T21:26:08.884957 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-04-29T21:26:08.885025 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-04-29T21:26:08.885077 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-04-29T21:26:08.885125 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-04-29T21:26:08.885173 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-04-29T21:26:08.885220 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-04-29T21:26:08.885268 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-04-29T21:26:08.885345 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-04-29T21:26:08.885423 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-04-29T21:26:08.885509 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-04-29T21:26:08.885561 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-04-29T21:26:08.885607 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+64.16.209.152 - - [29/Apr/2016:22:17:39 +0900] "GET /admin HTTP/1.0" 404 - 0.0038
+80.82.78.38 - - [30/Apr/2016:08:07:20 +0900] "GET /cache/global/img/gs.gif HTTP/1.0" 404 - 0.0014
+74.82.47.4 - - [30/Apr/2016:09:47:07 +0900] "GET / HTTP/1.0" 404 - 0.0056
+74.82.47.4 - - [30/Apr/2016:09:55:46 +0900] "GET / HTTP/1.0" 404 - 0.0040
+203.104.146.67 - - [30/Apr/2016:11:35:26 +0900] "POST /bot-game HTTP/1.0" 500 118237 0.4278
+203.104.146.68 - - [30/Apr/2016:11:35:49 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1898
+203.104.146.69 - - [30/Apr/2016:11:36:17 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0767
+203.104.146.70 - - [30/Apr/2016:11:36:29 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0734
+203.104.146.67 - - [30/Apr/2016:11:36:30 +0900] "POST /bot-game HTTP/1.0" 500 118237 0.3958
+203.104.146.68 - - [30/Apr/2016:11:36:36 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1423
+203.104.146.69 - - [30/Apr/2016:11:36:37 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0906
+203.104.146.70 - - [30/Apr/2016:11:36:46 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0906
+203.104.146.67 - - [30/Apr/2016:11:36:51 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0842
+203.104.146.68 - - [30/Apr/2016:11:36:51 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0856
+203.104.146.69 - - [30/Apr/2016:11:36:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0738
+203.104.146.70 - - [30/Apr/2016:11:37:03 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0847
+203.104.146.67 - - [30/Apr/2016:11:37:07 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0576
+203.104.146.68 - - [30/Apr/2016:11:37:11 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0808
+203.104.146.69 - - [30/Apr/2016:11:37:14 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0786
+203.104.146.70 - - [30/Apr/2016:11:37:14 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0695
+203.104.146.67 - - [30/Apr/2016:11:37:19 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0739
+203.104.146.68 - - [30/Apr/2016:11:37:21 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0854
+203.104.146.69 - - [30/Apr/2016:11:37:26 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0788
+188.0.236.221 - - [30/Apr/2016:11:37:27 +0900] "GET / HTTP/1.0" 404 - 0.0010
+188.0.236.221 - - [30/Apr/2016:11:37:27 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0009
+203.104.146.70 - - [30/Apr/2016:11:37:31 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0636
+203.104.146.67 - - [30/Apr/2016:11:41:15 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0580
+203.104.146.68 - - [30/Apr/2016:11:41:53 +0900] "POST /bot-game HTTP/1.0" 500 118237 0.4195
+59.16.72.58 - - [30/Apr/2016:13:58:30 +0900] "GET / HTTP/1.0" 404 - 0.0017
+42.159.144.101 - - [30/Apr/2016:15:51:15 +0900] "GET /images/G/01/x-locale/common/transparent-pixel._CB386942464_.gif HTTP/1.0" 404 - 0.0022
+222.85.138.75 - - [30/Apr/2016:18:41:22 +0900] "HEAD / HTTP/1.0" 404 - 0.0022
+E, [2016-04-30T18:41:22.830412 #29405] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-04-30T18:41:22.830533 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-04-30T18:41:22.830564 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-04-30T18:41:22.830608 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-04-30T18:41:22.830652 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-04-30T18:41:22.830693 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-04-30T18:41:22.830845 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-04-30T18:41:22.830875 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-04-30T18:41:22.830952 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-04-30T18:41:22.831006 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-04-30T18:41:22.831054 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-04-30T18:41:22.831102 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-04-30T18:41:22.831147 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+192.99.144.140 - - [30/Apr/2016:20:45:39 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0024
+64.16.209.177 - - [01/May/2016:00:43:50 +0900] "GET /skin/error.php HTTP/1.0" 404 - 0.0023
+58.249.64.248 - - [01/May/2016:03:17:59 +0900] "GET /ajax.list.search.php HTTP/1.0" 404 - 0.0025
+182.118.53.19 - - [01/May/2016:03:28:24 +0900] "GET / HTTP/1.0" 404 - 0.0020
+184.105.139.68 - - [01/May/2016:11:20:31 +0900] "GET / HTTP/1.0" 404 - 0.0023
+179.43.140.114 - - [01/May/2016:11:45:49 +0900] "GET /xmlrpc.php HTTP/1.0" 404 - 0.0025
+5.39.222.159 - - [01/May/2016:13:16:45 +0900] "GET / HTTP/1.0" 404 - 0.0021
+106.185.54.118 - - [01/May/2016:18:30:28 +0900] "GET /templates/ace/img/logo.png HTTP/1.0" 404 - 0.0016
+121.244.147.176 - - [01/May/2016:19:59:55 +0900] "GET /manager/html HTTP/1.0" 404 - 0.0018
+91.223.89.58 - - [01/May/2016:22:52:36 +0900] "GET / HTTP/1.0" 404 - 0.0022
+91.223.89.58 - - [01/May/2016:22:52:36 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0078
+192.99.144.140 - - [02/May/2016:09:15:37 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0020
+46.229.170.197 - - [02/May/2016:11:46:24 +0900] "GET / HTTP/1.0" 404 - 0.0020
+46.229.170.197 - - [02/May/2016:11:48:49 +0900] "GET / HTTP/1.0" 404 - 0.0018
+31.184.195.114 - - [02/May/2016:13:40:35 +0900] "GET /cgi-bin/cgi_wrapper/cgi_wrapper HTTP/1.0" 404 - 0.0023
+31.184.195.114 - - [02/May/2016:13:40:35 +0900] "GET /cgi-bin/feed.cgi HTTP/1.0" 404 - 0.0021
+31.184.195.114 - - [02/May/2016:13:40:36 +0900] "GET /cgi-bin/GetOrgFile HTTP/1.0" 404 - 0.0020
+31.184.195.114 - - [02/May/2016:13:40:37 +0900] "GET /cgi-bin/nofile.sh HTTP/1.0" 404 - 0.0018
+31.184.195.114 - - [02/May/2016:13:40:37 +0900] "GET /cgi-bin/php HTTP/1.0" 404 - 0.0020
+31.184.195.114 - - [02/May/2016:13:40:38 +0900] "GET /cgi-bin/php4 HTTP/1.0" 404 - 0.0055
+31.184.195.114 - - [02/May/2016:13:40:38 +0900] "GET /cgi-bin/php5 HTTP/1.0" 404 - 0.0022
+31.184.195.114 - - [02/May/2016:13:40:39 +0900] "GET /cgi-bin/php5-cgi HTTP/1.0" 404 - 0.0018
+31.184.195.114 - - [02/May/2016:13:40:40 +0900] "GET /cgi-bin/php5.cgi HTTP/1.0" 404 - 0.0058
+31.184.195.114 - - [02/May/2016:13:40:40 +0900] "GET /cgi-bin/php5-cgi/test-cgi HTTP/1.0" 404 - 0.0023
+31.184.195.114 - - [02/May/2016:13:40:41 +0900] "GET /cgi-bin/php5-cgi/test.cgi HTTP/1.0" 404 - 0.0019
+31.184.195.114 - - [02/May/2016:13:40:41 +0900] "GET /cgi-bin/php5-cli HTTP/1.0" 404 - 0.0019
+31.184.195.114 - - [02/May/2016:13:40:42 +0900] "GET /cgi-bin/php-cgi HTTP/1.0" 404 - 0.0019
+31.184.195.114 - - [02/May/2016:13:40:43 +0900] "GET /cgi-bin/php.cgi HTTP/1.0" 404 - 0.0020
+31.184.195.114 - - [02/May/2016:13:40:43 +0900] "GET /cgi-bin/rss.cgi HTTP/1.0" 404 - 0.0032
+31.184.195.114 - - [02/May/2016:13:40:44 +0900] "GET /cgi-bin/test-cgi HTTP/1.0" 404 - 0.0022
+31.184.195.114 - - [02/May/2016:13:40:44 +0900] "GET /cgi-bin/test.cgi HTTP/1.0" 404 - 0.0019
+31.184.195.114 - - [02/May/2016:13:40:45 +0900] "GET /cgi-bin/up.cgi HTTP/1.0" 404 - 0.0043
+31.184.195.114 - - [02/May/2016:13:40:46 +0900] "GET /cgi-bin/wrapper HTTP/1.0" 404 - 0.0010
+31.184.195.114 - - [02/May/2016:13:40:46 +0900] "GET /cgi.cgi HTTP/1.0" 404 - 0.0042
+31.184.195.114 - - [02/May/2016:13:40:47 +0900] "GET /fcgi-php/php HTTP/1.0" 404 - 0.0022
+31.184.195.114 - - [02/May/2016:13:40:47 +0900] "GET /phppath/cgi_wrapper HTTP/1.0" 404 - 0.0026
+31.184.195.114 - - [02/May/2016:13:40:48 +0900] "GET /phppath/php HTTP/1.0" 404 - 0.0013
+31.184.195.114 - - [02/May/2016:13:40:48 +0900] "GET /phppath/php4 HTTP/1.0" 404 - 0.0021
+31.184.195.114 - - [02/May/2016:13:40:49 +0900] "GET /phppath/php5 HTTP/1.0" 404 - 0.0019
+31.184.195.114 - - [02/May/2016:13:40:50 +0900] "GET /phppath/php-cgi HTTP/1.0" 404 - 0.0021
+31.184.195.114 - - [02/May/2016:13:40:50 +0900] "GET /phppath/php.cgi HTTP/1.0" 404 - 0.0019
+31.184.195.114 - - [02/May/2016:13:40:51 +0900] "GET /php/php HTTP/1.0" 404 - 0.0018
+31.184.195.114 - - [02/May/2016:13:40:51 +0900] "GET /php/php4 HTTP/1.0" 404 - 0.0018
+31.184.195.114 - - [02/May/2016:13:40:52 +0900] "GET /php/php5 HTTP/1.0" 404 - 0.0018
+31.184.195.114 - - [02/May/2016:13:40:53 +0900] "GET /php/php-cgi HTTP/1.0" 404 - 0.0016
+31.184.195.114 - - [02/May/2016:13:40:53 +0900] "GET /php/php.cgi HTTP/1.0" 404 - 0.0017
+31.184.195.114 - - [02/May/2016:13:40:54 +0900] "GET /xampp/cgi.cgi HTTP/1.0" 404 - 0.0016
+74.82.47.4 - - [02/May/2016:15:25:46 +0900] "GET / HTTP/1.0" 404 - 0.0020
+74.82.47.4 - - [02/May/2016:15:35:33 +0900] "GET / HTTP/1.0" 404 - 0.0017
+83.233.72.144 - - [02/May/2016:18:01:02 +0900] "GET /wp-content/plugins/gravityforms/js/gravityforms.js HTTP/1.0" 404 - 0.0024
+66.249.71.108 - - [02/May/2016:19:28:33 +0900] "GET / HTTP/1.0" 404 - 0.0012
+207.244.76.204 - - [02/May/2016:20:18:53 +0900] "GET /a2billing/ HTTP/1.0" 404 - 0.0023
+69.197.185.21 - - [03/May/2016:04:57:11 +0900] "GET / HTTP/1.0" 404 - 0.0028
+185.92.72.32 - - [03/May/2016:06:37:02 +0900] "GET / HTTP/1.0" 404 - 0.0020
+185.92.72.32 - - [03/May/2016:06:37:03 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0012
+66.249.69.128 - - [03/May/2016:06:38:26 +0900] "GET / HTTP/1.0" 404 - 0.0009
+122.226.73.131 - - [03/May/2016:09:21:01 +0900] "GET /member/jq_checkCode.do?mb_recommend=asdf%27 HTTP/1.0" 404 - 0.0021
+54.201.46.122 - - [03/May/2016:12:52:56 +0900] "GET / HTTP/1.0" 404 - 0.0021
+184.105.139.68 - - [03/May/2016:21:53:16 +0900] "GET / HTTP/1.0" 404 - 0.0018
+184.105.139.68 - - [03/May/2016:22:02:42 +0900] "GET / HTTP/1.0" 404 - 0.0023
+85.111.44.238 - - [03/May/2016:22:15:24 +0900] "HEAD /index.php HTTP/1.0" 404 - 0.0022
+E, [2016-05-03T22:15:24.521508 #29408] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-03T22:15:24.521617 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-03T22:15:24.521702 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-03T22:15:24.521805 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-03T22:15:24.521858 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-03T22:15:24.521905 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-03T22:15:24.521951 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-03T22:15:24.522003 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-03T22:15:24.522056 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-03T22:15:24.522101 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-03T22:15:24.522178 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-03T22:15:24.522225 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-03T22:15:24.522302 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+71.6.146.186 - - [04/May/2016:00:47:43 +0900] "GET / HTTP/1.0" 404 - 0.0011
+71.6.146.186 - - [04/May/2016:00:47:43 +0900] "GET /sitemap.xml HTTP/1.0" 404 - 0.0009
+71.6.146.186 - - [04/May/2016:00:48:14 +0900] "GET / HTTP/1.0" 404 - 0.0017
+71.6.146.186 - - [04/May/2016:00:48:19 +0900] "GET /sitemap.xml HTTP/1.0" 404 - 0.0017
+69.197.185.20 - - [04/May/2016:08:26:55 +0900] "GET / HTTP/1.0" 404 - 0.0023
+203.104.146.67 - - [04/May/2016:14:19:00 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0793
+184.105.139.68 - - [04/May/2016:17:19:52 +0900] "GET / HTTP/1.0" 404 - 0.0027
+42.159.144.101 - - [04/May/2016:17:26:04 +0900] "GET /images/G/01/x-locale/common/transparent-pixel._CB386942464_.gif HTTP/1.0" 404 - 0.0050
+184.105.139.68 - - [04/May/2016:17:27:12 +0900] "GET / HTTP/1.0" 404 - 0.0017
+192.99.144.140 - - [04/May/2016:20:08:13 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0024
+192.99.144.140 - - [05/May/2016:09:44:12 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0021
+192.99.150.120 - - [05/May/2016:10:32:08 +0900] "GET / HTTP/1.0" 404 - 0.0032
+141.212.122.145 - - [05/May/2016:11:43:11 +0900] "GET / HTTP/1.0" 404 - 0.0023
+203.104.146.68 - - [05/May/2016:17:30:45 +0900] "POST /bot-game HTTP/1.0" 500 118191 0.3709
+203.104.146.69 - - [05/May/2016:17:30:49 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0815
+203.104.146.70 - - [05/May/2016:17:31:02 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0721
+203.104.146.67 - - [05/May/2016:17:31:07 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0635
+203.104.146.68 - - [05/May/2016:17:31:11 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0656
+203.104.146.69 - - [05/May/2016:17:32:35 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0936
+203.104.146.70 - - [05/May/2016:17:32:48 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1732
+203.104.146.67 - - [05/May/2016:17:32:54 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0819
+203.104.146.68 - - [05/May/2016:17:32:58 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1631
+203.104.146.69 - - [05/May/2016:17:33:02 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0873
+203.104.146.70 - - [05/May/2016:17:33:08 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1667
+203.104.146.67 - - [05/May/2016:17:33:14 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1146
+203.104.146.68 - - [05/May/2016:17:34:49 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0862
+203.104.146.69 - - [05/May/2016:17:34:55 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0626
+203.104.146.70 - - [05/May/2016:17:34:59 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0811
+203.104.146.67 - - [05/May/2016:17:35:44 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0791
+203.104.146.68 - - [05/May/2016:17:35:52 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0814
+203.104.146.69 - - [05/May/2016:17:36:57 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0828
+203.104.146.70 - - [05/May/2016:17:37:04 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0730
+203.104.146.67 - - [05/May/2016:17:37:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0805
+203.104.146.68 - - [05/May/2016:17:37:17 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0787
+203.104.146.69 - - [05/May/2016:17:37:23 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0484
+203.104.146.70 - - [05/May/2016:17:37:28 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0716
+203.104.146.67 - - [05/May/2016:17:37:38 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0783
+203.104.146.68 - - [05/May/2016:17:38:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1026
+203.104.146.69 - - [05/May/2016:17:39:17 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0813
+203.104.146.70 - - [05/May/2016:17:39:26 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0795
+203.104.146.67 - - [05/May/2016:17:39:52 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0864
+203.104.146.68 - - [05/May/2016:17:39:54 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0734
+203.104.146.69 - - [05/May/2016:17:40:07 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0826
+203.104.146.70 - - [05/May/2016:17:40:12 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0782
+203.104.146.67 - - [05/May/2016:17:43:14 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0779
+203.104.146.68 - - [05/May/2016:17:43:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0556
+203.104.146.69 - - [05/May/2016:17:43:26 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0881
+203.104.146.67 - - [05/May/2016:17:47:32 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0560
+203.104.146.70 - - [05/May/2016:17:50:03 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0546
+203.104.146.67 - - [05/May/2016:17:50:11 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0765
+203.104.146.68 - - [05/May/2016:17:50:38 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0556
+203.104.146.69 - - [05/May/2016:17:50:44 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0799
+203.104.146.70 - - [05/May/2016:17:50:59 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0875
+203.104.146.67 - - [05/May/2016:17:51:00 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0805
+203.104.146.68 - - [05/May/2016:17:51:05 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0848
+203.104.146.69 - - [05/May/2016:17:51:09 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0532
+203.104.146.70 - - [05/May/2016:17:51:17 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0773
+203.104.146.67 - - [05/May/2016:17:51:21 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0803
+203.104.146.68 - - [05/May/2016:17:51:27 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0495
+203.104.146.69 - - [05/May/2016:17:51:30 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0805
+66.249.73.235 - - [05/May/2016:17:55:58 +0900] "GET / HTTP/1.0" 404 - 0.0017
+203.104.146.70 - - [05/May/2016:17:56:41 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0767
+203.104.146.67 - - [05/May/2016:17:57:02 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0518
+203.104.146.68 - - [05/May/2016:17:57:15 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0898
+203.104.146.69 - - [05/May/2016:18:01:20 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1245
+203.104.146.69 - - [05/May/2016:18:10:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0597
+192.99.144.140 - - [05/May/2016:18:46:31 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0010
+66.249.73.243 - - [05/May/2016:19:28:34 +0900] "GET / HTTP/1.0" 404 - 0.0045
+203.104.146.69 - - [05/May/2016:19:53:10 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0840
+203.104.146.70 - - [05/May/2016:19:53:25 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0807
+203.104.146.67 - - [05/May/2016:19:54:55 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1079
+203.104.146.68 - - [05/May/2016:19:55:01 +0900] "POST /bot-game HTTP/1.0" 200 - 0.6627
+74.82.47.4 - - [05/May/2016:20:08:01 +0900] "GET / HTTP/1.0" 404 - 0.0017
+74.82.47.4 - - [05/May/2016:20:14:55 +0900] "GET / HTTP/1.0" 404 - 0.0058
+185.92.72.32 - - [05/May/2016:21:01:24 +0900] "GET / HTTP/1.0" 404 - 0.0032
+185.92.72.32 - - [05/May/2016:21:01:25 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0018
+207.244.76.204 - - [06/May/2016:02:02:35 +0900] "GET /a2billing/ HTTP/1.0" 404 - 0.0019
+207.244.76.204 - - [06/May/2016:02:06:14 +0900] "GET /a2billing/ HTTP/1.0" 404 - 0.0023
+157.55.39.69 - - [06/May/2016:04:36:55 +0900] "GET /sitemap/ HTTP/1.0" 404 - 0.0026
+66.249.73.243 - - [06/May/2016:05:40:33 +0900] "GET / HTTP/1.0" 404 - 0.0021
+169.54.233.118 - - [06/May/2016:08:12:08 +0900] "GET / HTTP/1.0" 404 - 0.0019
+192.99.144.140 - - [06/May/2016:10:15:15 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0033
+203.104.146.69 - - [06/May/2016:11:05:41 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0889
+203.104.146.70 - - [06/May/2016:11:07:50 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0931
+192.99.150.120 - - [06/May/2016:13:22:35 +0900] "GET / HTTP/1.0" 404 - 0.0020
+216.218.206.68 - - [06/May/2016:18:49:19 +0900] "GET / HTTP/1.0" 404 - 0.0052
+216.218.206.68 - - [06/May/2016:18:49:59 +0900] "GET / HTTP/1.0" 404 - 0.0022
+112.124.20.21 - - [06/May/2016:19:39:35 +0900] "GET /console/login/LoginForm.jsp HTTP/1.0" 404 - 0.0018
+199.115.117.118 - - [07/May/2016:01:44:07 +0900] "GET /recordings/theme/iefixes.css HTTP/1.0" 404 - 0.0027
+211.140.169.244 - - [07/May/2016:03:34:32 +0900] "GET /phpMyAdmin HTTP/1.0" 404 - 0.0022
+83.233.72.144 - - [07/May/2016:05:34:32 +0900] "GET /wp-content/plugins/showbiz/js/showbiz_admin.js HTTP/1.0" 404 - 0.0051
+192.99.144.140 - - [07/May/2016:06:18:46 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0032
+107.150.32.60 - - [07/May/2016:09:16:34 +0900] "GET / HTTP/1.0" 404 - 0.0013
+192.99.144.140 - - [07/May/2016:10:49:09 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0022
+69.30.198.148 - - [07/May/2016:12:16:14 +0900] "GET / HTTP/1.0" 404 - 0.0026
+74.91.20.194 - - [07/May/2016:13:05:15 +0900] "GET / HTTP/1.0" 404 - 0.0021
+52.67.62.205 - - [07/May/2016:14:07:20 +0900] "HEAD /web-console/ServerInfo.jsp HTTP/1.0" 404 - 0.0026
+E, [2016-05-07T14:07:20.639955 #29408] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-07T14:07:20.640072 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-07T14:07:20.640141 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-07T14:07:20.640194 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-07T14:07:20.640253 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-07T14:07:20.640323 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-07T14:07:20.640378 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-07T14:07:20.640430 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-07T14:07:20.640515 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-07T14:07:20.640614 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-07T14:07:20.640770 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-07T14:07:20.640839 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-07T14:07:20.640890 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+52.67.62.205 - - [07/May/2016:14:07:21 +0900] "HEAD /jmx-console/HtmlAdaptor?action=inspectMBean&name=jboss.system:type=ServerInfo HTTP/1.0" 404 - 0.0022
+E, [2016-05-07T14:07:21.774376 #29408] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-07T14:07:21.774481 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-07T14:07:21.774565 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-07T14:07:21.774615 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-07T14:07:21.774670 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-07T14:07:21.774717 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-07T14:07:21.774875 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-07T14:07:21.774931 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-07T14:07:21.774988 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-07T14:07:21.775097 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-07T14:07:21.775151 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-07T14:07:21.775206 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-07T14:07:21.775260 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+52.67.62.205 - - [07/May/2016:14:07:22 +0900] "HEAD /invoker/JMXInvokerServlet HTTP/1.0" 404 - 0.0041
+E, [2016-05-07T14:07:22.881978 #29408] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-07T14:07:22.882127 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-07T14:07:22.882198 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-07T14:07:22.882263 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-07T14:07:22.882405 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-07T14:07:22.882470 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-07T14:07:22.882572 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-07T14:07:22.882653 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-07T14:07:22.882718 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-07T14:07:22.882821 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-07T14:07:22.883004 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-07T14:07:22.883059 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-07T14:07:22.883105 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+184.105.247.194 - - [07/May/2016:16:28:11 +0900] "GET / HTTP/1.0" 404 - 0.0022
+192.99.144.140 - - [07/May/2016:16:29:26 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0026
+184.105.247.194 - - [07/May/2016:16:31:22 +0900] "GET / HTTP/1.0" 404 - 0.0033
+203.104.146.67 - - [07/May/2016:23:14:37 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1158
+54.211.0.36 - - [08/May/2016:02:56:32 +0900] "GET / HTTP/1.0" 404 - 0.0013
+54.211.0.36 - - [08/May/2016:02:57:12 +0900] "GET / HTTP/1.0" 404 - 0.0021
+199.115.117.118 - - [08/May/2016:10:27:02 +0900] "GET /recordings/theme/iefixes.css HTTP/1.0" 404 - 0.0017
+141.212.122.193 - - [08/May/2016:17:19:37 +0900] "GET / HTTP/1.0" 404 - 0.0013
+167.114.233.118 - - [08/May/2016:18:37:13 +0900] "GET / HTTP/1.0" 404 - 0.0019
+66.249.64.93 - - [08/May/2016:19:28:35 +0900] "GET / HTTP/1.0" 404 - 0.0020
+184.105.247.194 - - [08/May/2016:21:59:35 +0900] "GET / HTTP/1.0" 404 - 0.0027
+184.105.247.194 - - [08/May/2016:22:08:30 +0900] "GET / HTTP/1.0" 404 - 0.0017
+185.92.72.32 - - [08/May/2016:23:44:52 +0900] "GET / HTTP/1.0" 404 - 0.0053
+185.92.72.32 - - [08/May/2016:23:44:55 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0038
+192.99.144.140 - - [08/May/2016:23:53:18 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0028
+106.184.3.122 - - [09/May/2016:04:10:15 +0900] "GET /echo.php?info=20160509031012 HTTP/1.0" 404 - 0.0020
+89.248.174.4 - - [09/May/2016:08:24:25 +0900] "GET /xmlrpc.php HTTP/1.0" 404 - 0.0021
+192.99.144.140 - - [09/May/2016:09:00:20 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0027
+195.245.112.158 - - [09/May/2016:09:30:07 +0900] "GET / HTTP/1.0" 404 - 0.0057
+69.58.178.58 - - [09/May/2016:11:37:48 +0900] "GET / HTTP/1.0" 404 - 0.0036
+69.58.178.58 - - [09/May/2016:11:37:57 +0900] "GET / HTTP/1.0" 404 - 0.0025
+172.93.98.2 - - [09/May/2016:12:26:13 +0900] "GET / HTTP/1.0" 404 - 0.0016
+125.77.18.85 - - [09/May/2016:15:40:47 +0900] "GET /phpMyAdmin HTTP/1.0" 404 - 0.0018
+216.218.206.68 - - [09/May/2016:15:56:26 +0900] "GET / HTTP/1.0" 404 - 0.0050
+216.218.206.68 - - [09/May/2016:16:03:26 +0900] "GET / HTTP/1.0" 404 - 0.0013
+207.46.13.72 - - [09/May/2016:17:03:02 +0900] "GET /j/shop/withdrawal HTTP/1.0" 404 - 0.0040
+125.77.18.85 - - [09/May/2016:17:06:57 +0900] "GET /phpMyAdmin HTTP/1.0" 404 - 0.0024
+203.104.146.67 - - [09/May/2016:18:43:29 +0900] "POST /bot-game HTTP/1.0" 500 118227 0.4095
+203.104.146.68 - - [09/May/2016:18:54:33 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1500
+203.104.146.70 - - [09/May/2016:19:01:47 +0900] "POST /bot-game HTTP/1.0" 500 110038 0.4000
+169.54.233.124 - - [10/May/2016:03:04:57 +0900] "GET / HTTP/1.0" 404 - 0.0055
+109.92.136.54 - - [10/May/2016:03:53:34 +0900] "OPTIONS / HTTP/1.0" 404 - 0.0013
+192.99.150.120 - - [10/May/2016:05:01:26 +0900] "GET / HTTP/1.0" 404 - 0.0025
+218.249.219.2 - - [10/May/2016:14:04:03 +0900] "GET / HTTP/1.0" 404 - 0.0046
+54.211.44.121 - - [10/May/2016:17:50:53 +0900] "GET / HTTP/1.0" 404 - 0.0038
+194.28.115.230 - - [10/May/2016:18:32:19 +0900] "GET / HTTP/1.0" 404 - 0.0021
+194.28.115.230 - - [10/May/2016:18:32:20 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0016
+74.82.47.2 - - [10/May/2016:18:37:46 +0900] "GET / HTTP/1.0" 404 - 0.0021
+74.82.47.2 - - [10/May/2016:18:41:40 +0900] "GET / HTTP/1.0" 404 - 0.0020
+54.169.103.39 - - [10/May/2016:20:14:05 +0900] "GET / HTTP/1.0" 404 - 0.0019
+203.104.146.67 - - [10/May/2016:20:42:01 +0900] "POST /bot-game HTTP/1.0" 500 118227 0.3288
+203.104.146.68 - - [10/May/2016:20:42:05 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0997
+203.104.146.69 - - [10/May/2016:20:42:13 +0900] "POST /bot-game HTTP/1.0" 500 110022 0.3167
+203.104.146.70 - - [10/May/2016:20:42:32 +0900] "POST /bot-game HTTP/1.0" 500 109998 0.1987
+203.104.146.67 - - [10/May/2016:20:42:36 +0900] "POST /bot-game HTTP/1.0" 500 109980 0.3281
+203.104.146.68 - - [10/May/2016:20:42:38 +0900] "POST /bot-game HTTP/1.0" 500 109980 0.2591
+203.104.146.69 - - [10/May/2016:20:42:40 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0785
+203.104.146.70 - - [10/May/2016:20:42:40 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0881
+203.104.146.67 - - [10/May/2016:20:42:40 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0773
+203.104.146.68 - - [10/May/2016:20:42:41 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0688
+203.104.146.69 - - [10/May/2016:20:42:41 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0793
+203.104.146.70 - - [10/May/2016:20:42:45 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0576
+203.104.146.67 - - [10/May/2016:20:42:50 +0900] "POST /bot-game HTTP/1.0" 500 109980 0.2717
+203.104.146.68 - - [10/May/2016:20:42:56 +0900] "POST /bot-game HTTP/1.0" 500 109992 0.2566
+66.240.213.93 - - [11/May/2016:03:41:50 +0900] "GET / HTTP/1.0" 404 - 0.0016
+82.179.12.174 - - [11/May/2016:05:48:05 +0900] "GET // HTTP/1.0" 404 - 0.0022
+192.99.150.120 - - [11/May/2016:06:30:28 +0900] "GET / HTTP/1.0" 404 - 0.0020
+137.226.113.7 - - [11/May/2016:07:55:28 +0900] "GET / HTTP/1.0" 404 - 0.0021
+137.226.113.7 - - [11/May/2016:07:55:29 +0900] "GET /YesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScann HTTP/1.0" 404 - 0.0020
+169.54.244.82 - - [11/May/2016:07:57:02 +0900] "GET / HTTP/1.0" 404 - 0.0018
+157.55.39.60 - - [11/May/2016:09:32:56 +0900] "GET / HTTP/1.0" 404 - 0.0020
+89.248.174.4 - - [11/May/2016:12:37:05 +0900] "GET / HTTP/1.0" 404 - 0.0020
+54.211.79.90 - - [11/May/2016:13:22:53 +0900] "GET / HTTP/1.0" 404 - 0.0018
+222.85.138.75 - - [11/May/2016:13:43:51 +0900] "HEAD / HTTP/1.0" 404 - 0.0029
+E, [2016-05-11T13:43:51.676550 #29405] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-11T13:43:51.676644 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-11T13:43:51.676696 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-11T13:43:51.676791 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-11T13:43:51.676846 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-11T13:43:51.676897 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-11T13:43:51.676981 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-11T13:43:51.677068 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-11T13:43:51.677120 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-11T13:43:51.677166 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-11T13:43:51.677210 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-11T13:43:51.677324 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-11T13:43:51.677373 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+141.212.122.161 - - [11/May/2016:15:49:03 +0900] "GET / HTTP/1.0" 404 - 0.0021
+66.249.79.215 - - [11/May/2016:19:28:36 +0900] "GET / HTTP/1.0" 404 - 0.0011
+208.67.1.194 - - [11/May/2016:19:30:47 +0900] "GET /muieblackcat HTTP/1.0" 404 - 0.0016
+208.67.1.194 - - [11/May/2016:19:30:47 +0900] "GET //phpMyAdmin/scripts/setup.php HTTP/1.0" 404 - 0.0018
+208.67.1.194 - - [11/May/2016:19:30:48 +0900] "GET //phpmyadmin/scripts/setup.php HTTP/1.0" 404 - 0.0018
+208.67.1.194 - - [11/May/2016:19:30:48 +0900] "GET //pma/scripts/setup.php HTTP/1.0" 404 - 0.0018
+208.67.1.194 - - [11/May/2016:19:30:48 +0900] "GET //myadmin/scripts/setup.php HTTP/1.0" 404 - 0.0022
+208.67.1.194 - - [11/May/2016:19:30:48 +0900] "GET //MyAdmin/scripts/setup.php HTTP/1.0" 404 - 0.0019
+45.55.168.90 - - [11/May/2016:20:50:38 +0900] "HEAD / HTTP/1.0" 404 - 0.0026
+E, [2016-05-11T20:50:38.504807 #29405] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-11T20:50:38.504909 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-11T20:50:38.504968 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-11T20:50:38.505060 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-11T20:50:38.505114 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-11T20:50:38.505163 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-11T20:50:38.505212 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-11T20:50:38.505261 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-11T20:50:38.505308 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-11T20:50:38.505356 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-11T20:50:38.505403 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-11T20:50:38.505451 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-11T20:50:38.505497 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+216.218.206.67 - - [11/May/2016:21:09:42 +0900] "GET / HTTP/1.0" 404 - 0.0021
+216.218.206.67 - - [11/May/2016:21:10:20 +0900] "GET / HTTP/1.0" 404 - 0.0017
+71.6.158.166 - - [12/May/2016:02:19:35 +0900] "GET / HTTP/1.0" 404 - 0.0019
+71.6.158.166 - - [12/May/2016:02:19:36 +0900] "GET /sitemap.xml HTTP/1.0" 404 - 0.0011
+52.77.219.52 - - [12/May/2016:04:26:19 +0900] "GET / HTTP/1.0" 404 - 0.0022
+217.70.19.83 - - [12/May/2016:08:15:19 +0900] "GET / HTTP/1.0" 404 - 0.0013
+107.150.46.37 - - [12/May/2016:11:14:56 +0900] "GET / HTTP/1.0" 404 - 0.0018
+45.55.192.126 - - [12/May/2016:12:38:08 +0900] "HEAD / HTTP/1.0" 404 - 0.0028
+E, [2016-05-12T12:38:08.876786 #29408] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-12T12:38:08.876893 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-12T12:38:08.876922 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-12T12:38:08.876989 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-12T12:38:08.877044 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-12T12:38:08.877091 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-12T12:38:08.877128 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-12T12:38:08.877206 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-12T12:38:08.877233 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-12T12:38:08.877309 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-12T12:38:08.877371 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-12T12:38:08.877438 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-12T12:38:08.877526 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+45.55.192.126 - - [12/May/2016:12:50:46 +0900] "HEAD / HTTP/1.0" 404 - 0.0015
+E, [2016-05-12T12:50:46.064551 #29408] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-12T12:50:46.064618 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-12T12:50:46.064651 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-12T12:50:46.064676 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-12T12:50:46.064701 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-12T12:50:46.064748 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-12T12:50:46.064789 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-12T12:50:46.064833 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-12T12:50:46.064863 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-12T12:50:46.064888 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-12T12:50:46.064911 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-12T12:50:46.064935 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-12T12:50:46.064958 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+74.82.47.3 - - [12/May/2016:13:00:18 +0900] "GET / HTTP/1.0" 404 - 0.0016
+74.82.47.3 - - [12/May/2016:13:01:45 +0900] "GET / HTTP/1.0" 404 - 0.0018
+74.91.20.197 - - [12/May/2016:18:34:38 +0900] "GET / HTTP/1.0" 404 - 0.0018
+154.74.130.69 - - [12/May/2016:19:26:20 +0900] "HEAD / HTTP/1.0" 404 - 0.0251
+E, [2016-05-12T19:26:20.564974 #29408] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-12T19:26:20.565075 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-12T19:26:20.565138 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-12T19:26:20.565191 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-12T19:26:20.565240 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-12T19:26:20.565288 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-12T19:26:20.565337 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-12T19:26:20.565446 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-12T19:26:20.565550 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-12T19:26:20.565653 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-12T19:26:20.565761 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-12T19:26:20.565817 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-12T19:26:20.565865 #29408] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+194.28.115.232 - - [12/May/2016:19:49:02 +0900] "GET / HTTP/1.0" 404 - 0.0011
+194.28.115.232 - - [12/May/2016:19:49:02 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0027
+203.104.146.69 - - [12/May/2016:20:22:27 +0900] "POST /bot-game HTTP/1.0" 500 119812 0.3637
+203.104.146.69 - - [12/May/2016:20:24:16 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1094
+203.104.146.70 - - [12/May/2016:20:24:22 +0900] "POST /bot-game HTTP/1.0" 500 123455 0.3867
+203.104.146.67 - - [12/May/2016:20:25:04 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1580
+203.104.146.68 - - [12/May/2016:20:25:07 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1004
+203.104.146.69 - - [12/May/2016:20:25:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1375
+203.104.146.70 - - [12/May/2016:20:26:07 +0900] "POST /bot-game HTTP/1.0" 200 - 0.2073
+203.104.146.67 - - [12/May/2016:20:27:04 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1387
+203.104.146.68 - - [12/May/2016:20:28:29 +0900] "POST /bot-game HTTP/1.0" 500 118260 0.4392
+211.140.169.244 - - [12/May/2016:20:28:44 +0900] "GET /phpMyAdmin HTTP/1.0" 404 - 0.0020
+203.104.146.69 - - [12/May/2016:20:28:44 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0869
+203.104.146.70 - - [12/May/2016:20:28:49 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0927
+203.104.146.67 - - [12/May/2016:20:28:57 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1140
+203.104.146.68 - - [12/May/2016:20:29:01 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0744
+203.104.146.69 - - [12/May/2016:20:29:06 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0709
+203.104.146.70 - - [12/May/2016:20:30:31 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1384
+203.104.146.67 - - [12/May/2016:20:31:15 +0900] "POST /bot-game HTTP/1.0" 500 107763 0.3704
+203.104.146.68 - - [12/May/2016:20:31:58 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1360
+203.104.146.69 - - [12/May/2016:20:32:24 +0900] "POST /bot-game HTTP/1.0" 500 107776 0.3279
+203.104.146.70 - - [12/May/2016:20:33:39 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1627
+203.104.146.67 - - [12/May/2016:20:34:38 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0964
+203.104.146.68 - - [12/May/2016:20:34:47 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1407
+203.104.146.69 - - [12/May/2016:20:35:49 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1413
+203.104.146.69 - - [12/May/2016:20:39:57 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1456
+203.104.146.70 - - [12/May/2016:20:41:39 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1432
+203.104.146.67 - - [12/May/2016:20:42:30 +0900] "POST /bot-game HTTP/1.0" 500 119587 0.4993
+203.104.146.67 - - [12/May/2016:20:46:50 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0778
+203.104.146.68 - - [12/May/2016:20:48:20 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0521
+203.104.146.69 - - [12/May/2016:20:48:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0523
+203.104.146.70 - - [12/May/2016:20:48:25 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1447
+203.104.146.67 - - [12/May/2016:20:48:26 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0800
+203.104.146.68 - - [12/May/2016:20:48:28 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0795
+203.104.146.69 - - [12/May/2016:20:48:29 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0752
+203.104.146.70 - - [12/May/2016:20:48:32 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0840
+203.104.146.67 - - [12/May/2016:20:49:02 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1598
+203.104.146.68 - - [12/May/2016:20:49:17 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1575
+203.104.146.69 - - [12/May/2016:20:50:24 +0900] "POST /bot-game HTTP/1.0" 500 119587 0.6068
+203.104.146.70 - - [12/May/2016:20:50:50 +0900] "POST /bot-game HTTP/1.0" 500 119587 0.4758
+203.104.146.67 - - [12/May/2016:20:50:53 +0900] "POST /bot-game HTTP/1.0" 500 119587 0.5050
+203.104.146.68 - - [12/May/2016:20:50:55 +0900] "POST /bot-game HTTP/1.0" 500 119587 0.4295
+203.104.146.69 - - [12/May/2016:20:51:24 +0900] "POST /bot-game HTTP/1.0" 500 119587 0.5538
+203.104.146.70 - - [12/May/2016:20:52:07 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1321
+203.104.146.67 - - [12/May/2016:20:52:43 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0982
+203.104.146.68 - - [12/May/2016:20:52:45 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0708
+203.104.146.69 - - [12/May/2016:20:52:47 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0841
+203.104.146.70 - - [12/May/2016:20:52:49 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0758
+203.104.146.67 - - [12/May/2016:20:52:51 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0651
+203.104.146.68 - - [12/May/2016:20:53:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1342
+203.104.146.69 - - [12/May/2016:20:54:23 +0900] "POST /bot-game HTTP/1.0" 500 107801 0.2715
+203.104.146.70 - - [12/May/2016:20:55:01 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1517
+203.104.146.67 - - [12/May/2016:20:56:12 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1245
+203.104.146.68 - - [12/May/2016:20:56:44 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1006
+203.104.146.69 - - [12/May/2016:20:56:48 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0879
+203.104.146.70 - - [12/May/2016:20:56:50 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0493
+203.104.146.67 - - [12/May/2016:20:56:52 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0994
+203.104.146.68 - - [12/May/2016:20:57:05 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0861
+203.104.146.69 - - [12/May/2016:20:57:12 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0801
+203.104.146.70 - - [12/May/2016:20:57:16 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0751
+203.104.146.67 - - [12/May/2016:20:57:18 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0780
+203.104.146.68 - - [12/May/2016:20:57:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0720
+203.104.146.69 - - [12/May/2016:20:58:02 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0748
+203.104.146.70 - - [12/May/2016:20:58:11 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1217
+203.104.146.67 - - [12/May/2016:20:58:14 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0838
+203.104.146.68 - - [12/May/2016:21:06:04 +0900] "POST /bot-game HTTP/1.0" 500 109224 0.3355
+203.104.146.69 - - [12/May/2016:21:07:45 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1918
+203.104.146.68 - - [12/May/2016:21:10:28 +0900] "POST /bot-game HTTP/1.0" 500 109341 0.3927
+203.104.146.69 - - [12/May/2016:21:10:40 +0900] "POST /bot-game HTTP/1.0" 500 109341 0.2080
+203.104.146.67 - - [12/May/2016:21:13:14 +0900] "POST /bot-game HTTP/1.0" 500 109341 0.4097
+203.104.146.68 - - [12/May/2016:21:13:22 +0900] "POST /bot-game HTTP/1.0" 500 109341 0.3400
+203.104.146.69 - - [12/May/2016:21:19:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0914
+203.104.146.70 - - [12/May/2016:21:19:32 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0852
+203.104.146.67 - - [12/May/2016:21:21:00 +0900] "POST /bot-game HTTP/1.0" 500 109341 0.2391
+203.104.146.68 - - [12/May/2016:21:21:27 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1857
+203.104.146.69 - - [12/May/2016:21:21:52 +0900] "POST /bot-game HTTP/1.0" 500 109341 0.2379
+203.104.146.67 - - [12/May/2016:21:25:46 +0900] "POST /bot-game HTTP/1.0" 500 118260 0.2838
+203.104.146.68 - - [12/May/2016:21:26:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0926
+203.104.146.70 - - [12/May/2016:21:27:58 +0900] "POST /bot-game HTTP/1.0" 500 109341 0.3193
+203.104.146.70 - - [12/May/2016:21:32:09 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1828
+203.104.146.67 - - [12/May/2016:21:32:24 +0900] "POST /bot-game HTTP/1.0" 500 109341 0.2859
+203.104.146.68 - - [12/May/2016:21:33:21 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1258
+203.104.146.69 - - [12/May/2016:21:33:33 +0900] "POST /bot-game HTTP/1.0" 500 109365 0.3993
+203.104.146.70 - - [12/May/2016:21:34:49 +0900] "POST /bot-game HTTP/1.0" 500 119721 0.4635
+203.104.146.67 - - [12/May/2016:21:36:37 +0900] "POST /bot-game HTTP/1.0" 500 118260 0.3409
+203.104.146.68 - - [12/May/2016:21:36:45 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1006
+203.104.146.69 - - [12/May/2016:21:36:58 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1003
+203.104.146.70 - - [12/May/2016:21:37:09 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0925
+203.104.146.67 - - [12/May/2016:21:37:18 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0875
+203.104.146.68 - - [12/May/2016:21:37:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0910
+203.104.146.69 - - [12/May/2016:21:37:34 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0863
+203.104.146.70 - - [12/May/2016:21:37:52 +0900] "POST /bot-game HTTP/1.0" 500 119721 0.3282
+203.104.146.67 - - [12/May/2016:21:38:01 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1124
+203.104.146.68 - - [12/May/2016:21:38:29 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0949
+203.104.146.69 - - [12/May/2016:21:38:47 +0900] "POST /bot-game HTTP/1.0" 500 119721 0.4427
+203.104.146.70 - - [12/May/2016:21:39:21 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0804
+203.104.146.67 - - [12/May/2016:21:39:27 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0641
+203.104.146.68 - - [12/May/2016:21:39:31 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0756
+203.104.146.69 - - [12/May/2016:21:39:36 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0733
+203.104.146.70 - - [12/May/2016:21:39:46 +0900] "POST /bot-game HTTP/1.0" 500 119721 0.2951
+203.104.146.67 - - [12/May/2016:21:41:33 +0900] "POST /bot-game HTTP/1.0" 500 100011 0.2264
+203.104.146.68 - - [12/May/2016:21:41:53 +0900] "POST /bot-game HTTP/1.0" 500 119711 0.4625
+203.104.146.69 - - [12/May/2016:21:42:39 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1408
+203.104.146.70 - - [12/May/2016:21:42:45 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0524
+203.104.146.67 - - [12/May/2016:21:43:21 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0911
+203.104.146.68 - - [12/May/2016:21:43:27 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0964
+203.104.146.69 - - [12/May/2016:21:43:30 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0867
+203.104.146.70 - - [12/May/2016:21:43:34 +0900] "POST /bot-game HTTP/1.0" 500 119699 0.4811
+203.104.146.67 - - [12/May/2016:21:43:37 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0868
+203.104.146.68 - - [12/May/2016:21:43:44 +0900] "POST /bot-game HTTP/1.0" 500 119721 0.5820
+203.104.146.69 - - [12/May/2016:21:43:50 +0900] "POST /bot-game HTTP/1.0" 500 119714 0.4314
+203.104.146.70 - - [12/May/2016:21:45:20 +0900] "POST /bot-game HTTP/1.0" 500 119720 0.5116
+203.104.146.67 - - [12/May/2016:21:48:25 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0880
+203.104.146.70 - - [12/May/2016:21:50:10 +0900] "POST /bot-game HTTP/1.0" 500 119720 0.4907
+203.104.146.67 - - [12/May/2016:21:50:36 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1344
+203.104.146.68 - - [12/May/2016:21:50:46 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0815
+203.104.146.69 - - [12/May/2016:21:50:48 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0800
+203.104.146.70 - - [12/May/2016:21:51:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0810
+203.104.146.67 - - [12/May/2016:21:52:16 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1006
+203.104.146.68 - - [12/May/2016:21:52:50 +0900] "POST /bot-game HTTP/1.0" 500 119721 0.5056
+203.104.146.69 - - [12/May/2016:21:53:00 +0900] "POST /bot-game HTTP/1.0" 500 119702 0.4909
+203.104.146.70 - - [12/May/2016:21:53:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0585
+203.104.146.67 - - [12/May/2016:21:53:41 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0740
+203.104.146.68 - - [12/May/2016:21:53:52 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0804
+203.104.146.69 - - [12/May/2016:21:53:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0756
+203.104.146.70 - - [12/May/2016:21:53:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0676
+203.104.146.67 - - [12/May/2016:21:54:04 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0766
+203.104.146.68 - - [12/May/2016:21:54:07 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0843
+203.104.146.69 - - [12/May/2016:21:54:10 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0659
+203.104.146.70 - - [12/May/2016:21:54:15 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0488
+203.104.146.67 - - [12/May/2016:21:54:35 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0778
+203.104.146.68 - - [12/May/2016:21:54:43 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0715
+203.104.146.69 - - [12/May/2016:21:54:47 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0759
+203.104.146.70 - - [12/May/2016:21:54:50 +0900] "POST /bot-game HTTP/1.0" 500 119721 0.3586
+203.104.146.67 - - [12/May/2016:21:54:54 +0900] "POST /bot-game HTTP/1.0" 500 119694 0.4035
+203.104.146.68 - - [12/May/2016:21:54:58 +0900] "POST /bot-game HTTP/1.0" 500 107970 0.2557
+203.104.146.69 - - [12/May/2016:21:55:04 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0534
+203.104.146.70 - - [12/May/2016:21:55:11 +0900] "POST /bot-game HTTP/1.0" 500 107988 0.2157
+203.104.146.67 - - [12/May/2016:21:55:18 +0900] "POST /bot-game HTTP/1.0" 500 107972 0.2785
+203.104.146.68 - - [12/May/2016:21:55:24 +0900] "POST /bot-game HTTP/1.0" 500 107964 0.3175
+203.104.146.69 - - [12/May/2016:21:55:26 +0900] "POST /bot-game HTTP/1.0" 500 107964 0.1606
+203.104.146.70 - - [12/May/2016:21:55:27 +0900] "POST /bot-game HTTP/1.0" 500 107964 0.3083
+203.104.146.67 - - [12/May/2016:21:56:09 +0900] "POST /bot-game HTTP/1.0" 500 119721 0.5412
+203.104.146.68 - - [12/May/2016:21:56:36 +0900] "POST /bot-game HTTP/1.0" 500 119720 0.3400
+203.104.146.69 - - [12/May/2016:21:57:08 +0900] "POST /bot-game HTTP/1.0" 500 119721 0.4448
+203.104.146.70 - - [12/May/2016:22:08:23 +0900] "POST /bot-game HTTP/1.0" 500 119892 0.5056
+203.104.146.67 - - [12/May/2016:22:08:37 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1381
+203.104.146.68 - - [12/May/2016:22:08:45 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0767
+203.104.146.69 - - [12/May/2016:22:09:05 +0900] "POST /bot-game HTTP/1.0" 500 119758 0.4497
+203.104.146.70 - - [12/May/2016:22:09:22 +0900] "POST /bot-game HTTP/1.0" 500 119898 0.5008
+203.104.146.67 - - [12/May/2016:22:09:34 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0928
+203.104.146.68 - - [12/May/2016:22:09:42 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1070
+203.104.146.69 - - [12/May/2016:22:10:15 +0900] "POST /bot-game HTTP/1.0" 500 119758 0.5313
+203.104.146.70 - - [12/May/2016:22:13:17 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0816
+203.104.146.67 - - [12/May/2016:22:13:24 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0920
+203.104.146.68 - - [12/May/2016:22:13:35 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0935
+203.104.146.69 - - [12/May/2016:22:13:41 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0721
+203.104.146.70 - - [12/May/2016:22:13:45 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0785
+203.104.146.67 - - [12/May/2016:22:13:51 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0533
+203.104.146.68 - - [12/May/2016:22:13:54 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0917
+203.104.146.69 - - [12/May/2016:22:13:59 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0723
+203.104.146.70 - - [12/May/2016:22:13:59 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1081
+203.104.146.67 - - [12/May/2016:22:14:08 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0761
+203.104.146.68 - - [12/May/2016:22:14:15 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0550
+203.104.146.69 - - [12/May/2016:22:14:29 +0900] "POST /bot-game HTTP/1.0" 500 119886 0.4172
+203.104.146.70 - - [12/May/2016:22:14:35 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0852
+203.104.146.67 - - [12/May/2016:22:14:39 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0713
+203.104.146.68 - - [12/May/2016:22:14:40 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1081
+203.104.146.69 - - [12/May/2016:22:14:50 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0813
+203.104.146.70 - - [12/May/2016:22:15:08 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0722
+203.104.146.67 - - [12/May/2016:22:15:18 +0900] "POST /bot-game HTTP/1.0" 500 119758 0.4788
+203.104.146.68 - - [12/May/2016:22:15:22 +0900] "POST /bot-game HTTP/1.0" 500 119886 0.4200
+203.104.146.69 - - [12/May/2016:22:15:34 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0858
+203.104.146.70 - - [12/May/2016:22:15:34 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0992
+203.104.146.67 - - [12/May/2016:22:15:40 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0819
+203.104.146.68 - - [12/May/2016:22:15:46 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0886
+203.104.146.69 - - [12/May/2016:22:15:48 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0951
+203.104.146.70 - - [12/May/2016:22:15:52 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0781
+203.104.146.67 - - [12/May/2016:22:15:54 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0879
+203.104.146.68 - - [12/May/2016:22:15:59 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0658
+203.104.146.69 - - [12/May/2016:22:16:01 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0622
+203.104.146.70 - - [12/May/2016:22:16:22 +0900] "POST /bot-game HTTP/1.0" 500 119758 0.4422
+203.104.146.67 - - [12/May/2016:22:34:37 +0900] "POST /bot-game HTTP/1.0" 500 107889 0.2557
+203.104.146.68 - - [12/May/2016:22:35:17 +0900] "POST /bot-game HTTP/1.0" 500 107789 0.2901
+203.104.146.70 - - [12/May/2016:22:36:02 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1048
+203.104.146.67 - - [12/May/2016:22:36:07 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0689
+203.104.146.68 - - [12/May/2016:22:53:32 +0900] "POST /bot-game HTTP/1.0" 500 93807 0.2708
+203.104.146.69 - - [12/May/2016:22:54:43 +0900] "POST /bot-game HTTP/1.0" 500 111382 0.3549
+203.104.146.70 - - [12/May/2016:22:55:37 +0900] "POST /bot-game HTTP/1.0" 500 119914 0.5326
+203.104.146.67 - - [12/May/2016:22:55:41 +0900] "POST /bot-game HTTP/1.0" 500 119780 0.5881
+203.104.146.68 - - [12/May/2016:22:57:34 +0900] "POST /bot-game HTTP/1.0" 500 111382 0.2554
+203.104.146.69 - - [12/May/2016:22:58:55 +0900] "POST /bot-game HTTP/1.0" 500 111382 0.3376
+203.104.146.68 - - [12/May/2016:23:01:59 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1332
+203.104.146.69 - - [12/May/2016:23:02:15 +0900] "POST /bot-game HTTP/1.0" 500 119884 0.4301
+203.104.146.70 - - [12/May/2016:23:02:19 +0900] "POST /bot-game HTTP/1.0" 500 119780 0.3664
+203.104.146.67 - - [12/May/2016:23:02:28 +0900] "POST /bot-game HTTP/1.0" 500 119884 0.3734
+203.104.146.68 - - [12/May/2016:23:02:31 +0900] "POST /bot-game HTTP/1.0" 500 111382 0.2634
+203.104.146.69 - - [12/May/2016:23:05:08 +0900] "POST /bot-game HTTP/1.0" 500 111382 0.3057
+203.104.146.70 - - [12/May/2016:23:05:16 +0900] "POST /bot-game HTTP/1.0" 500 111382 0.2913
+203.104.146.67 - - [12/May/2016:23:06:24 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1637
+203.104.146.68 - - [12/May/2016:23:06:36 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0778
+203.104.146.69 - - [12/May/2016:23:06:48 +0900] "POST /bot-game HTTP/1.0" 500 118426 0.2567
+203.104.146.70 - - [12/May/2016:23:07:10 +0900] "POST /bot-game HTTP/1.0" 500 118426 0.2996
+203.104.146.67 - - [12/May/2016:23:07:38 +0900] "POST /bot-game HTTP/1.0" 500 118426 0.4143
+203.104.146.68 - - [12/May/2016:23:09:04 +0900] "POST /bot-game HTTP/1.0" 500 118426 0.4622
+203.104.146.69 - - [12/May/2016:23:09:18 +0900] "POST /bot-game HTTP/1.0" 500 118426 0.3955
+203.104.146.70 - - [12/May/2016:23:09:37 +0900] "POST /bot-game HTTP/1.0" 500 118426 0.4735
+203.104.146.67 - - [12/May/2016:23:10:45 +0900] "POST /bot-game HTTP/1.0" 500 118426 0.4846
+203.104.146.68 - - [12/May/2016:23:13:50 +0900] "POST /bot-game HTTP/1.0" 500 119491 0.4985
+203.104.146.68 - - [12/May/2016:23:17:29 +0900] "POST /bot-game HTTP/1.0" 500 119491 0.5452
+203.104.146.67 - - [12/May/2016:23:19:39 +0900] "POST /bot-game HTTP/1.0" 500 119491 0.3123
+203.104.146.68 - - [12/May/2016:23:19:42 +0900] "POST /bot-game HTTP/1.0" 500 119491 0.3920
+203.104.146.69 - - [12/May/2016:23:22:14 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1328
+203.104.146.70 - - [12/May/2016:23:23:50 +0900] "POST /bot-game HTTP/1.0" 500 119491 0.4056
+203.104.146.69 - - [12/May/2016:23:27:03 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1450
+203.104.146.70 - - [12/May/2016:23:27:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1085
+203.104.146.67 - - [12/May/2016:23:27:28 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0775
+203.104.146.68 - - [12/May/2016:23:27:36 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0729
+203.104.146.69 - - [12/May/2016:23:27:40 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0552
+203.104.146.70 - - [12/May/2016:23:27:46 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0736
+203.104.146.67 - - [12/May/2016:23:29:10 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0731
+203.104.146.68 - - [12/May/2016:23:49:17 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0489
+203.104.146.69 - - [12/May/2016:23:49:38 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1103
+203.104.146.70 - - [13/May/2016:00:21:46 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1073
+187.160.167.131 - - [13/May/2016:02:29:28 +0900] "GET /cgi/common.cgi HTTP/1.0" 404 - 0.0010
+187.160.167.131 - - [13/May/2016:02:29:29 +0900] "GET /stssys.htm HTTP/1.0" 404 - 0.0015
+187.160.167.131 - - [13/May/2016:02:29:29 +0900] "GET / HTTP/1.0" 404 - 0.0019
+203.104.146.67 - - [13/May/2016:09:38:04 +0900] "POST /bot-game HTTP/1.0" 500 119885 0.4656
+203.104.146.68 - - [13/May/2016:09:38:14 +0900] "POST /bot-game HTTP/1.0" 500 119787 0.3340
+203.104.146.69 - - [13/May/2016:09:38:18 +0900] "POST /bot-game HTTP/1.0" 500 119885 0.3654
+203.104.146.70 - - [13/May/2016:09:38:29 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0632
+203.104.146.67 - - [13/May/2016:09:39:05 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0742
+203.104.146.68 - - [13/May/2016:09:39:21 +0900] "POST /bot-game HTTP/1.0" 500 119787 0.4778
+203.104.146.70 - - [13/May/2016:12:48:20 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0862
+203.104.146.67 - - [13/May/2016:12:48:34 +0900] "POST /bot-game HTTP/1.0" 500 119787 0.3570
+203.104.146.68 - - [13/May/2016:12:48:41 +0900] "POST /bot-game HTTP/1.0" 500 119909 0.5042
+203.104.146.69 - - [13/May/2016:12:54:26 +0900] "POST /bot-game HTTP/1.0" 500 119787 0.4966
+203.104.146.70 - - [13/May/2016:12:54:36 +0900] "POST /bot-game HTTP/1.0" 500 119891 0.4854
+203.104.146.67 - - [13/May/2016:12:54:41 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0805
+203.104.146.68 - - [13/May/2016:12:54:48 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0710
+203.104.146.69 - - [13/May/2016:12:55:18 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0539
+203.104.146.70 - - [13/May/2016:12:55:21 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0828
+157.55.39.42 - - [13/May/2016:12:58:50 +0900] "GET /%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/ HTTP/1.0" 404 - 0.0009
+222.186.23.112 - - [13/May/2016:13:20:52 +0900] "GET /phpMyAdmin HTTP/1.0" 404 - 0.0010
+74.82.47.3 - - [13/May/2016:14:07:10 +0900] "GET / HTTP/1.0" 404 - 0.0018
+74.82.47.3 - - [13/May/2016:14:10:56 +0900] "GET / HTTP/1.0" 404 - 0.0018
+192.99.144.140 - - [13/May/2016:18:23:15 +0900] "PROPFIND /webdav/ HTTP/1.0" 404 - 0.0019
+221.231.6.195 - - [13/May/2016:18:34:57 +0900] "OPTIONS / HTTP/1.0" 404 - 0.0025
+202.47.24.180 - - [13/May/2016:21:49:37 +0900] "GET / HTTP/1.0" 404 - 0.0021
+157.55.39.7 - - [13/May/2016:22:52:20 +0900] "GET /%E3%83%90%E3%82%A4%E3%82%AF%E9%83%A8%E5%93%81%E7%94%A8%E5%93%81-%E8%B2%A9%E5%A3%B2%E5%8F%AF%E8%83%BD%E5%93%81/ HTTP/1.0" 404 - 0.0010
+141.212.122.161 - - [14/May/2016:00:15:06 +0900] "GET / HTTP/1.0" 404 - 0.0017
+52.6.12.33 - - [14/May/2016:03:05:52 +0900] "HEAD / HTTP/1.0" 404 - 0.0012
+E, [2016-05-14T03:05:52.606375 #29405] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-14T03:05:52.606437 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-14T03:05:52.606466 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-14T03:05:52.606491 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-14T03:05:52.606516 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-14T03:05:52.606539 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-14T03:05:52.606563 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-14T03:05:52.606587 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-14T03:05:52.606610 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-14T03:05:52.606716 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-14T03:05:52.606771 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-14T03:05:52.606825 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-14T03:05:52.606849 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+24.215.114.4 - - [14/May/2016:04:32:46 +0900] "GET / HTTP/1.0" 404 - 0.0024
+83.233.72.144 - - [14/May/2016:04:42:31 +0900] "GET /wp-content/plugins/wysija-newsletters/js/tinymce/tiny_mce.js HTTP/1.0" 404 - 0.0018
+188.0.236.134 - - [14/May/2016:06:00:05 +0900] "GET / HTTP/1.0" 404 - 0.0015
+188.0.236.134 - - [14/May/2016:06:00:06 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0018
+208.100.26.230 - - [14/May/2016:06:27:13 +0900] "GET / HTTP/1.0" 404 - 0.0017
+208.100.26.230 - - [14/May/2016:06:30:44 +0900] "HEAD / HTTP/1.0" 404 - 0.0025
+E, [2016-05-14T06:30:44.837161 #29405] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-05-14T06:30:44.837256 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-05-14T06:30:44.837313 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-05-14T06:30:44.837364 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-05-14T06:30:44.837415 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-05-14T06:30:44.837465 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-05-14T06:30:44.837514 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-05-14T06:30:44.837606 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-05-14T06:30:44.837688 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-05-14T06:30:44.837756 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-05-14T06:30:44.837851 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-05-14T06:30:44.837912 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-05-14T06:30:44.837960 #29405] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+208.100.26.230 - - [14/May/2016:06:30:45 +0900] "GET / HTTP/1.0" 404 - 0.0020
+74.91.20.197 - - [14/May/2016:07:41:20 +0900] "GET / HTTP/1.0" 404 - 0.0016
+220.181.108.142 - - [14/May/2016:08:13:37 +0900] "GET / HTTP/1.0" 404 - 0.0020
+74.91.18.44 - - [14/May/2016:09:46:59 +0900] "GET / HTTP/1.0" 404 - 0.0020
+91.221.215.134 - - [14/May/2016:11:06:34 +0900] "GET / HTTP/1.0" 404 - 0.0021
+222.186.58.140 - - [14/May/2016:11:08:50 +0900] "GET /manager/html HTTP/1.0" 404 - 0.0019
+198.143.180.166 - - [14/May/2016:12:38:32 +0900] "GET / HTTP/1.0" 404 - 0.0020
