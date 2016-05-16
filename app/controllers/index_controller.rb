@@ -17,6 +17,7 @@ class IndexController < ApplicationController
     end
 
     from = params[:result][0][:content][:from]
+    message_type = params[:result][0][:content]["contentType"]
 
     #食い止め(作業中のみ)
     #output_message(from, "ジュンビチューデース"+"\n\n"+params[:result][0][:content][:text])
@@ -31,9 +32,9 @@ class IndexController < ApplicationController
       return
     end
 
-    if params[:result][0][:content]["contentType"] == 1
+    if message_type == 1
       text = params[:result][0][:content][:text]
-    elsif params[:result][0][:content]["contentType"] == 8
+    elsif message_type == 8
       #if user.level != "a-4"
         message = "スタンプはまだ対応してないんだ><"
         output_message(from, message)
@@ -45,9 +46,11 @@ class IndexController < ApplicationController
       return
     end
 
-    #File.open("log/line_message.log","a") do |file|
-    #  file.puts Time.now.to_s+" "+text+" : "+from+" ,"
-    #end
+    if message_type == 1
+      File.open("log/line_message.log","a") do |file|
+        file.puts Time.now.to_s+" "+text+" : "+from+" ,"
+      end
+    end
 
     if "a-1" == user.level
       if 10 < text.length
@@ -100,78 +103,101 @@ class IndexController < ApplicationController
     end
 
     if "a-4" == user.level
-      if params[:result][0][:content]["contentType"] == 8
-        output_sticker(user.partner, params[:result][0][:content]["contentMetadata"])
+      if message_type == 8
+        output_sticker("ua3c4c90fa2133580787a141316e73bcc", params[:result][0][:content]["contentMetadata"])
         #line_message("ua3c4c90fa2133580787a141316e73bcc", params[:result][0][:content]["contentMetadata"].to_s)
       else
         if "ばいばい" == text
           partner = User.by_mid(user.partner).first
           partner.update(level: "a-3", partner: nil)
           user.update(level: "a-3", partner: nil)
-          output_message(from, "マッチングがリセットされたよ！\n他の人と話したいときはまた話しかけてみて！")
-          output_message(partner.mid, "マッチングがリセットされたよ！\n他の人と話したいときはまた話しかけてみて！")
+          output_message([from,partner.mid], "マッチングがリセットされたよ！\n他の人と話したいときはまた話しかけてみて！")
         else
           output_message(user.partner, user.name+": "+text)
         end
       end
     end
 
-    end
+  end
 
-    private
+  private
 
-    def output_message(from, message)
+  def output_message(from, message)
+    if from.instance_of?(Array)
+      multiple_message(from, message)
+    else
       line_message(from, message)
-      render json: [], status: :ok
     end
+    render json: [], status: :ok
+  end
 
-    def output_sticker(from, sticker)
-      sticker_message(from, sticker)
-      render json: [], status: :ok
-    end
+  def output_sticker(from, sticker)
+    sticker_message(from, sticker)
+    render json: [], status: :ok
+  end
 
-    def line_message(to, text)
-      request_headers = {
-        "Content-Type": "application/json",
-        "X-Line-ChannelID": CHANNEL_ID,
-        "X-Line-ChannelSecret": CHANNEL_SECRET,
-        "X-Line-Trusted-User-With-ACL": CHANNEL_MID
-      }
-      request_params = {
-        to: [to],
-        toChannel: 1383378250, # Fixed value
-        eventType: "138311608800106203", # Fixed value
-        content:{
-        contentType: 1,
-        toType: 1,
-        text: text
-      }
-      }
-      ::RestClient.post 'https://trialbot-api.line.me/v1/events', request_params.to_json, request_headers
-    end
+  def line_message(to, text)
+    request_headers = {
+      "Content-Type": "application/json",
+      "X-Line-ChannelID": CHANNEL_ID,
+      "X-Line-ChannelSecret": CHANNEL_SECRET,
+      "X-Line-Trusted-User-With-ACL": CHANNEL_MID
+    }
+    request_params = {
+      to: [to],
+      toChannel: 1383378250, # Fixed value
+      eventType: "138311608800106203", # Fixed value
+      content:{
+      contentType: 1,
+      toType: 1,
+      text: text
+    }
+    }
+    ::RestClient.post 'https://trialbot-api.line.me/v1/events', request_params.to_json, request_headers
+  end
 
-    def sticker_message(to, sticker)
-      request_headers = {
-        "Content-Type": "application/json",
-        "X-Line-ChannelID": CHANNEL_ID,
-        "X-Line-ChannelSecret": CHANNEL_SECRET,
-        "X-Line-Trusted-User-With-ACL": CHANNEL_MID
-      }
-      request_params = {
-        to: [to],
-        toChannel: 1383378250, # Fixed value
-        eventType: "138311608800106203", # Fixed value
-        content:{
+  def multiple_message(to, text)
+    request_headers = {
+      "Content-Type": "application/json",
+      "X-Line-ChannelID": CHANNEL_ID,
+      "X-Line-ChannelSecret": CHANNEL_SECRET,
+      "X-Line-Trusted-User-With-ACL": CHANNEL_MID
+    }
+    request_params = {
+      to: to,
+      toChannel: 1383378250, # Fixed value
+      eventType: "138311608800106203", # Fixed value
+      content:{
+      contentType: 1,
+      toType: 1,
+      text: text
+    }
+    }
+    ::RestClient.post 'https://trialbot-api.line.me/v1/events', request_params.to_json, request_headers
+  end
+
+  def sticker_message(to, sticker)
+    request_headers = {
+      "Content-Type": "application/json",
+      "X-Line-ChannelID": CHANNEL_ID,
+      "X-Line-ChannelSecret": CHANNEL_SECRET,
+      "X-Line-Trusted-User-With-ACL": CHANNEL_MID
+    }
+    request_params = {
+      to: [to],
+      toChannel: 1383378250, # Fixed value
+      eventType: "138311608800106203", # Fixed value
+      content:{
         contentType: 8,
         toType: 1,
         contentMetadata:{
-        STKID: "47997",
-        STKPKGID: "2000000",
-        STKVER: "2"
-      },
+          STKID:  "2",
+          STKPKGID: "1", 
+          STKVER: "100"
+        }
       }
-      }
-      ::RestClient.post 'https://trialbot-api.line.me/v1/events', request_params.to_json, request_headers
-    end
+    }
+    ::RestClient.post 'https://trialbot-api.line.me/v1/events', request_params.to_json, request_headers
+  end
 
 end
