@@ -1,0 +1,24 @@
+<h1>画像名を入力して引き継ぎコード発行</h1>
+<%= form_tag( { controller: :pad_rmt, action: :publish, method: :post}) do %>
+  画像URL：
+  <%= text_field_tag :url, '', size: 25 %>
+  <br>
+  お客さんの名前：
+  <%= text_field_tag :customer, '', size: 25 %>
+  <br>
+  <%= submit_tag '引き継ぎコード発行' %>
+<% end%>
+
+<% if @status %>
+  <% if @status == 0 %>
+    <h3>発行中</h3>
+    <a onclick="window.location.reload();"><input type="button" value="更新する"></a>
+  <% elsif @status == 1 %>
+    <h3>モンスター確認用画像</h3>
+    <img src="/images/<%=@img_confirm%>">
+    <h3>お客さんに送信する用の画像</h3>
+    <img src="/images/<%=@img_for_sendding%>">
+  <% end %>
+<% end %>
+
+

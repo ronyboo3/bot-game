@@ -89,8 +89,7 @@ class IndexController < ApplicationController
         if !partner.partner && partner.partner != user.mid
           user.update(level: "a-4", partner: partner.mid)
           partner.update(level: "a-4", partner: user.mid)
-          output_message(from, partner.name+"さんと繋がったよ！\n\n別の人とお話ししたいときは\n「ばいばい」\nって言ってね！")
-          output_message(partner.mid, user.name+"さんと繋がったよ！\n\n別の人とお話ししたいときは\n「ばいばい」\nって言ってね！\n\n"+text)
+          output_message([from,partner.mid], user.name+"さんと繋がったよ！\n\n別の人とお話ししたいときは\n「ばいばい」\nって言ってね！\n\n"+text)
         else
           message = "話し相手が見つからなかったよ><\nもう一度話しかけてみて？"
           output_message(from, message)

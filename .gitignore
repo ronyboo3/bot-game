@@ -4,3 +4,5 @@ config/settings/*.local.yml
 config/environments/*.local.yml
 log/development.log log/line_message.log log/production.log log/unicorn.log log/unicorn.stderr.log log/unicorn.stdout.log
 tmp/pids/unicorn.pid
+tmp/cache/
+tmp/cache/*

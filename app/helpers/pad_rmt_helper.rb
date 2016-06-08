@@ -1,0 +1,2 @@
+module PadRmtHelper
+end
