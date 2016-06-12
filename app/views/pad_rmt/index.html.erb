@@ -1,13 +1,13 @@
-<h1>画像名を入力して引き継ぎコード発行</h1>
+<h1>引き継ぎコード発行</h1>
 <%= form_tag( { controller: :pad_rmt, action: :publish, method: :post}) do %>
   画像URL：
   <%= text_field_tag :url, '', size: 25 %>
   <br>
   お客さんの名前：
-  <%= text_field_tag :customer, '', size: 25 %>
+  <%= text_field_tag :customer, '', size: 25 %> さん
   <br>
   <%= submit_tag '引き継ぎコード発行' %>
-<% end%>
+<% end %>
 
 <% if @status %>
   <% if @status == 0 %>
