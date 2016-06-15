@@ -1,10 +1,72 @@
 @charset "UTF-8";
 
 body {
-  background-color: #DCDCDC;
-  color: #000000;
+  background-color: #333333;
+  color: #fff;
   text-align: center;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  font-size: 40px;
+  font-size: 12px;
 }
 
+#site-box {
+  margin : 0px auto;
+  text-align: center;
+  background-color: #848280;
+}
+
+.site_header_image {
+  width: 100%;
+}
+
+dl.hiki{
+  width: 90%;
+  position:relative;
+  background-color:#848290;
+  border:1px solid #aaa;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  -o-border-radius:6px;
+  -ms-border-radius:6px;
+  border-radius:6px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+dl.hiki dt{
+  margin-right:20px;
+  padding:8px 0 8px 8px;
+}
+dl.hiki dt input,
+dl.hiki dt textarea,
+dl.hiki dt select{
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:75%;
+  height:20px;
+  line-height:20px;
+  background-color: #fff;
+  /*border:none;*/
+}
+dl.hiki dd{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+dt.btn input {
+  height: 100px;
+}
+
+.hiki-form table {
+  width: 100%;
+}
+
+.hiki-form th {
+  text-align: left;
+  width: 30%;
+}
+
+.hiki-form td {
+  text-align: left;
+}

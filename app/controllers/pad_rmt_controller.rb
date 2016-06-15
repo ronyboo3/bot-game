@@ -13,13 +13,15 @@ class PadRmtController < ApplicationController
         Account.make_publish_data(account.image_name)
       end
     end
+    @error = params[:error]
   end
 
   def publish
     pp `echo '' > script/pad/image_name.lua`
     pp `echo 'IMAGE_NAME="#{params[:url]}"' > script/pad/image_name.lua`
+    account = nil
     if !Account.exists?(:image_name => params[:url])
-      Account.create_account(params[:url], params[:customer])
+      account = Account.create_account(params[:url], params[:customer])
     end
     redirect_to :action => "index", :url => params[:url]
   end

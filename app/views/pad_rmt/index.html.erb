@@ -1,24 +1,40 @@
+<div id="site-box">
+
+  <img class="site_header_image" src="/himg/site_header.png">
+
 <h1>引き継ぎコード発行</h1>
+<span class="hiki-form">
+<dl class="hiki">
+<table border="1">
 <%= form_tag( { controller: :pad_rmt, action: :publish, method: :post}) do %>
-  画像URL：
-  <%= text_field_tag :url, '', size: 25 %>
-  <br>
-  お客さんの名前：
-  <%= text_field_tag :customer, '', size: 25 %> さん
-  <br>
-  <%= submit_tag '引き継ぎコード発行' %>
+  <tr>  
+    <th>画像URL</th>
+    <td><dt><%= text_field_tag :url, '', size: 25 %></dt></td>
+  </tr>
+  <tr>
+    <th>お客さんの名前</th>
+    <td><dt><%= text_field_tag :customer, '', size: 25 %> さん</dt></td>
+  </tr>
+  </table>
+  <dt><%= submit_tag '引き継ぎコード発行' %></dt>
 <% end %>
+</dl>
+</span>
 
 <% if @status %>
   <% if @status == 0 %>
     <h3>発行中</h3>
     <a onclick="window.location.reload();"><input type="button" value="更新する"></a>
   <% elsif @status == 1 %>
-    <h3>モンスター確認用画像</h3>
+    <h3>↓モンスター確認用画像↓</h3>
     <img src="/images/<%=@img_confirm%>">
-    <h3>お客さんに送信する用の画像</h3>
+    <h3>↓お客さんに送信する用の画像↓</h3>
     <img src="/images/<%=@img_for_sendding%>">
   <% end %>
 <% end %>
 
+<div id="fixed" style="position: fixed;width: 80px;bottom: 100px;right: 0%;margin-right: 5px;" >
+  <a href=""><img src="/himg/book-icon.png" style="height:100%;width:100%;"></a>
+</div>
 
+</div> <!-- site-box -->

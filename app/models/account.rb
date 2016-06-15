@@ -1,11 +1,16 @@
 class Account < ActiveRecord::Base
 
+  VALID_IMAGE_REGEX = /[0-9]{4}-[0-9]{4}-[0-9]{2}-[0-9]{3}.jpg/
+  validates :image_name, presence: true, uniqueness: true, format: { with: VALID_IMAGE_REGEX }
+  validates :customer_name, presence: true
+
   scope :by_image_name, ->(name) { where(image_name: name) }
 
   def self.create_account(image_name, customer_name)
     account = self.new
     account.attributes = {image_name: image_name, customer_name: customer_name}
     account.save!
+  rescue ActiveRecord::RecordInvalid => e
   end
 
   def self.make_publish_data(sold_image_name)

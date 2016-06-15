@@ -16618,3 +16618,861 @@ Processing by IndexController#index as */*
 Can't verify CSRF token authenticity
   [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`mid` = 'ua3c4c90fa2133580787a141316e73bcc'  ORDER BY `users`.`id` ASC LIMIT 1[0m
 Completed 200 OK in 90ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:12:52 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.6ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 44ms (Views: 39.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=0420-1033-26-019.jpg" for 126.205.84.183 at 2016-06-14 20:13:25 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"0420-1033-26-019.jpg"}
+  [1m[36mAccount Load (0.9ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg'  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 62ms (Views: 56.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=0420-1033-26-019.jpg" for 126.205.84.183 at 2016-06-14 20:13:27 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"0420-1033-26-019.jpg"}
+  [1m[35mAccount Load (1.1ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg'  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 68ms (Views: 61.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/bot-game/pad_rmt/publish?method=post" for 126.205.84.183 at 2016-06-14 20:13:34 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#publish as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9c5qIW+IfNE3SS1CENSF6IpR2d9KgjcxtbD50pg7MDWXiYhohr2vrIZ+O1+E3O2wdgIs6nJlwpbFZXsnrWc4bg==", "url"=>"", "customer"=>"", "commit"=>"引き継ぎコード発行", "method"=>"post"}
+  [1m[36mAccount Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = '' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `accounts` (`image_name`, `customer_name`, `created_at`, `updated_at`) VALUES ('', '', '2016-06-14 11:13:34', '2016-06-14 11:13:34')[0m
+  [1m[35m (2.6ms)[0m  COMMIT
+Redirected to https://bot-jp.com/bot-game/pad_rmt/index?url=
+Completed 302 Found in 46ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=" for 126.205.84.183 at 2016-06-14 20:13:34 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>""}
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = ''  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.5ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg'  ORDER BY `accounts`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered pad_rmt/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 79ms (Views: 67.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 126.205.84.183 at 2016-06-14 20:13:40 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 82ms (Views: 75.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 126.205.84.183 at 2016-06-14 20:13:43 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 46.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 126.205.84.183 at 2016-06-14 20:14:07 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 54ms (Views: 49.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:29:12 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 56ms (Views: 51.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/himg/book-icon.png" for 124.35.80.154 at 2016-06-14 20:29:12 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/pad_rmt/himg/book-icon.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack (1.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.4) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.4) lib/rack/lint.rb:37:in `call'
+  rack (1.6.4) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.4) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.4) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+  /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+
+
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.3ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:29:16 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/himg/book-icon.png" for 124.35.80.154 at 2016-06-14 20:29:16 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/pad_rmt/himg/book-icon.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack (1.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.4) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.4) lib/rack/lint.rb:37:in `call'
+  rack (1.6.4) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.4) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.4) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+  /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+
+
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.3ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:29:54 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.8ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 38ms (Views: 31.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:30:26 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 38ms (Views: 32.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:30:39 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:30:44 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.4ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:39:08 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 50ms (Views: 44.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:39:28 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 52ms (Views: 46.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:39:45 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 48ms (Views: 42.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:40:30 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.5ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:40:56 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 52ms (Views: 46.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:41:18 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 43.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:41:30 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 49ms (Views: 43.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:44:37 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.8ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 52ms (Views: 46.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:45:18 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 43.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:47:57 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.6ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:53:09 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.9ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 48ms (Views: 43.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:54:16 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 50ms (Views: 44.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:54:54 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.4ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:56:22 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.5ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:56:40 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:57:06 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 20:58:47 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 48ms (Views: 43.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:00:41 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 42.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:02:34 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.6ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 39.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:02:44 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 50ms (Views: 43.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:03:01 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.8ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 62.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:03:23 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:03:43 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 70ms (Views: 65.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:04:05 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.5ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:04:11 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 53ms (Views: 47.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:04:33 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 20.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:04:49 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.5ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:05:28 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 54ms (Views: 48.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:05:50 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 41.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:05:59 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 49ms (Views: 42.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:06:36 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:06:45 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 52ms (Views: 46.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:06:53 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:06:55 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 49ms (Views: 43.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:06:57 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 71ms (Views: 65.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:07:18 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.8ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 50ms (Views: 44.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:07:26 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 45ms (Views: 40.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:08:00 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 41.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:11:18 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 53ms (Views: 47.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:12:01 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 53ms (Views: 46.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:13:34 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 51ms (Views: 45.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:13:42 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 48ms (Views: 43.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:13:49 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 54ms (Views: 48.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:13:56 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.8ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 48ms (Views: 43.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:14:18 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 49ms (Views: 43.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:14:37 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.8ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 50ms (Views: 44.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:15:28 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 52ms (Views: 46.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:15:29 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 51ms (Views: 45.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:15:33 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 48ms (Views: 42.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:16:03 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[36mAccount Load (0.5ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 42.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bot-game/pad_rmt/index" for 124.35.80.154 at 2016-06-14 21:16:30 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  [1m[35mAccount Load (0.5ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` IS NULL  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/bot-game/pad_rmt/publish?method=post" for 124.35.80.154 at 2016-06-14 21:20:13 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#publish as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KJ5TGQSad5+LW4vx+VnJJbWv4dylJXqDgZeuw8dzfzFK2bFQ7a+k4jpsnextUaF9SfwU6Z3CjyTxQiw28i93ag==", "url"=>"0420-1033-26-019.jpg", "customer"=>"", "commit"=>"引き継ぎコード発行", "method"=>"post"}
+  [1m[35mAccount Exists (0.4ms)[0m  SELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg' LIMIT 1
+Redirected to https://bot-jp.com/bot-game/pad_rmt/index?url=0420-1033-26-019.jpg
+Completed 302 Found in 18ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=0420-1033-26-019.jpg" for 124.35.80.154 at 2016-06-14 21:20:13 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"0420-1033-26-019.jpg"}
+  [1m[36mAccount Load (0.5ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg'  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=0420-1033-26-019.jpg" for 124.35.80.154 at 2016-06-14 21:21:23 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"0420-1033-26-019.jpg"}
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg'  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 49ms (Views: 43.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/bot-game/pad_rmt/publish?method=post" for 124.35.80.154 at 2016-06-14 21:21:41 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#publish as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9ArBAP0SkrNORyameGgAU3JsMy3J4C3DQIaRCm96ZfmWTSNJFCdBzv9wMLvsYGgLjj/GGPEH2GQwUxP/WiZtog==", "url"=>"たな", "customer"=>"", "commit"=>"引き継ぎコード発行", "method"=>"post"}
+  [1m[36mAccount Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = 'たな' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `accounts` (`image_name`, `customer_name`, `created_at`, `updated_at`) VALUES ('たな', '', '2016-06-14 12:21:41', '2016-06-14 12:21:41')[0m
+  [1m[35m (2.4ms)[0m  COMMIT
+Redirected to https://bot-jp.com/bot-game/pad_rmt/index?url=%E3%81%9F%E3%81%AA
+Completed 302 Found in 36ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=%E3%81%9F%E3%81%AA" for 124.35.80.154 at 2016-06-14 21:21:41 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"たな"}
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = 'たな'  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[35mAccount Load (0.4ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = ''  ORDER BY `accounts`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE `accounts` SET `confirm_url` = '', `for_sendding_url` = '', `updated_at` = '2016-06-14 12:21:41' WHERE `accounts`.`id` = 20
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 21.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=%E3%81%9F%E3%81%AA" for 124.35.80.154 at 2016-06-14 21:22:09 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"たな"}
+  [1m[35mAccount Load (0.6ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = 'たな'  ORDER BY `accounts`.`id` ASC LIMIT 1
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = ''  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 59ms (Views: 49.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=%E3%81%9F%E3%81%AA" for 124.35.80.154 at 2016-06-14 21:22:13 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"たな"}
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = 'たな'  ORDER BY `accounts`.`id` ASC LIMIT 1
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = ''  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 59ms (Views: 49.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/bot-game/pad_rmt/publish?method=post" for 124.35.80.154 at 2016-06-14 21:35:11 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#publish as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JJcP73j7yjGcvz2g6L8zxbrU1W9bnbiaV8VDCgDWF3NG0O2mkc4ZTC2IK718t1udRocgWmN6TT0nEMH/NYofKA==", "url"=>"0", "customer"=>"", "commit"=>"引き継ぎコード発行", "method"=>"post"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant Account::VALID_EMAIL_REGEX):
+  app/models/account.rb:4:in `<class:Account>'
+  app/models/account.rb:1:in `<top (required)>'
+  app/controllers/pad_rmt_controller.rb:23:in `publish'
+
+
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.5ms)
+
+
+Started POST "/bot-game/pad_rmt/publish?method=post" for 124.35.80.154 at 2016-06-14 21:35:32 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#publish as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JJcP73j7yjGcvz2g6L8zxbrU1W9bnbiaV8VDCgDWF3NG0O2mkc4ZTC2IK718t1udRocgWmN6TT0nEMH/NYofKA==", "url"=>"0", "customer"=>"", "commit"=>"引き継ぎコード発行", "method"=>"post"}
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = '0' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = BINARY '0' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 422 Unprocessable Entity in 40ms (ActiveRecord: 2.4ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Image name is invalid, Customer name can't be blank):
+  app/models/account.rb:12:in `create_account'
+  app/controllers/pad_rmt_controller.rb:24:in `publish'
+
+
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.5ms)
+
+
+Started POST "/bot-game/pad_rmt/publish?method=post" for 124.35.80.154 at 2016-06-14 21:36:10 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#publish as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JJcP73j7yjGcvz2g6L8zxbrU1W9bnbiaV8VDCgDWF3NG0O2mkc4ZTC2IK718t1udRocgWmN6TT0nEMH/NYofKA==", "url"=>"0", "customer"=>"", "commit"=>"引き継ぎコード発行", "method"=>"post"}
+  [1m[35mAccount Exists (0.5ms)[0m  SELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = '0' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = BINARY '0' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 2.6ms)
+
+NoMethodError (undefined method `errors' for nil:NilClass):
+  app/controllers/pad_rmt_controller.rb:26:in `publish'
+
+
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+
+
+Started POST "/bot-game/pad_rmt/publish?method=post" for 124.35.80.154 at 2016-06-14 21:37:19 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#publish as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JJcP73j7yjGcvz2g6L8zxbrU1W9bnbiaV8VDCgDWF3NG0O2mkc4ZTC2IK718t1udRocgWmN6TT0nEMH/NYofKA==", "url"=>"0", "customer"=>"", "commit"=>"引き継ぎコード発行", "method"=>"post"}
+  [1m[35mAccount Exists (0.4ms)[0m  SELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = '0' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAccount Exists (0.4ms)[0m  SELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = BINARY '0' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Redirected to https://bot-jp.com/bot-game/pad_rmt/index?url=0
+Completed 302 Found in 40ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=0" for 124.35.80.154 at 2016-06-14 21:37:19 +0900
+Cannot render console from 124.35.80.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"0"}
+  [1m[35mAccount Load (0.5ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0'  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 28.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=0" for 121.117.75.21 at 2016-06-14 23:32:34 +0900
+Cannot render console from 121.117.75.21! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"0"}
+  [1m[36mAccount Load (0.5ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0'  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/bot-game/pad_rmt/publish?method=post" for 121.117.75.21 at 2016-06-14 23:32:49 +0900
+Cannot render console from 121.117.75.21! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#publish as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F8ydDtNjYnggqtCdsq9arClSCerOYGQEvFH8Idtv4qB1i39HOlaxBZGdxoAmpzL01QH83/aHkaPMhH7U7jPq+w==", "url"=>"0420-1033-26-019.jpg", "customer"=>"", "commit"=>"引き継ぎコード発行", "method"=>"post"}
+  [1m[36mAccount Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg' LIMIT 1[0m
+Redirected to https://bot-jp.com/bot-game/pad_rmt/index?url=0420-1033-26-019.jpg
+Completed 302 Found in 23ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=0420-1033-26-019.jpg" for 121.117.75.21 at 2016-06-14 23:32:50 +0900
+Cannot render console from 121.117.75.21! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"0420-1033-26-019.jpg"}
+  [1m[35mAccount Load (0.4ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg'  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 43.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=0420-1033-26-019.jpg" for 126.205.84.183 at 2016-06-15 12:31:21 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"0420-1033-26-019.jpg"}
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg'  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 48ms (Views: 43.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=0420-1033-26-019.jpg" for 126.205.84.183 at 2016-06-15 15:53:52 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"0420-1033-26-019.jpg"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg'  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 25.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=0420-1033-26-019.jpg" for 126.205.84.183 at 2016-06-15 15:54:04 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>"0420-1033-26-019.jpg"}
+  [1m[36mAccount Load (0.5ms)[0m  [1mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = '0420-1033-26-019.jpg'  ORDER BY `accounts`.`id` ASC LIMIT 1[0m
+  Rendered pad_rmt/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/bot-game/pad_rmt/publish?method=post" for 126.205.84.183 at 2016-06-15 15:54:16 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#publish as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rwdSrCwiRZtOoavPS1hm0I4VDCfVbPRBybiI42aMmOkLtTWUGUAJHOa5bVtkUGmZdY6b1+12qB1dK762gRfvKA==", "url"=>"", "customer"=>"", "commit"=>"引き継ぎコード発行", "method"=>"post"}
+  [1m[35mAccount Exists (0.4ms)[0m  SELECT  1 AS one FROM `accounts` WHERE `accounts`.`image_name` = '' LIMIT 1
+Redirected to https://bot-jp.com/bot-game/pad_rmt/index?url=
+Completed 302 Found in 16ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/bot-game/pad_rmt/index?url=" for 126.205.84.183 at 2016-06-15 15:54:16 +0900
+Cannot render console from 126.205.84.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PadRmtController#index as HTML
+  Parameters: {"url"=>""}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`image_name` = ''  ORDER BY `accounts`.`id` ASC LIMIT 1
+  Rendered pad_rmt/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.3ms)
