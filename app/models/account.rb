@@ -5,6 +5,9 @@ class Account < ActiveRecord::Base
   validates :customer_name, presence: true
 
   scope :by_image_name, ->(name) { where(image_name: name) }
+  scope :publishing, -> { where(confirm_url: nil) }
+  scope :published, -> { where.not(confirm_url: nil) }
+
 
   def self.create_account(image_name, customer_name)
     account = self.new

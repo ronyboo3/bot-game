@@ -13,6 +13,9 @@ class PadRmtController < ApplicationController
         Account.make_publish_data(account.image_name)
       end
     end
+    @publishing_accounts = Account.publishing rescue nil
+    @published_accounts = Account.published rescue nil
+    @image_name = params[:image_name]
     @error = params[:error]
   end
 
@@ -24,6 +27,23 @@ class PadRmtController < ApplicationController
       account = Account.create_account(params[:url], params[:customer])
     end
     redirect_to :action => "index", :url => params[:url]
+  end
+
+  def images
+    @data = get_data
+    render "images"
+  end
+
+  private
+
+  def get_data
+    path = "/home/tanase/pad/data/"
+    data = []
+    Dir::glob( path + "/*.bin" ).sort.reverse.each_with_index do |fname, i|
+      data.push(fname) if i > 20 && i < 70
+      break if i == 70
+    end
+    return data
   end
 
 end

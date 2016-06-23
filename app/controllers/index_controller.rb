@@ -19,15 +19,28 @@ class IndexController < ApplicationController
     from = params[:result][0][:content][:from]
     message_type = params[:result][0][:content]["contentType"]
 
+    #全員へメッセージを送る
+    #if from == "ua3c4c90fa2133580787a141316e73bcc"
+    #  users = User.all
+    #  user_mids = Array.new
+    #  users.each do |user_all|
+    #    user_mids.push(user_all.mid)
+    #  end
+    #  output_message(user_mids, "新機能追加！！\n\n「マッチング拒否設定」を追加したよ！\n\n通知がうるさかったり、勝手にマッチングして欲しくない人はこの機能を設定しよう！\n\n\n設定方法は、まち子に「拒否設定」って送ってね！")
+     # return
+   # end
+
     #食い止め(作業中のみ)
     #output_message(from, "ジュンビチューデース"+"\n\n"+params[:result][0][:content][:text])
     #return 
 
     user = User.by_mid(from).first rescue nil
 
+    admin = User.find(26)
+
     if !user
       User.create(from, "first_name", "a-1")
-      message = "こんにちは！kosoっていいます！\nあなたのお名前は？"
+      message = "こんにちは！まち子っていいます！\nあなたのお名前は？"
       output_message(from, message)
       return
     end
@@ -80,16 +93,40 @@ class IndexController < ApplicationController
       end
     end
 
+    user.lock!
+
     if "a-3" == user.level
-      partners = User.partners(user.mid) rescue nil
+
+      if text == "support"
+        user.update(level: "support")
+        message = "サポート設定です！\n\nまち子に話しかけられるよ！"
+        output_message(from, message)
+        return
+      end
+
+      if text.include?("拒否設定")
+        user.update(level: "deny")
+        message = "拒否設定をしたよ！\n今は誰ともマッチングしないよ><\n\n拒否設定を解除したい場合は、「拒否設定解除」って送ってね！"
+        output_message(from, message)
+        return
+      end
+
+      if text == "admin" && user.id == admin.id
+        user.update(level: "admin")
+        message = "admin設定です！"
+        output_message(from, message)
+        return
+      end
+      partners = User.lock.partners(user.mid) rescue nil
       if partners
         num = rand(partners.length)
         partner = partners[num]
+        partner.lock!
 
         if !partner.partner && partner.partner != user.mid
           user.update(level: "a-4", partner: partner.mid)
           partner.update(level: "a-4", partner: user.mid)
-          output_message([from,partner.mid], user.name+"さんと繋がったよ！\n\n別の人とお話ししたいときは\n「ばいばい」\nって言ってね！\n\n"+text)
+          output_message([from,partner.mid,admin.mid], user.name+"さんと"+partner.name+"さんが繋がったよ！\n\n別の人とお話ししたいときは\n「ばいばい」\nって言ってね！\n\n"+text)
         else
           message = "話し相手が見つからなかったよ><\nもう一度話しかけてみて？"
           output_message(from, message)
@@ -108,6 +145,7 @@ class IndexController < ApplicationController
       else
         if "ばいばい" == text
           partner = User.by_mid(user.partner).first
+          partner.lock!
           partner.update(level: "a-3", partner: nil)
           user.update(level: "a-3", partner: nil)
           output_message([from,partner.mid], "マッチングがリセットされたよ！\n他の人と話したいときはまた話しかけてみて！")
@@ -115,6 +153,46 @@ class IndexController < ApplicationController
           output_message(user.partner, user.name+": "+text)
         end
       end
+    end
+
+    if "deny" == user.level
+      if text.include?("拒否設定解除")
+        user.update(level: "a-3")
+        message = "拒否設定が解除されたよ！\n\n早速話しかけてマッチングしよう！"
+      else
+      message = "現在拒否設定中だよ！\n\n拒否設定を解除したい場合は、「拒否設定解除」って送ってね！"
+      end
+      output_message(from, message)
+    end
+
+    if "admin" == user.level
+      if "exit" == text
+        admin.update(level: "a-3")
+        message = "adminシューリョー"
+        output_message(from, message)
+        return
+      end
+      #全員へメッセージを送る
+      if from == "ua3c4c90fa2133580787a141316e73bcc"
+        users = User.all
+        user_mids = Array.new
+        users.each do |user_all|
+          user_mids.push(user_all.mid)
+        end
+        output_message(user_mids, "まち子:"+text)
+        return
+      end
+    end
+
+    if "support" == user.level
+      if "exit" == text
+        user.update(level: "a-3")
+        message = "サポート設定シューリョー"
+        output_message(from, message)
+        return
+      end
+      output_message(admin.mid, user.name+": "+text)
+      output_message(from, "まち子に送信完了！\n\nサポート設定を解除したい場合は「exit」って送ってね！")
     end
 
   end
@@ -147,10 +225,10 @@ class IndexController < ApplicationController
       toChannel: 1383378250, # Fixed value
       eventType: "138311608800106203", # Fixed value
       content:{
-      contentType: 1,
-      toType: 1,
-      text: text
-    }
+        contentType: 1,
+        toType: 1,
+        text: text
+      }
     }
     ::RestClient.post 'https://trialbot-api.line.me/v1/events', request_params.to_json, request_headers
   end
@@ -167,10 +245,10 @@ class IndexController < ApplicationController
       toChannel: 1383378250, # Fixed value
       eventType: "138311608800106203", # Fixed value
       content:{
-      contentType: 1,
-      toType: 1,
-      text: text
-    }
+        contentType: 1,
+        toType: 1,
+        text: text
+      }
     }
     ::RestClient.post 'https://trialbot-api.line.me/v1/events', request_params.to_json, request_headers
   end

@@ -58,15 +58,148 @@ dt.btn input {
   height: 100px;
 }
 
+.hiki-form {
+  display: none;
+}
+
 .hiki-form table {
   width: 100%;
 }
 
 .hiki-form th {
-  text-align: left;
+  text-align: center;
   width: 30%;
 }
 
 .hiki-form td {
-  text-align: left;
+  text-align: center;
+}
+
+.hiki-dd {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  background-color: #848290;
+}
+
+.hiki-dd a {
+  margin: 0 auto;
+}
+
+dl.customer{
+  text-align: center;
+  width: 90%;
+  position:relative;
+  background-color:#848290;
+  border:1px solid #aaa;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  -o-border-radius:6px;
+  -ms-border-radius:6px;
+  border-radius:6px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+dl.customer dt{
+  margin-right:20px;
+  padding:8px 0 8px 8px;
+}
+dl.customer dt input,
+dl.customer dt textarea,
+dl.customer dt select{
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:75%;
+  height:20px;
+  line-height:20px;
+  background-color: #fff;
+  /*border:none;*/
+}
+dl.customer dd{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+dt.btn input {
+  height: 100px;
+}
+
+.customer-form {
+  display: none;
+}
+
+.customer-form table {
+  width: 100%;
+}
+
+.customer-form th {
+  text-align: center;
+}
+
+.customer-form td {
+  text-align: center;
+}
+
+.customer-dd {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  background-color: #848290;
+}
+
+.customer-dd a {
+  margin: 0 auto;
+}
+
+.images-div {
+  margin : 0px auto;
+  text-align: center;
+  background-color: #848280;
+}
+
+.image-div {
+  width: 33%;
+  height: 150px;
+  float: left;
+}
+
+.customer-table {
+  display: none;
+}
+
+.customer-table:target {
+  display: block;
+}
+
+.customer-tab-a {
+  width: 49%;
+  float: left;
+}
+
+.customer-tab {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #333333;
 }

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root 'index#index' , :via => :post
 
   namespace :pad_rmt do
-    get :index
+    get :index, :images
     post :publish
   end
 

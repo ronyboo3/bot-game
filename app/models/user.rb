@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   validates :mid, uniqueness: true
 
   scope :by_mid, ->(id) { where(mid: id) }
-  scope :partners, ->(id) { where(level: "a-3").where.not(mid: id) }
+  scope :partners, ->(id) { where(level: "a-3").where.not(mid: id, level: "deny") }
 
   def self.create(mid, name, level)
     User.transaction do
