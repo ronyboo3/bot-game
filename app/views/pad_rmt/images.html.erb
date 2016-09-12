@@ -2,12 +2,13 @@
 <div class="images-div">
   <% @data.each_with_index do |fname, i| %>
     <div class="image-div">
-      <a id="image-div<%=i%>a" href="index?image_name=<%=fname[-28,16]%>.jpg"><img src="http://image.pazudora.gatyaken.com/drop/drop345/<%=fname[-28,16]%>.jpg" height=130 width=100></a>
-      <a id="image-div<%=i%>b" href="index?image_name=<%=fname[-28,16]%>.jpg"><img src="http://image.pazudora.gatyaken.com/drop/daydrop345/<%=fname[-28,16]%>.jpg" height=130 width=100></a>
+      <a id="image-div<%=i%>a" class="image-absolute" href="index?image_name=<%=fname[-28,16]%>.jpg"><img src="http://image.pazudora.gatyaken.com/drop/drop345/<%=fname[-28,16]%>.jpg" height=130 width=100></a>
+      <a id="image-div<%=i%>b" class="image-absolute" href="index?image_name=<%=fname[-28,16]%>.jpg"><img src="http://image.pazudora.gatyaken.com/drop/daydrop345/<%=fname[-28,16]%>.jpg" height=130 width=100></a>
     </div>
   <% end %>
 </div>
 
+<!--
 <script>
   window.onload = function() {
     for (var i=0;i<<%=@data.length%>;i++) {
@@ -29,3 +30,4 @@
     }
   };
 </script>
+-->

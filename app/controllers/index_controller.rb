@@ -19,17 +19,6 @@ class IndexController < ApplicationController
     from = params[:result][0][:content][:from]
     message_type = params[:result][0][:content]["contentType"]
 
-    #全員へメッセージを送る
-    #if from == "ua3c4c90fa2133580787a141316e73bcc"
-    #  users = User.all
-    #  user_mids = Array.new
-    #  users.each do |user_all|
-    #    user_mids.push(user_all.mid)
-    #  end
-    #  output_message(user_mids, "新機能追加！！\n\n「マッチング拒否設定」を追加したよ！\n\n通知がうるさかったり、勝手にマッチングして欲しくない人はこの機能を設定しよう！\n\n\n設定方法は、まち子に「拒否設定」って送ってね！")
-     # return
-   # end
-
     #食い止め(作業中のみ)
     #output_message(from, "ジュンビチューデース"+"\n\n"+params[:result][0][:content][:text])
     #return 

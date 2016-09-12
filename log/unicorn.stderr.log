@@ -3286,3 +3286,535 @@ E, [2016-06-22T21:05:03.651011 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.
 203.104.146.69 - - [23/Jun/2016:18:16:50 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0648
 203.104.146.70 - - [23/Jun/2016:18:16:54 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0736
 203.104.146.68 - - [23/Jun/2016:18:17:31 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0542
+203.104.146.67 - - [23/Jun/2016:18:29:09 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0569
+203.104.146.67 - - [23/Jun/2016:18:32:59 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0626
+203.104.146.69 - - [23/Jun/2016:18:33:04 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1139
+126.205.148.231 - - [23/Jun/2016:18:33:17 +0900] "GET / HTTP/1.0" 404 - 0.0020
+126.205.148.231 - - [23/Jun/2016:18:33:19 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0728
+203.104.146.70 - - [23/Jun/2016:18:33:26 +0900] "POST /bot-game HTTP/1.0" 500 118315 0.4339
+126.205.148.231 - - [23/Jun/2016:18:34:17 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.1075
+126.205.148.231 - - [23/Jun/2016:18:34:27 +0900] "GET /bot-game/pad_rmt/index?image_name=0623-1819-05-033.jpg HTTP/1.0" 200 - 0.0545
+126.205.148.231 - - [23/Jun/2016:18:34:32 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0777
+124.35.80.154 - - [23/Jun/2016:18:34:48 +0900] "GET /bot-game/pad_rmt/index HTTP/1.0" 200 - 0.0750
+124.35.80.154 - - [23/Jun/2016:18:34:54 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0755
+124.35.80.154 - - [23/Jun/2016:18:35:27 +0900] "GET /bot-game/pad_rmt/index?image_name=0623-1823-21-020.jpg HTTP/1.0" 200 - 0.0768
+124.35.80.154 - - [23/Jun/2016:18:35:38 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0924
+203.104.146.68 - - [23/Jun/2016:18:35:55 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0692
+203.104.146.67 - - [23/Jun/2016:18:36:02 +0900] "POST /bot-game HTTP/1.0" 500 119549 0.4138
+203.104.146.69 - - [23/Jun/2016:18:36:18 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0722
+124.35.80.154 - - [23/Jun/2016:18:36:21 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0890
+124.35.80.154 - - [23/Jun/2016:18:48:13 +0900] "GET /bot-game/pad_rmt/index HTTP/1.0" 200 - 0.0333
+203.104.146.68 - - [23/Jun/2016:20:03:39 +0900] "POST /bot-game HTTP/1.0" 500 119555 0.5494
+203.104.146.67 - - [23/Jun/2016:20:34:57 +0900] "POST /bot-game HTTP/1.0" 500 119555 0.5495
+203.104.146.70 - - [23/Jun/2016:20:58:13 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0661
+203.104.146.69 - - [23/Jun/2016:23:40:35 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0893
+203.104.146.70 - - [24/Jun/2016:20:01:14 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1276
+203.104.146.68 - - [24/Jun/2016:20:01:26 +0900] "POST /bot-game HTTP/1.0" 500 119527 0.5098
+203.104.146.67 - - [24/Jun/2016:20:02:31 +0900] "POST /bot-game HTTP/1.0" 500 119497 0.3015
+203.104.146.69 - - [24/Jun/2016:20:02:52 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1134
+203.104.146.70 - - [24/Jun/2016:20:02:55 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0860
+203.104.146.68 - - [24/Jun/2016:20:02:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0912
+203.104.146.67 - - [24/Jun/2016:20:03:00 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0999
+203.104.146.69 - - [24/Jun/2016:20:03:22 +0900] "POST /bot-game HTTP/1.0" 500 119539 0.5305
+203.104.146.70 - - [24/Jun/2016:20:03:27 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1078
+203.104.146.68 - - [24/Jun/2016:20:03:50 +0900] "POST /bot-game HTTP/1.0" 500 119666 0.4545
+203.104.146.67 - - [24/Jun/2016:20:04:13 +0900] "POST /bot-game HTTP/1.0" 500 119666 0.3293
+74.82.47.2 - - [24/Jun/2016:21:35:38 +0900] "GET / HTTP/1.0" 404 - 0.0010
+203.104.146.69 - - [25/Jun/2016:00:32:20 +0900] "POST /bot-game HTTP/1.0" 500 119567 0.3939
+203.104.146.70 - - [25/Jun/2016:00:33:14 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0544
+203.104.146.68 - - [25/Jun/2016:00:33:25 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1017
+104.236.20.144 - - [25/Jun/2016:04:54:07 +0900] "GET / HTTP/1.0" 404 - 0.0017
+203.104.146.69 - - [25/Jun/2016:09:39:30 +0900] "POST /bot-game HTTP/1.0" 500 119521 0.5112
+216.218.206.68 - - [25/Jun/2016:11:31:21 +0900] "GET / HTTP/1.0" 404 - 0.0013
+159.203.95.76 - - [25/Jun/2016:19:38:09 +0900] "GET / HTTP/1.0" 404 - 0.0013
+121.117.75.21 - - [26/Jun/2016:02:43:45 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0679
+121.117.75.21 - - [26/Jun/2016:02:43:49 +0900] "GET /apple-touch-icon-76x76-precomposed.png HTTP/1.0" 404 - 0.0015
+121.117.75.21 - - [26/Jun/2016:02:43:50 +0900] "GET /apple-touch-icon-76x76.png HTTP/1.0" 404 - 0.0011
+121.117.75.21 - - [26/Jun/2016:02:43:50 +0900] "GET /apple-touch-icon.png HTTP/1.0" 404 - 0.0009
+121.117.75.21 - - [26/Jun/2016:02:43:50 +0900] "GET /apple-touch-icon.png HTTP/1.0" 404 - 0.0023
+121.117.75.21 - - [26/Jun/2016:02:43:50 +0900] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 - 0.0009
+184.105.139.70 - - [26/Jun/2016:18:29:27 +0900] "GET / HTTP/1.0" 404 - 0.0017
+104.236.22.154 - - [27/Jun/2016:00:33:07 +0900] "GET / HTTP/1.0" 404 - 0.0012
+200.107.200.61 - - [27/Jun/2016:17:28:38 +0900] "HEAD /index.php HTTP/1.0" 404 - 0.0017
+E, [2016-06-27T17:28:38.249329 #13598] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-06-27T17:28:38.249413 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-06-27T17:28:38.249447 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-06-27T17:28:38.249473 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-06-27T17:28:38.249497 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-06-27T17:28:38.249521 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-06-27T17:28:38.249544 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-06-27T17:28:38.249568 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-06-27T17:28:38.249592 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-06-27T17:28:38.249615 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-06-27T17:28:38.249638 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-06-27T17:28:38.249661 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-06-27T17:28:38.249736 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+74.82.47.2 - - [27/Jun/2016:19:43:37 +0900] "GET / HTTP/1.0" 404 - 0.0079
+37.123.97.16 - - [28/Jun/2016:07:12:12 +0900] "HEAD /index.php HTTP/1.0" 404 - 0.0035
+E, [2016-06-28T07:12:12.825167 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-06-28T07:12:12.825269 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-06-28T07:12:12.825355 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-06-28T07:12:12.825435 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-06-28T07:12:12.825505 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-06-28T07:12:12.825602 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-06-28T07:12:12.825740 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-06-28T07:12:12.825782 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-06-28T07:12:12.825822 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-06-28T07:12:12.825884 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-06-28T07:12:12.825945 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-06-28T07:12:12.826022 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-06-28T07:12:12.826102 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+54.183.118.60 - - [28/Jun/2016:11:12:09 +0900] "GET / HTTP/1.0" 404 - 0.0083
+74.82.47.3 - - [28/Jun/2016:19:09:29 +0900] "GET / HTTP/1.0" 404 - 0.0012
+125.84.81.221 - - [29/Jun/2016:01:54:57 +0900] "DELETE / HTTP/1.0" 404 - 0.0022
+71.6.165.200 - - [29/Jun/2016:15:56:34 +0900] "GET / HTTP/1.0" 404 - 0.0013
+74.82.47.3 - - [29/Jun/2016:21:09:03 +0900] "GET / HTTP/1.0" 404 - 0.0023
+103.253.14.43 - - [30/Jun/2016:03:06:57 +0900] "HEAD /index.php HTTP/1.0" 404 - 0.0013
+E, [2016-06-30T03:06:57.065307 #13598] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-06-30T03:06:57.065386 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-06-30T03:06:57.065414 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-06-30T03:06:57.065440 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-06-30T03:06:57.065463 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-06-30T03:06:57.065487 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-06-30T03:06:57.065510 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-06-30T03:06:57.065533 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-06-30T03:06:57.065556 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-06-30T03:06:57.065578 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-06-30T03:06:57.065601 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-06-30T03:06:57.065630 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-06-30T03:06:57.065653 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+74.82.47.4 - - [30/Jun/2016:13:00:23 +0900] "GET / HTTP/1.0" 404 - 0.0042
+199.115.117.99 - - [01/Jul/2016:10:21:31 +0900] "GET /admin/i18n/readme.txt HTTP/1.0" 404 - 0.0021
+124.35.80.154 - - [01/Jul/2016:10:47:49 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.1567
+124.35.80.154 - - [01/Jul/2016:10:47:49 +0900] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 - 0.0036
+124.35.80.154 - - [01/Jul/2016:10:47:49 +0900] "GET /apple-touch-icon.png HTTP/1.0" 404 - 0.0017
+124.35.80.154 - - [01/Jul/2016:10:47:49 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0728
+124.35.80.154 - - [01/Jul/2016:10:47:49 +0900] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 - 0.0017
+124.35.80.154 - - [01/Jul/2016:10:47:49 +0900] "GET /apple-touch-icon.png HTTP/1.0" 404 - 0.0016
+216.218.206.68 - - [01/Jul/2016:14:48:14 +0900] "GET / HTTP/1.0" 404 - 0.0021
+203.104.146.69 - - [01/Jul/2016:17:40:03 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0828
+203.104.146.67 - - [01/Jul/2016:17:40:06 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1315
+203.104.146.68 - - [01/Jul/2016:17:40:10 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0902
+203.104.146.70 - - [01/Jul/2016:17:40:31 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0568
+203.104.146.69 - - [01/Jul/2016:17:45:54 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1531
+203.104.146.67 - - [01/Jul/2016:18:51:29 +0900] "POST /bot-game HTTP/1.0" 500 119533 0.4999
+203.104.146.68 - - [01/Jul/2016:18:58:44 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0926
+203.104.146.70 - - [01/Jul/2016:18:59:15 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1118
+203.104.146.69 - - [01/Jul/2016:18:59:19 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0945
+203.104.146.67 - - [01/Jul/2016:19:00:33 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1548
+203.104.146.70 - - [01/Jul/2016:19:09:15 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1185
+203.104.146.68 - - [01/Jul/2016:19:13:16 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0959
+203.104.146.68 - - [01/Jul/2016:19:15:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0867
+203.104.146.67 - - [01/Jul/2016:19:19:20 +0900] "POST /bot-game HTTP/1.0" 500 119551 0.4574
+203.104.146.68 - - [01/Jul/2016:19:20:38 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0840
+203.104.146.70 - - [01/Jul/2016:19:30:49 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0913
+223.167.32.193 - - [02/Jul/2016:00:29:13 +0900] "GET / HTTP/1.0" 404 - 0.0011
+223.167.32.193 - - [02/Jul/2016:00:29:17 +0900] "GET /HNAP1/ HTTP/1.0" 404 - 0.0008
+121.117.75.21 - - [02/Jul/2016:09:39:40 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0905
+121.117.75.21 - - [02/Jul/2016:09:39:42 +0900] "GET /bot-game/pad_rmt/index HTTP/1.0" 200 - 0.0972
+121.117.75.21 - - [02/Jul/2016:09:39:52 +0900] "GET /bot-game/pad_rmt/index?url=0420-1033-26-019.jpg HTTP/1.0" 200 - 0.1113
+121.117.75.21 - - [02/Jul/2016:09:40:25 +0900] "GET /bot-game HTTP/1.0" 200 - 0.0827
+184.105.247.195 - - [02/Jul/2016:20:56:12 +0900] "GET / HTTP/1.0" 404 - 0.0022
+74.82.47.4 - - [03/Jul/2016:16:20:07 +0900] "GET / HTTP/1.0" 404 - 0.0035
+169.54.244.78 - - [04/Jul/2016:05:03:54 +0900] "GET / HTTP/1.0" 404 - 0.0021
+71.6.146.185 - - [04/Jul/2016:09:12:38 +0900] "GET / HTTP/1.0" 404 - 0.0046
+216.218.206.66 - - [04/Jul/2016:13:21:26 +0900] "GET / HTTP/1.0" 404 - 0.0021
+184.105.139.67 - - [05/Jul/2016:18:49:46 +0900] "GET / HTTP/1.0" 404 - 0.0039
+184.105.247.195 - - [06/Jul/2016:12:41:21 +0900] "GET / HTTP/1.0" 404 - 0.0036
+54.187.103.145 - - [07/Jul/2016:05:06:38 +0900] "GET / HTTP/1.0" 404 - 0.0034
+184.105.247.194 - - [07/Jul/2016:20:52:37 +0900] "GET / HTTP/1.0" 404 - 0.0015
+203.104.146.67 - - [07/Jul/2016:22:02:05 +0900] "POST /bot-game HTTP/1.0" 500 119543 0.4911
+192.111.152.6 - - [07/Jul/2016:23:53:51 +0900] "GET /epgrec/do-record.sh HTTP/1.0" 404 - 0.0019
+184.105.139.70 - - [08/Jul/2016:18:07:16 +0900] "GET / HTTP/1.0" 404 - 0.0022
+184.105.247.195 - - [09/Jul/2016:10:34:48 +0900] "GET / HTTP/1.0" 404 - 0.0037
+184.105.139.68 - - [11/Jul/2016:11:08:35 +0900] "GET / HTTP/1.0" 404 - 0.0040
+54.215.132.144 - - [12/Jul/2016:09:46:49 +0900] "GET / HTTP/1.0" 404 - 0.0024
+184.105.139.67 - - [12/Jul/2016:11:17:49 +0900] "GET / HTTP/1.0" 404 - 0.0033
+54.171.77.71 - - [13/Jul/2016:02:13:06 +0900] "GET / HTTP/1.0" 404 - 0.0050
+184.105.139.68 - - [13/Jul/2016:21:46:29 +0900] "GET / HTTP/1.0" 404 - 0.0023
+45.55.249.64 - - [14/Jul/2016:03:37:06 +0900] "HEAD / HTTP/1.0" 404 - 0.0023
+E, [2016-07-14T03:37:06.030497 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-07-14T03:37:06.030584 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-07-14T03:37:06.030649 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-07-14T03:37:06.030704 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-07-14T03:37:06.030752 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-07-14T03:37:06.030819 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-07-14T03:37:06.030883 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-07-14T03:37:06.030925 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-07-14T03:37:06.030966 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-07-14T03:37:06.031027 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-07-14T03:37:06.031139 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-07-14T03:37:06.031226 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-07-14T03:37:06.031267 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+45.55.249.64 - - [14/Jul/2016:03:54:42 +0900] "HEAD / HTTP/1.0" 404 - 0.0013
+E, [2016-07-14T03:54:42.845974 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-07-14T03:54:42.846024 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-07-14T03:54:42.846051 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-07-14T03:54:42.846103 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-07-14T03:54:42.846133 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-07-14T03:54:42.846177 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-07-14T03:54:42.846222 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-07-14T03:54:42.846274 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-07-14T03:54:42.846316 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-07-14T03:54:42.846352 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-07-14T03:54:42.846384 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-07-14T03:54:42.846407 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-07-14T03:54:42.846429 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+184.105.139.70 - - [14/Jul/2016:14:30:27 +0900] "GET / HTTP/1.0" 404 - 0.0013
+45.55.230.109 - - [15/Jul/2016:00:04:17 +0900] "GET / HTTP/1.0" 404 - 0.0053
+124.35.80.154 - - [15/Jul/2016:09:59:45 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.1147
+124.35.80.154 - - [15/Jul/2016:09:59:45 +0900] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 - 0.0017
+124.35.80.154 - - [15/Jul/2016:09:59:45 +0900] "GET /apple-touch-icon.png HTTP/1.0" 404 - 0.0012
+124.35.80.154 - - [15/Jul/2016:09:59:45 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0771
+124.35.80.154 - - [15/Jul/2016:09:59:45 +0900] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 - 0.0045
+124.35.80.154 - - [15/Jul/2016:09:59:45 +0900] "GET /apple-touch-icon.png HTTP/1.0" 404 - 0.0026
+216.218.206.68 - - [15/Jul/2016:10:24:26 +0900] "GET / HTTP/1.0" 404 - 0.0021
+184.105.139.70 - - [16/Jul/2016:14:27:05 +0900] "GET / HTTP/1.0" 404 - 0.0029
+203.104.146.70 - - [17/Jul/2016:15:42:02 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1196
+203.104.146.67 - - [17/Jul/2016:15:42:15 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1074
+203.104.146.68 - - [17/Jul/2016:15:43:37 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0953
+184.105.139.68 - - [17/Jul/2016:20:59:34 +0900] "GET / HTTP/1.0" 404 - 0.0020
+66.240.192.138 - - [18/Jul/2016:01:59:01 +0900] "GET / HTTP/1.0" 404 - 0.0047
+192.111.152.6 - - [18/Jul/2016:17:04:42 +0900] "GET / HTTP/1.0" 404 - 0.0055
+192.111.152.6 - - [18/Jul/2016:17:04:43 +0900] "GET /epgrec/do-record.sh HTTP/1.0" 404 - 0.0019
+216.218.206.68 - - [18/Jul/2016:18:34:15 +0900] "GET / HTTP/1.0" 404 - 0.0023
+45.55.240.45 - - [19/Jul/2016:07:04:05 +0900] "GET / HTTP/1.0" 404 - 0.0032
+71.6.165.200 - - [19/Jul/2016:11:25:03 +0900] "GET / HTTP/1.0" 404 - 0.0010
+54.201.230.66 - - [19/Jul/2016:12:18:41 +0900] "GET / HTTP/1.0" 404 - 0.0023
+184.105.139.70 - - [19/Jul/2016:19:58:30 +0900] "GET / HTTP/1.0" 404 - 0.0044
+126.205.134.88 - - [20/Jul/2016:13:17:39 +0900] "GET / HTTP/1.0" 404 - 0.0011
+126.205.134.88 - - [20/Jul/2016:13:17:41 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0444
+126.205.134.88 - - [20/Jul/2016:13:17:49 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0532
+126.205.134.88 - - [20/Jul/2016:13:17:51 +0900] "GET /bot-game/pad_rmt/index?image_name=0623-1819-05-033.jpg HTTP/1.0" 200 - 0.0666
+126.205.134.88 - - [20/Jul/2016:13:18:30 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0375
+126.205.134.88 - - [20/Jul/2016:13:18:47 +0900] "GET /bot-game/pad_rmt/index?image_name=0720-1256-00-021.jpg HTTP/1.0" 200 - 0.0629
+184.105.139.67 - - [20/Jul/2016:19:18:24 +0900] "GET / HTTP/1.0" 404 - 0.0044
+124.35.80.154 - - [20/Jul/2016:20:26:25 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0431
+124.35.80.154 - - [20/Jul/2016:20:26:25 +0900] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 - 0.0009
+124.35.80.154 - - [20/Jul/2016:20:26:25 +0900] "GET /apple-touch-icon.png HTTP/1.0" 404 - 0.0005
+124.35.80.154 - - [20/Jul/2016:20:26:25 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.0819
+124.35.80.154 - - [20/Jul/2016:20:26:25 +0900] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 - 0.0016
+124.35.80.154 - - [20/Jul/2016:20:26:25 +0900] "GET /apple-touch-icon.png HTTP/1.0" 404 - 0.0012
+184.105.139.68 - - [21/Jul/2016:19:09:51 +0900] "GET / HTTP/1.0" 404 - 0.0011
+74.82.47.4 - - [22/Jul/2016:12:41:26 +0900] "GET / HTTP/1.0" 404 - 0.0027
+183.129.160.229 - - [22/Jul/2016:17:43:07 +0900] "GET / HTTP/1.0" 404 - 0.0015
+185.77.91.101 - - [23/Jul/2016:03:20:49 +0900] "HEAD /index.php HTTP/1.0" 404 - 0.0012
+E, [2016-07-23T03:20:49.576672 #13598] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-07-23T03:20:49.576746 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-07-23T03:20:49.576791 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-07-23T03:20:49.576820 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-07-23T03:20:49.576855 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-07-23T03:20:49.576883 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-07-23T03:20:49.576921 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-07-23T03:20:49.576959 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-07-23T03:20:49.576993 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-07-23T03:20:49.577030 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-07-23T03:20:49.577055 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-07-23T03:20:49.577105 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-07-23T03:20:49.577130 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+184.105.139.67 - - [23/Jul/2016:10:58:44 +0900] "GET / HTTP/1.0" 404 - 0.0014
+183.129.160.229 - - [23/Jul/2016:15:20:28 +0900] "GET / HTTP/1.0" 404 - 0.0008
+199.115.117.99 - - [24/Jul/2016:09:10:44 +0900] "GET /admin/i18n/readme.txt HTTP/1.0" 404 - 0.0051
+184.105.139.68 - - [24/Jul/2016:17:05:39 +0900] "GET / HTTP/1.0" 404 - 0.0016
+184.105.247.195 - - [25/Jul/2016:11:17:54 +0900] "GET / HTTP/1.0" 404 - 0.0015
+66.240.236.119 - - [25/Jul/2016:16:08:58 +0900] "GET / HTTP/1.0" 404 - 0.0010
+54.206.59.228 - - [26/Jul/2016:04:02:24 +0900] "GET / HTTP/1.0" 404 - 0.0024
+113.240.250.156 - - [26/Jul/2016:11:22:38 +0900] "GET / HTTP/1.0" 404 - 0.0074
+113.240.250.156 - - [26/Jul/2016:11:27:47 +0900] "GET / HTTP/1.0" 404 - 0.0036
+190.103.31.165 - - [26/Jul/2016:18:40:45 +0900] "HEAD /index.php HTTP/1.0" 404 - 0.0030
+E, [2016-07-26T18:40:45.823210 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-07-26T18:40:45.823370 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-07-26T18:40:45.823438 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-07-26T18:40:45.823491 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-07-26T18:40:45.823542 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-07-26T18:40:45.823590 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-07-26T18:40:45.823640 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-07-26T18:40:45.823688 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-07-26T18:40:45.823735 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-07-26T18:40:45.823783 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-07-26T18:40:45.823829 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-07-26T18:40:45.823876 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-07-26T18:40:45.823922 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+184.105.139.68 - - [26/Jul/2016:19:59:04 +0900] "GET / HTTP/1.0" 404 - 0.0012
+121.117.75.21 - - [26/Jul/2016:22:11:12 +0900] "GET /bot-game/pad_rmt/images HTTP/1.0" 200 - 0.2251
+121.117.75.21 - - [26/Jul/2016:22:11:14 +0900] "GET /bot-game/pad_rmt/index HTTP/1.0" 200 - 0.0824
+121.117.75.21 - - [26/Jul/2016:22:11:25 +0900] "GET /bot-game/pad_rmt/index?url=0420-1033-26-019.jpg HTTP/1.0" 200 - 0.0716
+121.117.75.21 - - [26/Jul/2016:22:11:49 +0900] "GET /bot-game HTTP/1.0" 200 - 0.1405
+203.104.146.67 - - [27/Jul/2016:17:49:26 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1212
+203.104.146.69 - - [27/Jul/2016:17:50:33 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1153
+203.104.146.70 - - [27/Jul/2016:17:51:35 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1038
+203.104.146.68 - - [27/Jul/2016:17:51:40 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0915
+216.218.206.68 - - [27/Jul/2016:21:27:40 +0900] "GET / HTTP/1.0" 404 - 0.0020
+184.105.139.70 - - [28/Jul/2016:17:56:05 +0900] "GET / HTTP/1.0" 404 - 0.0027
+121.117.75.21 - - [28/Jul/2016:22:52:47 +0900] "GET /bot-game/pad_rmt/index HTTP/1.0" 200 - 0.0857
+121.117.75.21 - - [28/Jul/2016:22:52:54 +0900] "GET /bot-game/pad_rmt/index?url=0420-1033-26-019.jpg HTTP/1.0" 200 - 0.0709
+121.117.75.21 - - [28/Jul/2016:22:53:13 +0900] "GET /bot-game HTTP/1.0" 304 - 0.0082
+184.105.139.68 - - [29/Jul/2016:19:08:03 +0900] "GET / HTTP/1.0" 404 - 0.0023
+80.82.65.212 - - [30/Jul/2016:05:31:43 +0900] "GET / HTTP/1.0" 404 - 0.0017
+74.82.47.2 - - [30/Jul/2016:14:26:49 +0900] "GET / HTTP/1.0" 404 - 0.0023
+184.105.247.196 - - [31/Jul/2016:15:06:47 +0900] "GET / HTTP/1.0" 404 - 0.0023
+74.82.47.2 - - [01/Aug/2016:20:45:56 +0900] "GET / HTTP/1.0" 404 - 0.0012
+93.158.216.70 - - [02/Aug/2016:05:50:01 +0900] "GET /CFIDE/h.cfm HTTP/1.0" 404 - 0.0022
+93.158.216.70 - - [02/Aug/2016:05:50:02 +0900] "GET /CFIDE/updates.cfm HTTP/1.0" 404 - 0.0018
+93.158.216.70 - - [02/Aug/2016:05:50:03 +0900] "GET /CFIDE/sysinfo.cfm HTTP/1.0" 404 - 0.0016
+93.158.216.70 - - [02/Aug/2016:05:50:05 +0900] "GET /CFIDE/administrator/index.cfm HTTP/1.0" 404 - 0.0016
+93.158.216.70 - - [02/Aug/2016:05:50:06 +0900] "GET /jmx-console/ HTTP/1.0" 404 - 0.0022
+93.158.216.70 - - [02/Aug/2016:05:50:07 +0900] "GET /manager/html HTTP/1.0" 404 - 0.0023
+93.158.216.70 - - [02/Aug/2016:05:50:08 +0900] "GET /plugins/weathermap/editor.php HTTP/1.0" 404 - 0.0017
+93.158.216.70 - - [02/Aug/2016:05:50:09 +0900] "GET /cacti/plugins/weathermap/editor.php HTTP/1.0" 404 - 0.0021
+93.158.216.70 - - [02/Aug/2016:05:50:10 +0900] "GET / HTTP/1.0" 404 - 0.0016
+93.158.216.70 - - [02/Aug/2016:05:50:11 +0900] "GET //CHANGELOG.txt HTTP/1.0" 404 - 0.0017
+93.158.216.70 - - [02/Aug/2016:05:50:12 +0900] "GET /?q=node&destination=node HTTP/1.0" 404 - 0.0017
+93.158.216.70 - - [02/Aug/2016:05:50:13 +0900] "GET /user/login HTTP/1.0" 404 - 0.0015
+184.105.139.67 - - [02/Aug/2016:21:29:57 +0900] "GET / HTTP/1.0" 404 - 0.0011
+216.218.206.66 - - [03/Aug/2016:16:17:37 +0900] "GET / HTTP/1.0" 404 - 0.0021
+54.201.127.116 - - [03/Aug/2016:23:28:26 +0900] "GET / HTTP/1.0" 404 - 0.0018
+61.49.45.41 - - [04/Aug/2016:12:02:46 +0900] "GET / HTTP/1.0" 404 - 0.0027
+184.105.247.195 - - [04/Aug/2016:12:26:14 +0900] "GET / HTTP/1.0" 404 - 0.0093
+52.41.145.132 - - [04/Aug/2016:12:31:08 +0900] "HEAD / HTTP/1.0" 404 - 0.0018
+E, [2016-08-04T12:31:08.479933 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-08-04T12:31:08.480035 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-08-04T12:31:08.480155 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-08-04T12:31:08.480235 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-08-04T12:31:08.480292 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-08-04T12:31:08.480341 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-08-04T12:31:08.480395 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-08-04T12:31:08.480443 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-08-04T12:31:08.480498 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-08-04T12:31:08.480581 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-08-04T12:31:08.480632 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-08-04T12:31:08.480681 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-08-04T12:31:08.480732 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+52.41.145.132 - - [04/Aug/2016:12:31:09 +0900] "GET / HTTP/1.0" 404 - 0.0008
+184.105.139.68 - - [05/Aug/2016:20:11:05 +0900] "GET / HTTP/1.0" 404 - 0.0019
+74.82.47.3 - - [06/Aug/2016:14:29:39 +0900] "GET / HTTP/1.0" 404 - 0.0057
+121.117.75.21 - - [06/Aug/2016:17:51:49 +0900] "GET /bot-game/pad_rmt/index HTTP/1.0" 200 - 0.0645
+121.117.75.21 - - [06/Aug/2016:17:51:52 +0900] "GET /bot-game/pad_rmt/index?url=0420-1033-26-019.jpg HTTP/1.0" 200 - 0.1129
+121.117.75.21 - - [06/Aug/2016:17:52:08 +0900] "GET /bot-game HTTP/1.0" 200 - 0.0080
+216.218.206.68 - - [07/Aug/2016:09:48:49 +0900] "GET / HTTP/1.0" 404 - 0.0016
+203.104.146.70 - - [07/Aug/2016:16:03:52 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1450
+203.104.146.68 - - [07/Aug/2016:16:04:53 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1176
+203.104.146.69 - - [07/Aug/2016:16:05:04 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0869
+203.104.146.70 - - [07/Aug/2016:16:13:27 +0900] "POST /bot-game HTTP/1.0" 500 119561 0.7004
+203.104.146.67 - - [07/Aug/2016:17:21:56 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0656
+203.104.146.70 - - [07/Aug/2016:17:22:22 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0944
+203.104.146.69 - - [07/Aug/2016:17:22:51 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0772
+203.104.146.69 - - [07/Aug/2016:17:47:37 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1157
+203.104.146.68 - - [07/Aug/2016:17:47:49 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1790
+203.104.146.67 - - [08/Aug/2016:12:23:52 +0900] "POST /bot-game HTTP/1.0" 500 118315 0.4691
+184.105.247.194 - - [08/Aug/2016:22:40:07 +0900] "GET / HTTP/1.0" 404 - 0.0030
+54.206.55.202 - - [09/Aug/2016:04:35:05 +0900] "GET / HTTP/1.0" 404 - 0.0024
+216.218.206.66 - - [09/Aug/2016:16:45:26 +0900] "GET / HTTP/1.0" 404 - 0.0020
+37.187.114.171 - - [10/Aug/2016:04:31:57 +0900] "HEAD /irj/portal HTTP/1.0" 404 - 0.0028
+E, [2016-08-10T04:31:57.850797 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-08-10T04:31:57.850907 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-08-10T04:31:57.851002 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-08-10T04:31:57.851177 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-08-10T04:31:57.851251 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-08-10T04:31:57.851303 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-08-10T04:31:57.851350 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-08-10T04:31:57.851398 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-08-10T04:31:57.851445 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-08-10T04:31:57.851492 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-08-10T04:31:57.851539 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-08-10T04:31:57.851615 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-08-10T04:31:57.851666 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+184.105.139.67 - - [10/Aug/2016:19:29:11 +0900] "GET / HTTP/1.0" 404 - 0.0019
+71.6.135.131 - - [11/Aug/2016:01:06:16 +0900] "GET / HTTP/1.0" 404 - 0.0032
+184.105.139.68 - - [11/Aug/2016:11:29:14 +0900] "GET / HTTP/1.0" 404 - 0.0017
+216.218.206.66 - - [12/Aug/2016:10:35:43 +0900] "GET / HTTP/1.0" 404 - 0.0024
+104.236.199.87 - - [12/Aug/2016:11:30:06 +0900] "HEAD / HTTP/1.0" 404 - 0.0024
+E, [2016-08-12T11:30:06.732504 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-08-12T11:30:06.732593 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-08-12T11:30:06.732650 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-08-12T11:30:06.732700 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-08-12T11:30:06.732795 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-08-12T11:30:06.732898 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-08-12T11:30:06.732985 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-08-12T11:30:06.733154 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-08-12T11:30:06.733241 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-08-12T11:30:06.733295 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-08-12T11:30:06.733370 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-08-12T11:30:06.733480 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-08-12T11:30:06.733533 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+104.236.199.87 - - [12/Aug/2016:11:40:53 +0900] "HEAD / HTTP/1.0" 404 - 0.0054
+E, [2016-08-12T11:40:53.122713 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-08-12T11:40:53.122803 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-08-12T11:40:53.122858 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-08-12T11:40:53.123233 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-08-12T11:40:53.123294 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-08-12T11:40:53.123411 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-08-12T11:40:53.123483 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-08-12T11:40:53.123535 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-08-12T11:40:53.123582 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-08-12T11:40:53.123661 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-08-12T11:40:53.123712 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-08-12T11:40:53.123758 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-08-12T11:40:53.123803 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+192.111.152.6 - - [13/Aug/2016:01:11:35 +0900] "GET /epgrec/do-record.sh HTTP/1.0" 404 - 0.0015
+63.251.96.59 - - [13/Aug/2016:03:50:02 +0900] "GET /admin/i18n/readme.txt HTTP/1.0" 404 - 0.0055
+74.82.47.2 - - [13/Aug/2016:11:03:49 +0900] "GET / HTTP/1.0" 404 - 0.0041
+104.236.231.241 - - [13/Aug/2016:15:22:09 +0900] "GET / HTTP/1.0" 404 - 0.0015
+45.55.139.87 - - [13/Aug/2016:19:13:19 +0900] "GET / HTTP/1.0" 404 - 0.0045
+45.55.153.170 - - [14/Aug/2016:05:01:18 +0900] "GET / HTTP/1.0" 404 - 0.0013
+141.212.122.112 - - [14/Aug/2016:19:39:35 +0900] "GET /Support.aspx HTTP/1.0" 404 - 0.0066
+184.105.247.195 - - [14/Aug/2016:21:22:40 +0900] "GET / HTTP/1.0" 404 - 0.0046
+169.229.3.90 - - [15/Aug/2016:14:21:58 +0900] "GET /redirect.aspx HTTP/1.0" 404 - 0.0027
+52.77.254.150 - - [16/Aug/2016:02:39:38 +0900] "GET / HTTP/1.0" 404 - 0.0034
+89.248.172.16 - - [16/Aug/2016:13:00:22 +0900] "GET / HTTP/1.0" 404 - 0.0018
+74.82.47.4 - - [16/Aug/2016:18:59:26 +0900] "GET / HTTP/1.0" 404 - 0.0017
+216.218.206.66 - - [17/Aug/2016:14:34:09 +0900] "GET / HTTP/1.0" 404 - 0.0019
+45.55.189.10 - - [17/Aug/2016:17:08:55 +0900] "GET / HTTP/1.0" 404 - 0.0027
+74.82.47.2 - - [18/Aug/2016:20:50:03 +0900] "GET / HTTP/1.0" 404 - 0.0030
+216.218.206.66 - - [20/Aug/2016:02:23:05 +0900] "GET / HTTP/1.0" 404 - 0.0032
+183.129.160.229 - - [20/Aug/2016:04:28:03 +0900] "GET / HTTP/1.0" 404 - 0.0046
+184.105.247.196 - - [20/Aug/2016:17:33:48 +0900] "GET / HTTP/1.0" 404 - 0.0048
+184.105.247.194 - - [21/Aug/2016:13:07:03 +0900] "GET / HTTP/1.0" 404 - 0.0036
+74.82.47.3 - - [22/Aug/2016:21:29:26 +0900] "GET / HTTP/1.0" 404 - 0.0040
+54.153.45.6 - - [23/Aug/2016:07:56:23 +0900] "GET / HTTP/1.0" 404 - 0.0056
+184.105.247.195 - - [23/Aug/2016:22:46:44 +0900] "GET / HTTP/1.0" 404 - 0.0052
+101.87.66.111 - - [24/Aug/2016:07:43:55 +0900] "GET / HTTP/1.0" 404 - 0.0039
+184.105.247.196 - - [24/Aug/2016:17:59:39 +0900] "GET / HTTP/1.0" 404 - 0.0041
+216.218.206.66 - - [25/Aug/2016:20:43:21 +0900] "GET / HTTP/1.0" 404 - 0.0060
+129.56.2.38 - - [26/Aug/2016:03:44:09 +0900] "GET /admin/config.php HTTP/1.0" 404 - 0.0036
+216.218.206.66 - - [26/Aug/2016:20:21:16 +0900] "GET / HTTP/1.0" 404 - 0.0039
+183.129.160.229 - - [27/Aug/2016:06:32:11 +0900] "GET / HTTP/1.0" 404 - 0.0042
+158.130.6.191 - - [27/Aug/2016:07:09:48 +0900] "HEAD /images/ HTTP/1.0" 404 - 0.0022
+E, [2016-08-27T07:09:48.439214 #13598] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-08-27T07:09:48.439341 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-08-27T07:09:48.439403 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-08-27T07:09:48.439455 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-08-27T07:09:48.439505 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-08-27T07:09:48.439554 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-08-27T07:09:48.439604 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-08-27T07:09:48.439718 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-08-27T07:09:48.439779 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-08-27T07:09:48.439828 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-08-27T07:09:48.439877 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-08-27T07:09:48.439924 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-08-27T07:09:48.439970 #13598] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+121.117.75.21 - - [28/Aug/2016:10:19:55 +0900] "GET /bot-game/pad_rmt/index HTTP/1.0" 200 - 0.0772
+121.117.75.21 - - [28/Aug/2016:10:20:02 +0900] "GET /bot-game/pad_rmt/index?url=0420-1033-26-019.jpg HTTP/1.0" 200 - 0.0772
+121.117.75.21 - - [28/Aug/2016:10:20:19 +0900] "GET /bot-game HTTP/1.0" 200 - 0.0174
+184.105.247.194 - - [28/Aug/2016:23:38:46 +0900] "GET / HTTP/1.0" 404 - 0.0066
+184.105.247.194 - - [29/Aug/2016:15:17:49 +0900] "GET / HTTP/1.0" 404 - 0.0046
+80.82.65.120 - - [30/Aug/2016:01:27:30 +0900] "GET // HTTP/1.0" 404 - 0.0097
+54.218.114.93 - - [30/Aug/2016:03:30:31 +0900] "GET / HTTP/1.0" 404 - 0.0052
+183.129.160.229 - - [30/Aug/2016:04:33:23 +0900] "GET / HTTP/1.0" 404 - 0.0048
+216.218.206.66 - - [31/Aug/2016:00:13:23 +0900] "GET / HTTP/1.0" 404 - 0.0044
+192.111.152.6 - - [31/Aug/2016:16:20:44 +0900] "GET / HTTP/1.0" 404 - 0.0047
+192.111.152.6 - - [31/Aug/2016:16:20:46 +0900] "GET /epgrec/do-record.sh HTTP/1.0" 404 - 0.0041
+216.55.186.43 - - [31/Aug/2016:16:49:23 +0900] "GET /services/MyICOffice/ HTTP/1.0" 404 - 0.0015
+184.105.139.70 - - [01/Sep/2016:03:14:32 +0900] "GET / HTTP/1.0" 404 - 0.0068
+183.129.160.229 - - [01/Sep/2016:14:03:15 +0900] "GET / HTTP/1.0" 404 - 0.0056
+74.82.47.4 - - [01/Sep/2016:17:17:46 +0900] "GET / HTTP/1.0" 404 - 0.0018
+190.103.31.165 - - [01/Sep/2016:22:34:17 +0900] "HEAD /index.php HTTP/1.0" 404 - 0.0032
+E, [2016-09-01T22:34:17.462103 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-09-01T22:34:17.462159 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-09-01T22:34:17.462187 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-09-01T22:34:17.462211 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-09-01T22:34:17.462254 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-09-01T22:34:17.462284 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-09-01T22:34:17.462308 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-09-01T22:34:17.462331 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-09-01T22:34:17.462353 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-09-01T22:34:17.462375 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-09-01T22:34:17.462398 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-09-01T22:34:17.462420 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-09-01T22:34:17.462462 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+190.103.31.165 - - [01/Sep/2016:22:34:18 +0900] "HEAD /admin/images/tango.png HTTP/1.0" 404 - 0.0012
+E, [2016-09-01T22:34:18.357928 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-09-01T22:34:18.357976 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-09-01T22:34:18.358003 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-09-01T22:34:18.358045 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-09-01T22:34:18.358112 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-09-01T22:34:18.358142 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-09-01T22:34:18.358165 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-09-01T22:34:18.358188 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-09-01T22:34:18.358210 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-09-01T22:34:18.358247 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-09-01T22:34:18.358289 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-09-01T22:34:18.358316 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-09-01T22:34:18.358338 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+184.105.139.67 - - [02/Sep/2016:21:05:39 +0900] "GET / HTTP/1.0" 404 - 0.0052
+183.129.160.229 - - [03/Sep/2016:08:14:34 +0900] "GET / HTTP/1.0" 404 - 0.0047
+216.218.206.66 - - [03/Sep/2016:15:18:28 +0900] "GET / HTTP/1.0" 404 - 0.0035
+66.240.192.138 - - [03/Sep/2016:20:33:47 +0900] "GET / HTTP/1.0" 404 - 0.0069
+103.62.28.2 - - [04/Sep/2016:10:21:44 +0900] "HEAD /index.php HTTP/1.0" 404 - 0.0047
+E, [2016-09-04T10:21:44.646442 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-09-04T10:21:44.646550 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-09-04T10:21:44.646609 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-09-04T10:21:44.646670 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-09-04T10:21:44.646694 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-09-04T10:21:44.646733 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-09-04T10:21:44.646784 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-09-04T10:21:44.646832 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-09-04T10:21:44.646898 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-09-04T10:21:44.647039 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-09-04T10:21:44.647149 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-09-04T10:21:44.647224 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-09-04T10:21:44.647317 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+103.62.28.2 - - [04/Sep/2016:10:21:45 +0900] "HEAD /admin/images/tango.png HTTP/1.0" 404 - 0.0019
+E, [2016-09-04T10:21:45.910066 #13602] ERROR -- : app error: Response body was given for HEAD request, but should be empty (Rack::Lint::LintError)
+E, [2016-09-04T10:21:45.910194 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:20:in `assert'
+E, [2016-09-04T10:21:45.910248 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:688:in `verify_content_length'
+E, [2016-09-04T10:21:45.910295 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:716:in `each'
+E, [2016-09-04T10:21:45.910340 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/body_proxy.rb:31:in `each'
+E, [2016-09-04T10:21:45.910384 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_response.rb:57:in `http_response_write'
+E, [2016-09-04T10:21:45.910427 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:573:in `process_client'
+E, [2016-09-04T10:21:45.910472 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-09-04T10:21:45.910515 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-09-04T10:21:45.910558 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-09-04T10:21:45.910601 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-09-04T10:21:45.910680 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `load'
+E, [2016-09-04T10:21:45.910795 #13602] ERROR -- : /usr/local/rbenv/versions/2.2.2/bin/unicorn:22:in `<main>'
+74.82.47.2 - - [04/Sep/2016:17:49:43 +0900] "GET / HTTP/1.0" 404 - 0.0014
+216.223.26.107 - - [04/Sep/2016:23:58:21 +0900] "GET /admin/i18n/readme.txt HTTP/1.0" 404 - 0.0038
+216.218.206.68 - - [05/Sep/2016:18:20:16 +0900] "GET / HTTP/1.0" 404 - 0.0045
+74.82.47.3 - - [06/Sep/2016:22:05:05 +0900] "GET / HTTP/1.0" 404 - 0.0029
+184.105.247.194 - - [07/Sep/2016:15:38:42 +0900] "GET / HTTP/1.0" 404 - 0.0028
+216.218.206.68 - - [08/Sep/2016:18:44:26 +0900] "GET / HTTP/1.0" 404 - 0.0028
+198.20.70.114 - - [09/Sep/2016:00:47:28 +0900] "GET / HTTP/1.0" 404 - 0.0033
+54.154.200.230 - - [09/Sep/2016:02:56:56 +0900] "GET / HTTP/1.0" 404 - 0.0022
+184.105.139.68 - - [09/Sep/2016:13:16:07 +0900] "GET / HTTP/1.0" 404 - 0.0030
+106.39.60.180 - - [09/Sep/2016:15:35:27 +0900] "GET / HTTP/1.0" 404 - 0.0020
+106.39.60.180 - - [09/Sep/2016:15:35:43 +0900] "GET / HTTP/1.0" 404 - 0.0008
+184.105.247.196 - - [10/Sep/2016:16:57:02 +0900] "GET / HTTP/1.0" 404 - 0.0039
+184.105.139.67 - - [11/Sep/2016:13:19:00 +0900] "GET / HTTP/1.0" 404 - 0.0069
+203.104.146.67 - - [12/Sep/2016:14:43:48 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0749
+203.104.146.67 - - [12/Sep/2016:14:43:57 +0900] "POST /bot-game HTTP/1.0" 200 - 0.0931
+203.104.146.70 - - [12/Sep/2016:14:54:59 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1361
+203.104.146.70 - - [12/Sep/2016:14:55:06 +0900] "POST /bot-game HTTP/1.0" 200 - 0.1345
+216.218.206.66 - - [12/Sep/2016:16:00:20 +0900] "GET / HTTP/1.0" 404 - 0.0017
+185.141.27.197 - - [12/Sep/2016:16:03:16 +0900] "GET /admin/module-builtin.xml HTTP/1.0" 404 - 0.0017
+124.35.80.154 - - [12/Sep/2016:17:30:44 +0900] "GET /facebook_bot/callback HTTP/1.0" 404 - 0.0017
+124.35.80.154 - - [12/Sep/2016:17:31:00 +0900] "POST /facebook_bot/callback HTTP/1.0" 404 - 0.0017
+124.35.80.154 - - [12/Sep/2016:17:31:59 +0900] "POST / HTTP/1.0" 404 - 0.0008
+124.35.80.154 - - [12/Sep/2016:17:32:01 +0900] "POST / HTTP/1.0" 404 - 0.0017
+124.35.80.154 - - [12/Sep/2016:17:32:08 +0900] "POST /bot-game/?text=aaa HTTP/1.0" 500 - 0.1327
+124.35.80.154 - - [12/Sep/2016:17:32:20 +0900] "POST /facebook_bot/callback HTTP/1.0" 404 - 0.0019
+124.35.80.154 - - [12/Sep/2016:17:32:25 +0900] "POST /facebook_bot/callback HTTP/1.0" 404 - 0.0021
+124.35.80.154 - - [12/Sep/2016:17:32:56 +0900] "POST /facebook_bot/callback HTTP/1.0" 404 - 0.0020
+124.35.80.154 - - [12/Sep/2016:17:32:57 +0900] "POST /facebook_bot/callback HTTP/1.0" 404 - 0.0025
+124.35.80.154 - - [12/Sep/2016:17:50:59 +0900] "GET /facebook_bot/callback HTTP/1.0" 404 - 0.0016
+124.35.80.154 - - [12/Sep/2016:17:51:34 +0900] "GET /facebook_bot/callback HTTP/1.0" 404 - 0.0018
+124.35.80.154 - - [12/Sep/2016:17:51:35 +0900] "GET /facebook_bot/callback HTTP/1.0" 404 - 0.0011
+124.35.80.154 - - [12/Sep/2016:17:51:53 +0900] "GET /facebook_bot/callback HTTP/1.0" 404 - 0.0009
+124.35.80.154 - - [12/Sep/2016:17:53:23 +0900] "GET /facebook_bot/callback HTTP/1.0" 404 - 0.0016
+124.35.80.154 - - [12/Sep/2016:17:53:26 +0900] "GET /facebook_bot HTTP/1.0" 404 - 0.0017
+124.35.80.154 - - [12/Sep/2016:17:53:33 +0900] "GET /facebook_bot/callback HTTP/1.0" 404 - 0.0010
+124.35.80.154 - - [12/Sep/2016:17:53:49 +0900] "GET /bot-game HTTP/1.0" 200 - 0.0339
+124.35.80.154 - - [12/Sep/2016:17:54:13 +0900] "GET /bot-game/facebook_bot/callback HTTP/1.0" 404 23163 0.1107
+124.35.80.154 - - [12/Sep/2016:17:54:23 +0900] "POST /bot-game/facebook_bot/callback HTTP/1.0" 500 85982 0.1703
+69.63.188.115 - - [12/Sep/2016:17:55:16 +0900] "GET /bot-game/facebook_bot/callback?hub.mode=subscribe&hub.challenge=47472675&hub.verify_token=EAAY2aCj3h6YBAAbqLF06ZCnkEmFevdvxgCLWqCxVI5LowZBwOcBoeYb7ZCTkojhpTbHgBhfOhv856ZAZBo5m23NnJ5U8zeTxS8nnjzn8ZCAPXfggZBVkAA02mZAswZB4w3VcT46SRl51YiVTViIATt5zEoOvVZA5eaaXlnWjHZC2iiYBwZDZD HTTP/1.0" 404 23225 0.0684
+124.35.80.154 - - [12/Sep/2016:17:55:35 +0900] "GET /bot-game/facebook_bot/callback HTTP/1.0" 404 23163 0.0719
+69.63.188.121 - - [12/Sep/2016:17:55:54 +0900] "GET /bot-game/facebook_bot/callback?hub.mode=subscribe&hub.challenge=1799857557&hub.verify_token=EAAY2aCj3h6YBAAbqLF06ZCnkEmFevdvxgCLWqCxVI5LowZBwOcBoeYb7ZCTkojhpTbHgBhfOhv856ZAZBo5m23NnJ5U8zeTxS8nnjzn8ZCAPXfggZBVkAA02mZAswZB4w3VcT46SRl51YiVTViIATt5zEoOvVZA5eaaXlnWjHZC2iiYBwZDZD HTTP/1.0" 404 23227 0.0689
+69.63.188.103 - - [12/Sep/2016:17:56:18 +0900] "GET /bot-game/facebook_bot/callback?hub.mode=subscribe&hub.challenge=334052418&hub.verify_token=EAAY2aCj3h6YBAAbqLF06ZCnkEmFevdvxgCLWqCxVI5LowZBwOcBoeYb7ZCTkojhpTbHgBhfOhv856ZAZBo5m23NnJ5U8zeTxS8nnjzn8ZCAPXfggZBVkAA02mZAswZB4w3VcT46SRl51YiVTViIATt5zEoOvVZA5eaaXlnWjHZC2iiYBwZDZD HTTP/1.0" 404 23226 0.0692
+69.63.188.112 - - [12/Sep/2016:17:56:30 +0900] "GET /bot-game/facebook_bot/callback?hub.mode=subscribe&hub.challenge=1145765124&hub.verify_token=EAAY2aCj3h6YBAAbqLF06ZCnkEmFevdvxgCLWqCxVI5LowZBwOcBoeYb7ZCTkojhpTbHgBhfOhv856ZAZBo5m23NnJ5U8zeTxS8nnjzn8ZCAPXfggZBVkAA02mZAswZB4w3VcT46SRl51YiVTViIATt5zEoOvVZA5eaaXlnWjHZC2iiYBwZDZD HTTP/1.0" 404 23227 0.0739
+124.35.80.154 - - [12/Sep/2016:17:57:38 +0900] "GET /bot-game/facebook_bot/callback HTTP/1.0" 404 23163 0.1664
+124.35.80.154 - - [12/Sep/2016:17:57:51 +0900] "POST /bot-game/facebook_bot/callback HTTP/1.0" 500 85982 0.1935
+124.35.80.154 - - [12/Sep/2016:17:59:16 +0900] "POST /bot-game/facebook_bot/callback HTTP/1.0" 422 106090 0.3139
+69.63.188.106 - - [12/Sep/2016:17:59:40 +0900] "GET /bot-game/facebook_bot/callback?hub.mode=subscribe&hub.challenge=342250947&hub.verify_token=EAAY2aCj3h6YBAAbqLF06ZCnkEmFevdvxgCLWqCxVI5LowZBwOcBoeYb7ZCTkojhpTbHgBhfOhv856ZAZBo5m23NnJ5U8zeTxS8nnjzn8ZCAPXfggZBVkAA02mZAswZB4w3VcT46SRl51YiVTViIATt5zEoOvVZA5eaaXlnWjHZC2iiYBwZDZD HTTP/1.0" 404 23226 0.0831
+69.63.188.114 - - [12/Sep/2016:17:59:48 +0900] "GET /bot-game/facebook_bot/callback?hub.mode=subscribe&hub.challenge=1587405352&hub.verify_token=EAAY2aCj3h6YBAAbqLF06ZCnkEmFevdvxgCLWqCxVI5LowZBwOcBoeYb7ZCTkojhpTbHgBhfOhv856ZAZBo5m23NnJ5U8zeTxS8nnjzn8ZCAPXfggZBVkAA02mZAswZB4w3VcT46SRl51YiVTViIATt5zEoOvVZA5eaaXlnWjHZC2iiYBwZDZD HTTP/1.0" 404 23227 0.1568
+69.63.188.114 - - [12/Sep/2016:18:00:07 +0900] "GET /bot-game/facebook_bot/callback?hub.mode=subscribe&hub.challenge=731774802&hub.verify_token=EAAY2aCj3h6YBAAbqLF06ZCnkEmFevdvxgCLWqCxVI5LowZBwOcBoeYb7ZCTkojhpTbHgBhfOhv856ZAZBo5m23NnJ5U8zeTxS8nnjzn8ZCAPXfggZBVkAA02mZAswZB4w3VcT46SRl51YiVTViIATt5zEoOvVZA5eaaXlnWjHZC2iiYBwZDZD HTTP/1.0" 404 23226 0.0724
+124.35.80.154 - - [12/Sep/2016:18:01:15 +0900] "POST /bot-game/facebook_bot/callback HTTP/1.0" 422 106090 0.3153

@@ -5,9 +5,13 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'index#index' , :via => :post
 
-  namespace :pad_rmt do
-    get :index, :images
-    post :publish
+  #namespace :pad_rmt do
+  #  get :index, :images
+  #  post :publish
+  #end
+
+  namespace :facebook_bot do
+    post :callback
   end
 
   # Example of regular route:
